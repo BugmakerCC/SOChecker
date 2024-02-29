@@ -1,0 +1,297 @@
+{
+  "absolutePath": "output/output_546.sol",
+  "exportedSymbols":
+  {
+    "Greeter":
+    [
+      10
+    ],
+    "Greeter_":
+    [
+      21
+    ]
+  },
+  "id": 22,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Greeter",
+      "contractDependencies": [],
+      "contractKind": "library",
+      "fullyImplemented": true,
+      "id": 10,
+      "linearizedBaseContracts":
+      [
+        10
+      ],
+      "name": "Greeter",
+      "nameLocation": "33:7:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 8,
+            "nodeType": "Block",
+            "src": "98:28:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "hexValue": "53616c757421",
+                  "id": 6,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "112:8:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_stringliteral_9b2dc42f3d04b90cf2d3132b90fb68be5ed5cf43e2e1b7c0897bcb1646a3c35b",
+                    "typeString": "literal_string \"Salut!\""
+                  },
+                  "value": "Salut!"
+                },
+                "functionReturnParameters": 5,
+                "id": 7,
+                "nodeType": "Return",
+                "src": "105:15:0"
+              }
+            ]
+          },
+          "functionSelector": "cfae3217",
+          "id": 9,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "greet",
+          "nameLocation": "55:5:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 2,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "60:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 5,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 4,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 9,
+                "src": "83:13:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 3,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "83:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "82:15:0"
+          },
+          "scope": 10,
+          "src": "46:80:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 22,
+      "src": "25:104:0",
+      "usedErrors": []
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Greeter_",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 21,
+      "linearizedBaseContracts":
+      [
+        21
+      ],
+      "name": "Greeter_",
+      "nameLocation": "142:8:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 19,
+            "nodeType": "Block",
+            "src": "209:39:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments": [],
+                  "expression":
+                  {
+                    "argumentTypes": [],
+                    "expression":
+                    {
+                      "id": 15,
+                      "name": "Greeter",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10,
+                      "src": "225:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_contract$_Greeter_$10_$",
+                        "typeString": "type(library Greeter)"
+                      }
+                    },
+                    "id": 16,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "greet",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 9,
+                    "src": "225:13:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_delegatecall_view$__$returns$_t_string_memory_ptr_$",
+                      "typeString": "function () view returns (string memory)"
+                    }
+                  },
+                  "id": 17,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "225:15:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string memory"
+                  }
+                },
+                "functionReturnParameters": 14,
+                "id": 18,
+                "nodeType": "Return",
+                "src": "218:22:0"
+              }
+            ]
+          },
+          "functionSelector": "cfae3217",
+          "id": 20,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "greet",
+          "nameLocation": "166:5:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 11,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "171:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 14,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 13,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 20,
+                "src": "194:13:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 12,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "194:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "193:15:0"
+          },
+          "scope": 21,
+          "src": "157:91:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 22,
+      "src": "133:118:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:255:0"
+}

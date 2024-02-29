@@ -1,0 +1,1070 @@
+{
+  "absolutePath": "output/output_437.sol",
+  "exportedSymbols":
+  {
+    "nft_array":
+    [
+      69
+    ]
+  },
+  "id": 70,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "nft_array",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 69,
+      "linearizedBaseContracts":
+      [
+        69
+      ],
+      "name": "nft_array",
+      "nameLocation": "34:9:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "nft_array.NFT",
+          "id": 12,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "contractAddress",
+              "nameLocation": "80:15:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "73:22:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "73:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "tokenID",
+              "nameLocation": "114:7:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "106:15:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "106:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "tokenStandard",
+              "nameLocation": "139:13:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "132:20:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "132:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 9,
+              "mutability": "mutable",
+              "name": "blockChain",
+              "nameLocation": "170:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "163:17:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 8,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "163:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 11,
+              "mutability": "mutable",
+              "name": "creatorFees",
+              "nameLocation": "199:11:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "191:19:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 10,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "191:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "NFT",
+          "nameLocation": "58:3:0",
+          "nodeType": "StructDefinition",
+          "scope": 69,
+          "src": "51:167:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 22,
+          "mutability": "mutable",
+          "name": "nftOne",
+          "nameLocation": "230:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 69,
+          "src": "226:84:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_struct$_NFT_$12_storage",
+            "typeString": "struct nft_array.NFT"
+          },
+          "typeName":
+          {
+            "id": 14,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 13,
+              "name": "NFT",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 12,
+              "src": "226:3:0"
+            },
+            "referencedDeclaration": 12,
+            "src": "226:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_NFT_$12_storage_ptr",
+              "typeString": "struct nft_array.NFT"
+            }
+          },
+          "value":
+          {
+            "arguments":
+            [
+              {
+                "hexValue": "3078443944323461346238413538424364426644446430643237423531463237",
+                "id": 16,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "243:34:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_614f9d97609fd6431c911347284ddfadd60113a4f2607304bc7a3f9e68efdbb1",
+                  "typeString": "literal_string \"0xD9D24a4b8A58BCdBfDDd0d27B51F27\""
+                },
+                "value": "0xD9D24a4b8A58BCdBfDDd0d27B51F27"
+              },
+              {
+                "hexValue": "333435",
+                "id": 17,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "279:3:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_rational_345_by_1",
+                  "typeString": "int_const 345"
+                },
+                "value": "345"
+              },
+              {
+                "hexValue": "4552432d373231",
+                "id": 18,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "283:9:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_9749deb3653bfc54e58b98cf0e2a5da19c8871ab9d8f2c3c80f47d5d9b4a5a3e",
+                  "typeString": "literal_string \"ERC-721\""
+                },
+                "value": "ERC-721"
+              },
+              {
+                "hexValue": "455448455245554d",
+                "id": 19,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "294:10:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_f9b1779dd736d62f9a5815f9f11cb752f6342e8584a01f22e1b19b9a8cb5694e",
+                  "typeString": "literal_string \"ETHEREUM\""
+                },
+                "value": "ETHEREUM"
+              },
+              {
+                "hexValue": "373231",
+                "id": 20,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "306:3:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_rational_721_by_1",
+                  "typeString": "int_const 721"
+                },
+                "value": "721"
+              }
+            ],
+            "expression":
+            {
+              "argumentTypes":
+              [
+                {
+                  "typeIdentifier": "t_stringliteral_614f9d97609fd6431c911347284ddfadd60113a4f2607304bc7a3f9e68efdbb1",
+                  "typeString": "literal_string \"0xD9D24a4b8A58BCdBfDDd0d27B51F27\""
+                },
+                {
+                  "typeIdentifier": "t_rational_345_by_1",
+                  "typeString": "int_const 345"
+                },
+                {
+                  "typeIdentifier": "t_stringliteral_9749deb3653bfc54e58b98cf0e2a5da19c8871ab9d8f2c3c80f47d5d9b4a5a3e",
+                  "typeString": "literal_string \"ERC-721\""
+                },
+                {
+                  "typeIdentifier": "t_stringliteral_f9b1779dd736d62f9a5815f9f11cb752f6342e8584a01f22e1b19b9a8cb5694e",
+                  "typeString": "literal_string \"ETHEREUM\""
+                },
+                {
+                  "typeIdentifier": "t_rational_721_by_1",
+                  "typeString": "int_const 721"
+                }
+              ],
+              "id": 15,
+              "name": "NFT",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 12,
+              "src": "239:3:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_type$_t_struct$_NFT_$12_storage_ptr_$",
+                "typeString": "type(struct nft_array.NFT storage pointer)"
+              }
+            },
+            "id": 21,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "structConstructorCall",
+            "lValueRequested": false,
+            "names": [],
+            "nodeType": "FunctionCall",
+            "src": "239:71:0",
+            "tryCall": false,
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_NFT_$12_memory_ptr",
+              "typeString": "struct nft_array.NFT memory"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 32,
+          "mutability": "mutable",
+          "name": "nftTwo",
+          "nameLocation": "321:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 69,
+          "src": "317:84:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_struct$_NFT_$12_storage",
+            "typeString": "struct nft_array.NFT"
+          },
+          "typeName":
+          {
+            "id": 24,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 23,
+              "name": "NFT",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 12,
+              "src": "317:3:0"
+            },
+            "referencedDeclaration": 12,
+            "src": "317:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_NFT_$12_storage_ptr",
+              "typeString": "struct nft_array.NFT"
+            }
+          },
+          "value":
+          {
+            "arguments":
+            [
+              {
+                "hexValue": "3078443938323461346238413575384364426644446430643237423531463237",
+                "id": 26,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "334:34:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_624f915b9009e7af698ea8308bdae22611fa304161487b187b6aecfa6a80753e",
+                  "typeString": "literal_string \"0xD9824a4b8A5u8CdBfDDd0d27B51F27\""
+                },
+                "value": "0xD9824a4b8A5u8CdBfDDd0d27B51F27"
+              },
+              {
+                "hexValue": "333436",
+                "id": 27,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "370:3:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_rational_346_by_1",
+                  "typeString": "int_const 346"
+                },
+                "value": "346"
+              },
+              {
+                "hexValue": "4552432d373231",
+                "id": 28,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "374:9:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_9749deb3653bfc54e58b98cf0e2a5da19c8871ab9d8f2c3c80f47d5d9b4a5a3e",
+                  "typeString": "literal_string \"ERC-721\""
+                },
+                "value": "ERC-721"
+              },
+              {
+                "hexValue": "455448455245554d",
+                "id": 29,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "385:10:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_f9b1779dd736d62f9a5815f9f11cb752f6342e8584a01f22e1b19b9a8cb5694e",
+                  "typeString": "literal_string \"ETHEREUM\""
+                },
+                "value": "ETHEREUM"
+              },
+              {
+                "hexValue": "373231",
+                "id": 30,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "397:3:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_rational_721_by_1",
+                  "typeString": "int_const 721"
+                },
+                "value": "721"
+              }
+            ],
+            "expression":
+            {
+              "argumentTypes":
+              [
+                {
+                  "typeIdentifier": "t_stringliteral_624f915b9009e7af698ea8308bdae22611fa304161487b187b6aecfa6a80753e",
+                  "typeString": "literal_string \"0xD9824a4b8A5u8CdBfDDd0d27B51F27\""
+                },
+                {
+                  "typeIdentifier": "t_rational_346_by_1",
+                  "typeString": "int_const 346"
+                },
+                {
+                  "typeIdentifier": "t_stringliteral_9749deb3653bfc54e58b98cf0e2a5da19c8871ab9d8f2c3c80f47d5d9b4a5a3e",
+                  "typeString": "literal_string \"ERC-721\""
+                },
+                {
+                  "typeIdentifier": "t_stringliteral_f9b1779dd736d62f9a5815f9f11cb752f6342e8584a01f22e1b19b9a8cb5694e",
+                  "typeString": "literal_string \"ETHEREUM\""
+                },
+                {
+                  "typeIdentifier": "t_rational_721_by_1",
+                  "typeString": "int_const 721"
+                }
+              ],
+              "id": 25,
+              "name": "NFT",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 12,
+              "src": "330:3:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_type$_t_struct$_NFT_$12_storage_ptr_$",
+                "typeString": "type(struct nft_array.NFT storage pointer)"
+              }
+            },
+            "id": 31,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "structConstructorCall",
+            "lValueRequested": false,
+            "names": [],
+            "nodeType": "FunctionCall",
+            "src": "330:71:0",
+            "tryCall": false,
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_NFT_$12_memory_ptr",
+              "typeString": "struct nft_array.NFT memory"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 42,
+          "mutability": "mutable",
+          "name": "nftThree",
+          "nameLocation": "412:8:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 69,
+          "src": "408:85:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_struct$_NFT_$12_storage",
+            "typeString": "struct nft_array.NFT"
+          },
+          "typeName":
+          {
+            "id": 34,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 33,
+              "name": "NFT",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 12,
+              "src": "408:3:0"
+            },
+            "referencedDeclaration": 12,
+            "src": "408:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_NFT_$12_storage_ptr",
+              "typeString": "struct nft_array.NFT"
+            }
+          },
+          "value":
+          {
+            "arguments":
+            [
+              {
+                "hexValue": "30784439444539383234613462384135384243644266444464305931463237",
+                "id": 36,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "427:33:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_1fbd798162fd2808f499575b5664eed5fab805128c73ba598a1a31c04950c08e",
+                  "typeString": "literal_string \"0xD9DE9824a4b8A58BCdBfDDd0Y1F27\""
+                },
+                "value": "0xD9DE9824a4b8A58BCdBfDDd0Y1F27"
+              },
+              {
+                "hexValue": "333437",
+                "id": 37,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "462:3:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_rational_347_by_1",
+                  "typeString": "int_const 347"
+                },
+                "value": "347"
+              },
+              {
+                "hexValue": "4552432d373231",
+                "id": 38,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "466:9:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_9749deb3653bfc54e58b98cf0e2a5da19c8871ab9d8f2c3c80f47d5d9b4a5a3e",
+                  "typeString": "literal_string \"ERC-721\""
+                },
+                "value": "ERC-721"
+              },
+              {
+                "hexValue": "455448455245554d",
+                "id": 39,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "string",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "477:10:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_stringliteral_f9b1779dd736d62f9a5815f9f11cb752f6342e8584a01f22e1b19b9a8cb5694e",
+                  "typeString": "literal_string \"ETHEREUM\""
+                },
+                "value": "ETHEREUM"
+              },
+              {
+                "hexValue": "373231",
+                "id": 40,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "489:3:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_rational_721_by_1",
+                  "typeString": "int_const 721"
+                },
+                "value": "721"
+              }
+            ],
+            "expression":
+            {
+              "argumentTypes":
+              [
+                {
+                  "typeIdentifier": "t_stringliteral_1fbd798162fd2808f499575b5664eed5fab805128c73ba598a1a31c04950c08e",
+                  "typeString": "literal_string \"0xD9DE9824a4b8A58BCdBfDDd0Y1F27\""
+                },
+                {
+                  "typeIdentifier": "t_rational_347_by_1",
+                  "typeString": "int_const 347"
+                },
+                {
+                  "typeIdentifier": "t_stringliteral_9749deb3653bfc54e58b98cf0e2a5da19c8871ab9d8f2c3c80f47d5d9b4a5a3e",
+                  "typeString": "literal_string \"ERC-721\""
+                },
+                {
+                  "typeIdentifier": "t_stringliteral_f9b1779dd736d62f9a5815f9f11cb752f6342e8584a01f22e1b19b9a8cb5694e",
+                  "typeString": "literal_string \"ETHEREUM\""
+                },
+                {
+                  "typeIdentifier": "t_rational_721_by_1",
+                  "typeString": "int_const 721"
+                }
+              ],
+              "id": 35,
+              "name": "NFT",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 12,
+              "src": "423:3:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_type$_t_struct$_NFT_$12_storage_ptr_$",
+                "typeString": "type(struct nft_array.NFT storage pointer)"
+              }
+            },
+            "id": 41,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "structConstructorCall",
+            "lValueRequested": false,
+            "names": [],
+            "nodeType": "FunctionCall",
+            "src": "423:70:0",
+            "tryCall": false,
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_NFT_$12_memory_ptr",
+              "typeString": "struct nft_array.NFT memory"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 46,
+          "mutability": "mutable",
+          "name": "nftArray",
+          "nameLocation": "508:8:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 69,
+          "src": "502:14:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_NFT_$12_storage_$dyn_storage",
+            "typeString": "struct nft_array.NFT[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 44,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 43,
+                "name": "NFT",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 12,
+                "src": "502:3:0"
+              },
+              "referencedDeclaration": 12,
+              "src": "502:3:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_NFT_$12_storage_ptr",
+                "typeString": "struct nft_array.NFT"
+              }
+            },
+            "id": 45,
+            "nodeType": "ArrayTypeName",
+            "src": "502:5:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_NFT_$12_storage_$dyn_storage_ptr",
+              "typeString": "struct nft_array.NFT[]"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "body":
+          {
+            "id": 67,
+            "nodeType": "Block",
+            "src": "539:106:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 52,
+                      "name": "nftOne",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22,
+                      "src": "564:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_NFT_$12_storage",
+                        "typeString": "struct nft_array.NFT storage ref"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_NFT_$12_storage",
+                        "typeString": "struct nft_array.NFT storage ref"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 49,
+                      "name": "nftArray",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46,
+                      "src": "550:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_NFT_$12_storage_$dyn_storage",
+                        "typeString": "struct nft_array.NFT storage ref[] storage ref"
+                      }
+                    },
+                    "id": 51,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "550:13:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_NFT_$12_storage_$dyn_storage_ptr_$_t_struct$_NFT_$12_storage_$returns$__$bound_to$_t_array$_t_struct$_NFT_$12_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct nft_array.NFT storage ref[] storage pointer,struct nft_array.NFT storage ref)"
+                    }
+                  },
+                  "id": 53,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "550:21:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 54,
+                "nodeType": "ExpressionStatement",
+                "src": "550:21:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 58,
+                      "name": "nftTwo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32,
+                      "src": "596:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_NFT_$12_storage",
+                        "typeString": "struct nft_array.NFT storage ref"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_NFT_$12_storage",
+                        "typeString": "struct nft_array.NFT storage ref"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 55,
+                      "name": "nftArray",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46,
+                      "src": "582:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_NFT_$12_storage_$dyn_storage",
+                        "typeString": "struct nft_array.NFT storage ref[] storage ref"
+                      }
+                    },
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "582:13:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_NFT_$12_storage_$dyn_storage_ptr_$_t_struct$_NFT_$12_storage_$returns$__$bound_to$_t_array$_t_struct$_NFT_$12_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct nft_array.NFT storage ref[] storage pointer,struct nft_array.NFT storage ref)"
+                    }
+                  },
+                  "id": 59,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "582:21:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 60,
+                "nodeType": "ExpressionStatement",
+                "src": "582:21:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 64,
+                      "name": "nftThree",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42,
+                      "src": "628:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_NFT_$12_storage",
+                        "typeString": "struct nft_array.NFT storage ref"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_NFT_$12_storage",
+                        "typeString": "struct nft_array.NFT storage ref"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 61,
+                      "name": "nftArray",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46,
+                      "src": "614:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_NFT_$12_storage_$dyn_storage",
+                        "typeString": "struct nft_array.NFT storage ref[] storage ref"
+                      }
+                    },
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "614:13:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_NFT_$12_storage_$dyn_storage_ptr_$_t_struct$_NFT_$12_storage_$returns$__$bound_to$_t_array$_t_struct$_NFT_$12_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct nft_array.NFT storage ref[] storage pointer,struct nft_array.NFT storage ref)"
+                    }
+                  },
+                  "id": 65,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "614:23:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 66,
+                "nodeType": "ExpressionStatement",
+                "src": "614:23:0"
+              }
+            ]
+          },
+          "id": 68,
+          "implemented": true,
+          "kind": "constructor",
+          "modifiers": [],
+          "name": "",
+          "nameLocation": "-1:-1:-1",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 47,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "536:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 48,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "539:0:0"
+          },
+          "scope": 69,
+          "src": "525:120:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 70,
+      "src": "25:627:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:656:0"
+}

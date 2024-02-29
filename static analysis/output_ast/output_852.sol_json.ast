@@ -1,0 +1,1143 @@
+{
+  "absolutePath": "./output/output_852.sol",
+  "exportedSymbols":
+  {
+    "TestContract":
+    [
+      83
+    ]
+  },
+  "id": 84,
+  "license": "MIT",
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".4"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "33:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 83,
+      "linearizedBaseContracts":
+      [
+        83
+      ],
+      "name": "TestContract",
+      "nameLocation": "69:12:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "TestContract.Item",
+          "id": 6,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "itemId",
+              "nameLocation": "113:6:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "108:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "108:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "itemValue",
+              "nameLocation": "131:9:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "126:14:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "126:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Item",
+          "nameLocation": "96:4:0",
+          "nodeType": "StructDefinition",
+          "scope": 83,
+          "src": "89:57:0",
+          "visibility": "public"
+        },
+        {
+          "canonicalName": "TestContract.OverlayingItemStruct",
+          "id": 16,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 11,
+              "mutability": "mutable",
+              "name": "items",
+              "nameLocation": "209:5:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 16,
+              "src": "187:27:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$6_storage_$",
+                "typeString": "mapping(uint256 => struct TestContract.Item)"
+              },
+              "typeName":
+              {
+                "id": 10,
+                "keyType":
+                {
+                  "id": 7,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "187:21:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$6_storage_$",
+                  "typeString": "mapping(uint256 => struct TestContract.Item)"
+                },
+                "valueType":
+                {
+                  "id": 9,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 8,
+                    "name": "Item",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 6,
+                    "src": "203:4:0"
+                  },
+                  "referencedDeclaration": 6,
+                  "src": "203:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Item_$6_storage_ptr",
+                    "typeString": "struct TestContract.Item"
+                  }
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 13,
+              "mutability": "mutable",
+              "name": "overlayingId",
+              "nameLocation": "226:12:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 16,
+              "src": "221:17:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 12,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "221:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 15,
+              "mutability": "mutable",
+              "name": "itemsCount",
+              "nameLocation": "250:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 16,
+              "src": "245:15:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 14,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "245:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "OverlayingItemStruct",
+          "nameLocation": "159:20:0",
+          "nodeType": "StructDefinition",
+          "scope": 83,
+          "src": "152:114:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "0c6c0c04",
+          "id": 21,
+          "mutability": "mutable",
+          "name": "overlayingItems",
+          "nameLocation": "317:15:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 83,
+          "src": "272:60:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_OverlayingItemStruct_$16_storage_$",
+            "typeString": "mapping(uint256 => struct TestContract.OverlayingItemStruct)"
+          },
+          "typeName":
+          {
+            "id": 20,
+            "keyType":
+            {
+              "id": 17,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "280:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "272:37:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_OverlayingItemStruct_$16_storage_$",
+              "typeString": "mapping(uint256 => struct TestContract.OverlayingItemStruct)"
+            },
+            "valueType":
+            {
+              "id": 19,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 18,
+                "name": "OverlayingItemStruct",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 16,
+                "src": "288:20:0"
+              },
+              "referencedDeclaration": 16,
+              "src": "288:20:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage_ptr",
+                "typeString": "struct TestContract.OverlayingItemStruct"
+              }
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "9e4681a9",
+          "id": 23,
+          "mutability": "mutable",
+          "name": "overlayCount",
+          "nameLocation": "353:12:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 83,
+          "src": "341:24:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 22,
+            "name": "uint",
+            "nodeType": "ElementaryTypeName",
+            "src": "341:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 48,
+            "nodeType": "Block",
+            "src": "428:255:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 29,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "UnaryOperation",
+                  "operator": "++",
+                  "prefix": false,
+                  "src": "435:15:0",
+                  "subExpression":
+                  {
+                    "id": 28,
+                    "name": "overlayCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 23,
+                    "src": "435:12:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 30,
+                "nodeType": "ExpressionStatement",
+                "src": "435:15:0"
+              },
+              {
+                "assignments":
+                [
+                  33
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 33,
+                    "mutability": "mutable",
+                    "name": "item",
+                    "nameLocation": "512:4:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 48,
+                    "src": "500:16:0",
+                    "stateVariable": false,
+                    "storageLocation": "memory",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Item_$6_memory_ptr",
+                      "typeString": "struct TestContract.Item"
+                    },
+                    "typeName":
+                    {
+                      "id": 32,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 31,
+                        "name": "Item",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 6,
+                        "src": "500:4:0"
+                      },
+                      "referencedDeclaration": 6,
+                      "src": "500:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Item_$6_storage_ptr",
+                        "typeString": "struct TestContract.Item"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 38,
+                "initialValue":
+                {
+                  "arguments":
+                  [
+                    {
+                      "hexValue": "31",
+                      "id": 35,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "524:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    {
+                      "id": 36,
+                      "name": "_value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 25,
+                      "src": "527:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    ],
+                    "id": 34,
+                    "name": "Item",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 6,
+                    "src": "519:4:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_type$_t_struct$_Item_$6_storage_ptr_$",
+                      "typeString": "type(struct TestContract.Item storage pointer)"
+                    }
+                  },
+                  "id": 37,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "structConstructorCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "519:15:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Item_$6_memory_ptr",
+                    "typeString": "struct TestContract.Item memory"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "500:34:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 46,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "baseExpression":
+                    {
+                      "expression":
+                      {
+                        "baseExpression":
+                        {
+                          "id": 39,
+                          "name": "overlayingItems",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21,
+                          "src": "632:15:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_OverlayingItemStruct_$16_storage_$",
+                            "typeString": "mapping(uint256 => struct TestContract.OverlayingItemStruct storage ref)"
+                          }
+                        },
+                        "id": 41,
+                        "indexExpression":
+                        {
+                          "id": 40,
+                          "name": "overlayCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 23,
+                          "src": "648:12:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "632:29:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage",
+                          "typeString": "struct TestContract.OverlayingItemStruct storage ref"
+                        }
+                      },
+                      "id": 42,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "items",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11,
+                      "src": "632:35:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$6_storage_$",
+                        "typeString": "mapping(uint256 => struct TestContract.Item storage ref)"
+                      }
+                    },
+                    "id": 44,
+                    "indexExpression":
+                    {
+                      "hexValue": "31",
+                      "id": 43,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "668:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "nodeType": "IndexAccess",
+                    "src": "632:38:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Item_$6_storage",
+                      "typeString": "struct TestContract.Item storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 45,
+                    "name": "item",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 33,
+                    "src": "673:4:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Item_$6_memory_ptr",
+                      "typeString": "struct TestContract.Item memory"
+                    }
+                  },
+                  "src": "632:45:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Item_$6_storage",
+                    "typeString": "struct TestContract.Item storage ref"
+                  }
+                },
+                "id": 47,
+                "nodeType": "ExpressionStatement",
+                "src": "632:45:0"
+              }
+            ]
+          },
+          "functionSelector": "96a13176",
+          "id": 49,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addOverlayingItemsStruct",
+          "nameLocation": "381:24:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 26,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 25,
+                "mutability": "mutable",
+                "name": "_value",
+                "nameLocation": "411:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 49,
+                "src": "406:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 24,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "406:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "405:13:0"
+          },
+          "returnParameters":
+          {
+            "id": 27,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "428:0:0"
+          },
+          "scope": 83,
+          "src": "372:311:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "external"
+        },
+        {
+          "body":
+          {
+            "id": 81,
+            "nodeType": "Block",
+            "src": "745:182:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  58
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 58,
+                    "mutability": "mutable",
+                    "name": "overlay",
+                    "nameLocation": "781:7:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 81,
+                    "src": "752:36:0",
+                    "stateVariable": false,
+                    "storageLocation": "storage",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage_ptr",
+                      "typeString": "struct TestContract.OverlayingItemStruct"
+                    },
+                    "typeName":
+                    {
+                      "id": 57,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 56,
+                        "name": "OverlayingItemStruct",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 16,
+                        "src": "752:20:0"
+                      },
+                      "referencedDeclaration": 16,
+                      "src": "752:20:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage_ptr",
+                        "typeString": "struct TestContract.OverlayingItemStruct"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 62,
+                "initialValue":
+                {
+                  "baseExpression":
+                  {
+                    "id": 59,
+                    "name": "overlayingItems",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 21,
+                    "src": "791:15:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_OverlayingItemStruct_$16_storage_$",
+                      "typeString": "mapping(uint256 => struct TestContract.OverlayingItemStruct storage ref)"
+                    }
+                  },
+                  "id": 61,
+                  "indexExpression":
+                  {
+                    "id": 60,
+                    "name": "_overlayId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 53,
+                    "src": "807:10:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "791:27:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage",
+                    "typeString": "struct TestContract.OverlayingItemStruct storage ref"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "752:66:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 66,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "UnaryOperation",
+                  "operator": "++",
+                  "prefix": false,
+                  "src": "825:21:0",
+                  "subExpression":
+                  {
+                    "expression":
+                    {
+                      "id": 63,
+                      "name": "overlay",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 58,
+                      "src": "825:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage_ptr",
+                        "typeString": "struct TestContract.OverlayingItemStruct storage pointer"
+                      }
+                    },
+                    "id": 65,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "memberName": "itemsCount",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 15,
+                    "src": "825:18:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 67,
+                "nodeType": "ExpressionStatement",
+                "src": "825:21:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 79,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "baseExpression":
+                    {
+                      "expression":
+                      {
+                        "id": 68,
+                        "name": "overlay",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 58,
+                        "src": "853:7:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage_ptr",
+                          "typeString": "struct TestContract.OverlayingItemStruct storage pointer"
+                        }
+                      },
+                      "id": 72,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "items",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 11,
+                      "src": "853:13:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Item_$6_storage_$",
+                        "typeString": "mapping(uint256 => struct TestContract.Item storage ref)"
+                      }
+                    },
+                    "id": 73,
+                    "indexExpression":
+                    {
+                      "expression":
+                      {
+                        "id": 70,
+                        "name": "overlay",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 58,
+                        "src": "867:7:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage_ptr",
+                          "typeString": "struct TestContract.OverlayingItemStruct storage pointer"
+                        }
+                      },
+                      "id": 71,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "itemsCount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 15,
+                      "src": "867:18:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "nodeType": "IndexAccess",
+                    "src": "853:33:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Item_$6_storage",
+                      "typeString": "struct TestContract.Item storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "arguments":
+                    [
+                      {
+                        "expression":
+                        {
+                          "id": 75,
+                          "name": "overlay",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 58,
+                          "src": "894:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_struct$_OverlayingItemStruct_$16_storage_ptr",
+                            "typeString": "struct TestContract.OverlayingItemStruct storage pointer"
+                          }
+                        },
+                        "id": 76,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "itemsCount",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 15,
+                        "src": "894:18:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 77,
+                        "name": "_value",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51,
+                        "src": "914:6:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression":
+                    {
+                      "argumentTypes":
+                      [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 74,
+                      "name": "Item",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "889:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_struct$_Item_$6_storage_ptr_$",
+                        "typeString": "type(struct TestContract.Item storage pointer)"
+                      }
+                    },
+                    "id": 78,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "889:32:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Item_$6_memory_ptr",
+                      "typeString": "struct TestContract.Item memory"
+                    }
+                  },
+                  "src": "853:68:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Item_$6_storage",
+                    "typeString": "struct TestContract.Item storage ref"
+                  }
+                },
+                "id": 80,
+                "nodeType": "ExpressionStatement",
+                "src": "853:68:0"
+              }
+            ]
+          },
+          "functionSelector": "a2125232",
+          "id": 82,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addItem",
+          "nameLocation": "698:7:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 54,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 51,
+                "mutability": "mutable",
+                "name": "_value",
+                "nameLocation": "711:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 82,
+                "src": "706:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 50,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "706:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 53,
+                "mutability": "mutable",
+                "name": "_overlayId",
+                "nameLocation": "724:10:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 82,
+                "src": "719:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 52,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "719:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "705:30:0"
+          },
+          "returnParameters":
+          {
+            "id": 55,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "745:0:0"
+          },
+          "scope": 83,
+          "src": "689:238:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 84,
+      "src": "60:870:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "33:903:0"
+}

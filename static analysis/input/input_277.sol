@@ -1,0 +1,5 @@
+zombies.push(
+    Zombie(...) 
+)
+
+

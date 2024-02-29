@@ -1,0 +1,272 @@
+{
+  "absolutePath": "output/output_476.sol",
+  "exportedSymbols":
+  {
+    "IData":
+    [
+      17
+    ],
+    "Person":
+    [
+      7
+    ]
+  },
+  "id": 18,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Person",
+      "contractDependencies": [],
+      "contractKind": "library",
+      "fullyImplemented": true,
+      "id": 7,
+      "linearizedBaseContracts":
+      [
+        7
+      ],
+      "name": "Person",
+      "nameLocation": "33:6:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "Person.Person",
+          "id": 6,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "name",
+              "nameLocation": "79:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "72:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "72:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "number",
+              "nameLocation": "102:6:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "94:14:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "94:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Person",
+          "nameLocation": "54:6:0",
+          "nodeType": "StructDefinition",
+          "scope": 7,
+          "src": "47:69:0",
+          "visibility": "public"
+        }
+      ],
+      "scope": 18,
+      "src": "25:94:0",
+      "usedErrors": []
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "IData",
+      "contractDependencies": [],
+      "contractKind": "interface",
+      "fullyImplemented": false,
+      "id": 17,
+      "linearizedBaseContracts":
+      [
+        17
+      ],
+      "name": "IData",
+      "nameLocation": "133:5:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "functionSelector": "246982c4",
+          "id": 16,
+          "implemented": false,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getPerson",
+          "nameLocation": "155:9:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 10,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 9,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "173:2:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 16,
+                "src": "165:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 8,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "165:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "164:12:0"
+          },
+          "returnParameters":
+          {
+            "id": 15,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 12,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 16,
+                "src": "200:13:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 11,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "200:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 14,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 16,
+                "src": "215:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 13,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "215:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "199:24:0"
+          },
+          "scope": 17,
+          "src": "146:78:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 18,
+      "src": "123:104:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:231:0"
+}

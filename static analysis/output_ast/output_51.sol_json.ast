@@ -1,0 +1,172 @@
+{
+  "absolutePath": "output/output_51.sol",
+  "exportedSymbols":
+  {
+    "ExampleContract":
+    [
+      12
+    ]
+  },
+  "id": 13,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "ExampleContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 12,
+      "linearizedBaseContracts":
+      [
+        12
+      ],
+      "name": "ExampleContract",
+      "nameLocation": "34:15:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 10,
+            "nodeType": "Block",
+            "src": "132:30:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 8,
+                  "name": "_str",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 3,
+                  "src": "150:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string calldata"
+                  }
+                },
+                "functionReturnParameters": 7,
+                "id": 9,
+                "nodeType": "Return",
+                "src": "143:11:0"
+              }
+            ]
+          },
+          "functionSelector": "f31a6969",
+          "id": 11,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "foo",
+          "nameLocation": "68:3:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 4,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "_str",
+                "nameLocation": "88:4:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 11,
+                "src": "72:20:0",
+                "stateVariable": false,
+                "storageLocation": "calldata",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_calldata_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 2,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "72:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "71:22:0"
+          },
+          "returnParameters":
+          {
+            "id": 7,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 6,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 11,
+                "src": "115:15:0",
+                "stateVariable": false,
+                "storageLocation": "calldata",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_calldata_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 5,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "115:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "114:17:0"
+          },
+          "scope": 12,
+          "src": "59:103:0",
+          "stateMutability": "pure",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 13,
+      "src": "25:142:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:171:0"
+}

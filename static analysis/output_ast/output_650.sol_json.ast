@@ -1,0 +1,1439 @@
+{
+  "absolutePath": "output/output_650.sol",
+  "exportedSymbols":
+  {
+    "BettingGame":
+    [
+      100
+    ]
+  },
+  "id": 101,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "BettingGame",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 100,
+      "linearizedBaseContracts":
+      [
+        100
+      ],
+      "name": "BettingGame",
+      "nameLocation": "34:11:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "BettingGame.Teams",
+          "id": 4,
+          "members":
+          [
+            {
+              "id": 2,
+              "name": "Team1",
+              "nameLocation": "75:5:0",
+              "nodeType": "EnumValue",
+              "src": "75:5:0"
+            },
+            {
+              "id": 3,
+              "name": "Team2",
+              "nameLocation": "91:5:0",
+              "nodeType": "EnumValue",
+              "src": "91:5:0"
+            }
+          ],
+          "name": "Teams",
+          "nameLocation": "58:5:0",
+          "nodeType": "EnumDefinition",
+          "src": "53:50:0"
+        },
+        {
+          "canonicalName": "BettingGame.Game",
+          "id": 12,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "team",
+              "nameLocation": "140:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "134:10:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_enum$_Teams_$4",
+                "typeString": "enum BettingGame.Teams"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode":
+                {
+                  "id": 5,
+                  "name": "Teams",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 4,
+                  "src": "134:5:0"
+                },
+                "referencedDeclaration": 4,
+                "src": "134:5:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_enum$_Teams_$4",
+                  "typeString": "enum BettingGame.Teams"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 9,
+              "mutability": "mutable",
+              "name": "score1",
+              "nameLocation": "163:6:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "155:14:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 8,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "155:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 11,
+              "mutability": "mutable",
+              "name": "score2",
+              "nameLocation": "188:6:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 12,
+              "src": "180:14:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 10,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "180:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Game",
+          "nameLocation": "118:4:0",
+          "nodeType": "StructDefinition",
+          "scope": 100,
+          "src": "111:91:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "c3fe3e28",
+          "id": 15,
+          "mutability": "mutable",
+          "name": "game",
+          "nameLocation": "222:4:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 100,
+          "src": "210:16:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_struct$_Game_$12_storage",
+            "typeString": "struct BettingGame.Game"
+          },
+          "typeName":
+          {
+            "id": 14,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 13,
+              "name": "Game",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 12,
+              "src": "210:4:0"
+            },
+            "referencedDeclaration": 12,
+            "src": "210:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_Game_$12_storage_ptr",
+              "typeString": "struct BettingGame.Game"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 35,
+            "nodeType": "Block",
+            "src": "297:106:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  24
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 24,
+                    "mutability": "mutable",
+                    "name": "_diff",
+                    "nameLocation": "315:5:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 35,
+                    "src": "308:12:0",
+                    "stateVariable": false,
+                    "storageLocation": "default",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    },
+                    "typeName":
+                    {
+                      "id": 23,
+                      "name": "int256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "308:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 28,
+                "initialValue":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 26,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18,
+                      "src": "342:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_enum$_Teams_$4",
+                        "typeString": "enum BettingGame.Teams"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_enum$_Teams_$4",
+                        "typeString": "enum BettingGame.Teams"
+                      }
+                    ],
+                    "id": 25,
+                    "name": "getScoreDifference",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 76,
+                    "src": "323:18:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_internal_view$_t_enum$_Teams_$4_$returns$_t_int256_$",
+                      "typeString": "function (enum BettingGame.Teams) view returns (int256)"
+                    }
+                  },
+                  "id": 27,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "323:21:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "308:36:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "expression":
+                      {
+                        "id": 30,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "378:3:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "value",
+                      "nodeType": "MemberAccess",
+                      "src": "378:9:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    {
+                      "id": 32,
+                      "name": "_diff",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 24,
+                      "src": "389:5:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    ],
+                    "id": 29,
+                    "name": "calculatePayout",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 99,
+                    "src": "362:15:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_int256_$returns$_t_uint256_$",
+                      "typeString": "function (uint256,int256) pure returns (uint256)"
+                    }
+                  },
+                  "id": 33,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "362:33:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "functionReturnParameters": 22,
+                "id": 34,
+                "nodeType": "Return",
+                "src": "355:40:0"
+              }
+            ]
+          },
+          "functionSelector": "43046844",
+          "id": 36,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "placeBet",
+          "nameLocation": "244:8:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 19,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 18,
+                "mutability": "mutable",
+                "name": "x",
+                "nameLocation": "259:1:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "253:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_enum$_Teams_$4",
+                  "typeString": "enum BettingGame.Teams"
+                },
+                "typeName":
+                {
+                  "id": 17,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 16,
+                    "name": "Teams",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 4,
+                    "src": "253:5:0"
+                  },
+                  "referencedDeclaration": 4,
+                  "src": "253:5:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_enum$_Teams_$4",
+                    "typeString": "enum BettingGame.Teams"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "252:9:0"
+          },
+          "returnParameters":
+          {
+            "id": 22,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 21,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "288:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 20,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "288:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "287:9:0"
+          },
+          "scope": 100,
+          "src": "235:168:0",
+          "stateMutability": "payable",
+          "virtual": false,
+          "visibility": "external"
+        },
+        {
+          "body":
+          {
+            "id": 75,
+            "nodeType": "Block",
+            "src": "477:196:0",
+            "statements":
+            [
+              {
+                "condition":
+                {
+                  "commonType":
+                  {
+                    "typeIdentifier": "t_enum$_Teams_$4",
+                    "typeString": "enum BettingGame.Teams"
+                  },
+                  "id": 47,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression":
+                  {
+                    "id": 44,
+                    "name": "x",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 39,
+                    "src": "492:1:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_enum$_Teams_$4",
+                      "typeString": "enum BettingGame.Teams"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "==",
+                  "rightExpression":
+                  {
+                    "expression":
+                    {
+                      "id": 45,
+                      "name": "Teams",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "497:5:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_enum$_Teams_$4_$",
+                        "typeString": "type(enum BettingGame.Teams)"
+                      }
+                    },
+                    "id": 46,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberName": "Team1",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 2,
+                    "src": "497:11:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_enum$_Teams_$4",
+                      "typeString": "enum BettingGame.Teams"
+                    }
+                  },
+                  "src": "492:16:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "falseBody":
+                {
+                  "id": 73,
+                  "nodeType": "Block",
+                  "src": "591:75:0",
+                  "statements":
+                  [
+                    {
+                      "expression":
+                      {
+                        "commonType":
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        "id": 71,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression":
+                        {
+                          "arguments":
+                          [
+                            {
+                              "expression":
+                              {
+                                "id": 63,
+                                "name": "game",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 15,
+                                "src": "620:4:0",
+                                "typeDescriptions":
+                                {
+                                  "typeIdentifier": "t_struct$_Game_$12_storage",
+                                  "typeString": "struct BettingGame.Game storage ref"
+                                }
+                              },
+                              "id": 64,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "score2",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 11,
+                              "src": "620:11:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "id": 62,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "613:6:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_type$_t_int256_$",
+                              "typeString": "type(int256)"
+                            },
+                            "typeName":
+                            {
+                              "id": 61,
+                              "name": "int256",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "613:6:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 65,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "613:19:0",
+                          "tryCall": false,
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "-",
+                        "rightExpression":
+                        {
+                          "arguments":
+                          [
+                            {
+                              "expression":
+                              {
+                                "id": 68,
+                                "name": "game",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 15,
+                                "src": "642:4:0",
+                                "typeDescriptions":
+                                {
+                                  "typeIdentifier": "t_struct$_Game_$12_storage",
+                                  "typeString": "struct BettingGame.Game storage ref"
+                                }
+                              },
+                              "id": 69,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "score1",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 9,
+                              "src": "642:11:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "id": 67,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "635:6:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_type$_t_int256_$",
+                              "typeString": "type(int256)"
+                            },
+                            "typeName":
+                            {
+                              "id": 66,
+                              "name": "int256",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "635:6:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 70,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "635:19:0",
+                          "tryCall": false,
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          }
+                        },
+                        "src": "613:41:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      "functionReturnParameters": 43,
+                      "id": 72,
+                      "nodeType": "Return",
+                      "src": "606:48:0"
+                    }
+                  ]
+                },
+                "id": 74,
+                "nodeType": "IfStatement",
+                "src": "488:178:0",
+                "trueBody":
+                {
+                  "id": 60,
+                  "nodeType": "Block",
+                  "src": "510:75:0",
+                  "statements":
+                  [
+                    {
+                      "expression":
+                      {
+                        "commonType":
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        },
+                        "id": 58,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression":
+                        {
+                          "arguments":
+                          [
+                            {
+                              "expression":
+                              {
+                                "id": 50,
+                                "name": "game",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 15,
+                                "src": "539:4:0",
+                                "typeDescriptions":
+                                {
+                                  "typeIdentifier": "t_struct$_Game_$12_storage",
+                                  "typeString": "struct BettingGame.Game storage ref"
+                                }
+                              },
+                              "id": 51,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "score1",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 9,
+                              "src": "539:11:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "id": 49,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "532:6:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_type$_t_int256_$",
+                              "typeString": "type(int256)"
+                            },
+                            "typeName":
+                            {
+                              "id": 48,
+                              "name": "int256",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "532:6:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 52,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "532:19:0",
+                          "tryCall": false,
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "-",
+                        "rightExpression":
+                        {
+                          "arguments":
+                          [
+                            {
+                              "expression":
+                              {
+                                "id": 55,
+                                "name": "game",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 15,
+                                "src": "561:4:0",
+                                "typeDescriptions":
+                                {
+                                  "typeIdentifier": "t_struct$_Game_$12_storage",
+                                  "typeString": "struct BettingGame.Game storage ref"
+                                }
+                              },
+                              "id": 56,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberName": "score2",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 11,
+                              "src": "561:11:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "id": 54,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "554:6:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_type$_t_int256_$",
+                              "typeString": "type(int256)"
+                            },
+                            "typeName":
+                            {
+                              "id": 53,
+                              "name": "int256",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "554:6:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 57,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "554:19:0",
+                          "tryCall": false,
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          }
+                        },
+                        "src": "532:41:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      "functionReturnParameters": 43,
+                      "id": 59,
+                      "nodeType": "Return",
+                      "src": "525:48:0"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "functionSelector": "d0821cc5",
+          "id": 76,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getScoreDifference",
+          "nameLocation": "420:18:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 40,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 39,
+                "mutability": "mutable",
+                "name": "x",
+                "nameLocation": "445:1:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 76,
+                "src": "439:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_enum$_Teams_$4",
+                  "typeString": "enum BettingGame.Teams"
+                },
+                "typeName":
+                {
+                  "id": 38,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 37,
+                    "name": "Teams",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 4,
+                    "src": "439:5:0"
+                  },
+                  "referencedDeclaration": 4,
+                  "src": "439:5:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_enum$_Teams_$4",
+                    "typeString": "enum BettingGame.Teams"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "438:9:0"
+          },
+          "returnParameters":
+          {
+            "id": 43,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 42,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 76,
+                "src": "469:6:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName":
+                {
+                  "id": 41,
+                  "name": "int256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "469:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "468:8:0"
+          },
+          "scope": 100,
+          "src": "411:262:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 98,
+            "nodeType": "Block",
+            "src": "765:70:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "commonType":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "id": 96,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression":
+                  {
+                    "id": 85,
+                    "name": "_value",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 78,
+                    "src": "783:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "+",
+                  "rightExpression":
+                  {
+                    "arguments":
+                    [
+                      {
+                        "condition":
+                        {
+                          "commonType":
+                          {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          },
+                          "id": 90,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression":
+                          {
+                            "id": 88,
+                            "name": "_diff",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 80,
+                            "src": "800:5:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": ">",
+                          "rightExpression":
+                          {
+                            "hexValue": "30",
+                            "id": 89,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "808:1:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          },
+                          "src": "800:9:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseExpression":
+                        {
+                          "id": 93,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "UnaryOperation",
+                          "operator": "-",
+                          "prefix": true,
+                          "src": "820:6:0",
+                          "subExpression":
+                          {
+                            "id": 92,
+                            "name": "_diff",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 80,
+                            "src": "821:5:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_int256",
+                              "typeString": "int256"
+                            }
+                          },
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          }
+                        },
+                        "id": 94,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "Conditional",
+                        "src": "800:26:0",
+                        "trueExpression":
+                        {
+                          "id": 91,
+                          "name": "_diff",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 80,
+                          "src": "812:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_int256",
+                            "typeString": "int256"
+                          }
+                        },
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression":
+                    {
+                      "argumentTypes":
+                      [
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "id": 87,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "792:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_uint256_$",
+                        "typeString": "type(uint256)"
+                      },
+                      "typeName":
+                      {
+                        "id": 86,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "792:7:0",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 95,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "792:35:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "src": "783:44:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "functionReturnParameters": 84,
+                "id": 97,
+                "nodeType": "Return",
+                "src": "776:51:0"
+              }
+            ]
+          },
+          "functionSelector": "1638f628",
+          "id": 99,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "calculatePayout",
+          "nameLocation": "690:15:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 81,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 78,
+                "mutability": "mutable",
+                "name": "_value",
+                "nameLocation": "714:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 99,
+                "src": "706:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 77,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "706:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 80,
+                "mutability": "mutable",
+                "name": "_diff",
+                "nameLocation": "729:5:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 99,
+                "src": "722:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName":
+                {
+                  "id": 79,
+                  "name": "int256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "722:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "705:30:0"
+          },
+          "returnParameters":
+          {
+            "id": 84,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 83,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 99,
+                "src": "756:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 82,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "756:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "755:9:0"
+          },
+          "scope": 100,
+          "src": "681:154:0",
+          "stateMutability": "pure",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 101,
+      "src": "25:813:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:842:0"
+}

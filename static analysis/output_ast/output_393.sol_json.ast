@@ -1,0 +1,399 @@
+{
+	"absolutePath" : "./output\\output_393.sol",
+	"exportedSymbols" : 
+	{
+		"Sale" : 
+		[
+			28
+		],
+		"Sales" : 
+		[
+			8
+		]
+	},
+	"id" : 29,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"^",
+				"0.4",
+				".25"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:24:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "interface",
+			"documentation" : null,
+			"fullyImplemented" : false,
+			"id" : 8,
+			"linearizedBaseContracts" : 
+			[
+				8
+			],
+			"name" : "Sales",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"body" : null,
+					"documentation" : null,
+					"id" : 7,
+					"implemented" : false,
+					"isConstructor" : false,
+					"isDeclaredConst" : true,
+					"modifiers" : [],
+					"name" : "getOngoingSales",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 2,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "73:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 6,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 5,
+								"name" : "",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 7,
+								"src" : "98:6:0",
+								"stateVariable" : false,
+								"storageLocation" : "memory",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_array$_t_contract$_Sale_$28_$dyn_memory_ptr",
+									"typeString" : "contract Sale[]"
+								},
+								"typeName" : 
+								{
+									"baseType" : 
+									{
+										"contractScope" : null,
+										"id" : 3,
+										"name" : "Sale",
+										"nodeType" : "UserDefinedTypeName",
+										"referencedDeclaration" : 28,
+										"src" : "98:4:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_contract$_Sale_$28",
+											"typeString" : "contract Sale"
+										}
+									},
+									"id" : 4,
+									"length" : null,
+									"nodeType" : "ArrayTypeName",
+									"src" : "98:6:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_array$_t_contract$_Sale_$28_$dyn_storage_ptr",
+										"typeString" : "contract Sale[]"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "97:15:0"
+					},
+					"scope" : 8,
+					"src" : "49:64:0",
+					"stateMutability" : "view",
+					"superFunction" : null,
+					"visibility" : "external"
+				}
+			],
+			"scope" : 29,
+			"src" : "26:90:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 28,
+			"linearizedBaseContracts" : 
+			[
+				28
+			],
+			"name" : "Sale",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"canonicalName" : "Sale.Sale",
+					"id" : 17,
+					"members" : 
+					[
+						{
+							"constant" : false,
+							"id" : 10,
+							"name" : "creator",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 17,
+							"src" : "164:15:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_address",
+								"typeString" : "address"
+							},
+							"typeName" : 
+							{
+								"id" : 9,
+								"name" : "address",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "164:7:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_address",
+									"typeString" : "address"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 12,
+							"name" : "ended",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 17,
+							"src" : "190:10:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_bool",
+								"typeString" : "bool"
+							},
+							"typeName" : 
+							{
+								"id" : 11,
+								"name" : "bool",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "190:4:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bool",
+									"typeString" : "bool"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 14,
+							"name" : "startTime",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 17,
+							"src" : "211:14:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_uint256",
+								"typeString" : "uint256"
+							},
+							"typeName" : 
+							{
+								"id" : 13,
+								"name" : "uint",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "211:4:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_uint256",
+									"typeString" : "uint256"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 16,
+							"name" : "endTime",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 17,
+							"src" : "236:12:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_uint256",
+								"typeString" : "uint256"
+							},
+							"typeName" : 
+							{
+								"id" : 15,
+								"name" : "uint",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "236:4:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_uint256",
+									"typeString" : "uint256"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						}
+					],
+					"name" : "Sale",
+					"nodeType" : "StructDefinition",
+					"scope" : 28,
+					"src" : "141:115:0",
+					"visibility" : "public"
+				},
+				{
+					"constant" : false,
+					"id" : 20,
+					"name" : "sales",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 28,
+					"src" : "264:20:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_array$_t_contract$_Sales_$8_$dyn_storage",
+						"typeString" : "contract Sales[]"
+					},
+					"typeName" : 
+					{
+						"baseType" : 
+						{
+							"contractScope" : null,
+							"id" : 18,
+							"name" : "Sales",
+							"nodeType" : "UserDefinedTypeName",
+							"referencedDeclaration" : 8,
+							"src" : "264:5:0",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_contract$_Sales_$8",
+								"typeString" : "contract Sales"
+							}
+						},
+						"id" : 19,
+						"length" : null,
+						"nodeType" : "ArrayTypeName",
+						"src" : "264:7:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_array$_t_contract$_Sales_$8_$dyn_storage_ptr",
+							"typeString" : "contract Sales[]"
+						}
+					},
+					"value" : null,
+					"visibility" : "public"
+				},
+				{
+					"body" : 
+					{
+						"id" : 26,
+						"nodeType" : "Block",
+						"src" : "321:27:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"arguments" : [],
+									"expression" : 
+									{
+										"argumentTypes" : [],
+										"id" : 23,
+										"name" : "revert",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : 
+										[
+											48,
+											49
+										],
+										"referencedDeclaration" : 48,
+										"src" : "332:6:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_function_revert_pure$__$returns$__$",
+											"typeString" : "function () pure"
+										}
+									},
+									"id" : 24,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"kind" : "functionCall",
+									"lValueRequested" : false,
+									"names" : [],
+									"nodeType" : "FunctionCall",
+									"src" : "332:8:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_tuple$__$",
+										"typeString" : "tuple()"
+									}
+								},
+								"id" : 25,
+								"nodeType" : "ExpressionStatement",
+								"src" : "332:8:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 27,
+					"implemented" : true,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 21,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "301:2:0"
+					},
+					"payable" : true,
+					"returnParameters" : 
+					{
+						"id" : 22,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "321:0:0"
+					},
+					"scope" : 28,
+					"src" : "293:55:0",
+					"stateMutability" : "payable",
+					"superFunction" : null,
+					"visibility" : "external"
+				}
+			],
+			"scope" : 29,
+			"src" : "120:231:0"
+		}
+	],
+	"src" : "0:355:0"
+}

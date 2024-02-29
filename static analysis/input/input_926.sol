@@ -1,0 +1,5 @@
+constructor(){
+  manager = msg.sender;
+}
+
+

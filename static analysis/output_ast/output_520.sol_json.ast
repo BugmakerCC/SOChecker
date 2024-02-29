@@ -1,0 +1,103 @@
+{
+  "absolutePath": "output/output_520.sol",
+  "exportedSymbols":
+  {
+    "SupportableContract":
+    [
+      6
+    ]
+  },
+  "id": 7,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "SupportableContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 6,
+      "linearizedBaseContracts":
+      [
+        6
+      ],
+      "name": "SupportableContract",
+      "nameLocation": "34:19:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "id": 5,
+          "mutability": "mutable",
+          "name": "_supportedInterfaces",
+          "nameLocation": "97:20:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 6,
+          "src": "64:53:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+            "typeString": "mapping(bytes32 => bool)"
+          },
+          "typeName":
+          {
+            "id": 4,
+            "keyType":
+            {
+              "id": 2,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "72:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "64:24:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_bool_$",
+              "typeString": "mapping(bytes32 => bool)"
+            },
+            "valueType":
+            {
+              "id": 3,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "83:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            }
+          },
+          "visibility": "private"
+        }
+      ],
+      "scope": 7,
+      "src": "25:98:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:127:0"
+}

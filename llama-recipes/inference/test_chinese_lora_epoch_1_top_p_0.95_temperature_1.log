@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/data2/chench/recipes/llama-recipes-09-11/inference/eval_inference.py", line 180, in <module>
+    fire.Fire(main)
+  File "/mnt/data2/miniconda3/envs/ccllm/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/mnt/data2/miniconda3/envs/ccllm/lib/python3.10/site-packages/fire/core.py", line 475, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/mnt/data2/miniconda3/envs/ccllm/lib/python3.10/site-packages/fire/core.py", line 691, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/mnt/data2/chench/recipes/llama-recipes-09-11/inference/eval_inference.py", line 48, in main
+    with open(prompt_file,'r')as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/GPUFS/nsccgz_ywang_zfd/glh/code/datapreprocess/test.json'

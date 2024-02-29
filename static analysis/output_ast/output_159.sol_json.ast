@@ -1,0 +1,1270 @@
+{
+  "absolutePath": "output/output_159.sol",
+  "exportedSymbols":
+  {
+    "DonationContract":
+    [
+      87
+    ]
+  },
+  "id": 88,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "DonationContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 87,
+      "linearizedBaseContracts":
+      [
+        87
+      ],
+      "name": "DonationContract",
+      "nameLocation": "34:16:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "DonationContract.Donation",
+          "id": 24,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "pickupDate",
+              "nameLocation": "92:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "85:17:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "85:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "pickupTime",
+              "nameLocation": "120:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "113:17:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "113:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "availabilityDate",
+              "nameLocation": "148:16:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "141:23:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "141:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 9,
+              "mutability": "mutable",
+              "name": "pickupHours",
+              "nameLocation": "182:11:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "175:18:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 8,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "175:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 11,
+              "mutability": "mutable",
+              "name": "itemType",
+              "nameLocation": "211:8:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "204:15:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 10,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "204:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 13,
+              "mutability": "mutable",
+              "name": "otherItem",
+              "nameLocation": "237:9:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "230:16:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 12,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "230:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 15,
+              "mutability": "mutable",
+              "name": "itemDescription",
+              "nameLocation": "264:15:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "257:22:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 14,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "257:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 17,
+              "mutability": "mutable",
+              "name": "quantity",
+              "nameLocation": "295:8:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "290:13:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 16,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "290:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 19,
+              "mutability": "mutable",
+              "name": "requiresRefrigeration",
+              "nameLocation": "321:21:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "314:28:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 18,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "314:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 21,
+              "mutability": "mutable",
+              "name": "bestConsumedDate",
+              "nameLocation": "360:16:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "353:23:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 20,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "353:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 23,
+              "mutability": "mutable",
+              "name": "partialDonation",
+              "nameLocation": "394:15:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 24,
+              "src": "387:22:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 22,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "387:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Donation",
+          "nameLocation": "65:8:0",
+          "nodeType": "StructDefinition",
+          "scope": 87,
+          "src": "58:359:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "f8626af8",
+          "id": 28,
+          "mutability": "mutable",
+          "name": "donations",
+          "nameLocation": "443:9:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 87,
+          "src": "425:27:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_Donation_$24_storage_$dyn_storage",
+            "typeString": "struct DonationContract.Donation[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 26,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 25,
+                "name": "Donation",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 24,
+                "src": "425:8:0"
+              },
+              "referencedDeclaration": 24,
+              "src": "425:8:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Donation_$24_storage_ptr",
+                "typeString": "struct DonationContract.Donation"
+              }
+            },
+            "id": 27,
+            "nodeType": "ArrayTypeName",
+            "src": "425:10:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_Donation_$24_storage_$dyn_storage_ptr",
+              "typeString": "struct DonationContract.Donation[]"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 76,
+            "nodeType": "Block",
+            "src": "926:421:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  55
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 55,
+                    "mutability": "mutable",
+                    "name": "newDonation",
+                    "nameLocation": "953:11:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 76,
+                    "src": "937:27:0",
+                    "stateVariable": false,
+                    "storageLocation": "memory",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Donation_$24_memory_ptr",
+                      "typeString": "struct DonationContract.Donation"
+                    },
+                    "typeName":
+                    {
+                      "id": 54,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 53,
+                        "name": "Donation",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 24,
+                        "src": "937:8:0"
+                      },
+                      "referencedDeclaration": 24,
+                      "src": "937:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Donation_$24_storage_ptr",
+                        "typeString": "struct DonationContract.Donation"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 69,
+                "initialValue":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 57,
+                      "name": "_pickupDate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 30,
+                      "src": "990:11:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 58,
+                      "name": "_pickupTime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32,
+                      "src": "1016:11:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 59,
+                      "name": "_availabilityDate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 34,
+                      "src": "1042:17:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 60,
+                      "name": "_pickupHours",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 36,
+                      "src": "1074:12:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 61,
+                      "name": "_itemType",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 38,
+                      "src": "1101:9:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 62,
+                      "name": "_otherItem",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 40,
+                      "src": "1125:10:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 63,
+                      "name": "_itemDescription",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42,
+                      "src": "1150:16:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 64,
+                      "name": "_quantity",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44,
+                      "src": "1181:9:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    {
+                      "id": 65,
+                      "name": "_requiresRefrigeration",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46,
+                      "src": "1205:22:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 66,
+                      "name": "_bestConsumedDate",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48,
+                      "src": "1242:17:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    {
+                      "id": 67,
+                      "name": "_partialDonation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 50,
+                      "src": "1274:16:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      },
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    ],
+                    "id": 56,
+                    "name": "Donation",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 24,
+                    "src": "967:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_type$_t_struct$_Donation_$24_storage_ptr_$",
+                      "typeString": "type(struct DonationContract.Donation storage pointer)"
+                    }
+                  },
+                  "id": 68,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "structConstructorCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "967:334:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Donation_$24_memory_ptr",
+                    "typeString": "struct DonationContract.Donation memory"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "937:364:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 73,
+                      "name": "newDonation",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 55,
+                      "src": "1327:11:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Donation_$24_memory_ptr",
+                        "typeString": "struct DonationContract.Donation memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_Donation_$24_memory_ptr",
+                        "typeString": "struct DonationContract.Donation memory"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 70,
+                      "name": "donations",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 28,
+                      "src": "1312:9:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_Donation_$24_storage_$dyn_storage",
+                        "typeString": "struct DonationContract.Donation storage ref[] storage ref"
+                      }
+                    },
+                    "id": 72,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "1312:14:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Donation_$24_storage_$dyn_storage_ptr_$_t_struct$_Donation_$24_storage_$returns$__$bound_to$_t_array$_t_struct$_Donation_$24_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct DonationContract.Donation storage ref[] storage pointer,struct DonationContract.Donation storage ref)"
+                    }
+                  },
+                  "id": 74,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "1312:27:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 75,
+                "nodeType": "ExpressionStatement",
+                "src": "1312:27:0"
+              }
+            ]
+          },
+          "functionSelector": "f0b21989",
+          "id": 77,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "createDonation",
+          "nameLocation": "470:14:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 51,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 30,
+                "mutability": "mutable",
+                "name": "_pickupDate",
+                "nameLocation": "509:11:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "495:25:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 29,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "495:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 32,
+                "mutability": "mutable",
+                "name": "_pickupTime",
+                "nameLocation": "545:11:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "531:25:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 31,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "531:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 34,
+                "mutability": "mutable",
+                "name": "_availabilityDate",
+                "nameLocation": "581:17:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "567:31:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 33,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "567:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 36,
+                "mutability": "mutable",
+                "name": "_pickupHours",
+                "nameLocation": "623:12:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "609:26:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 35,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "609:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 38,
+                "mutability": "mutable",
+                "name": "_itemType",
+                "nameLocation": "660:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "646:23:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 37,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "646:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 40,
+                "mutability": "mutable",
+                "name": "_otherItem",
+                "nameLocation": "694:10:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "680:24:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 39,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "680:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 42,
+                "mutability": "mutable",
+                "name": "_itemDescription",
+                "nameLocation": "729:16:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "715:30:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 41,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "715:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44,
+                "mutability": "mutable",
+                "name": "_quantity",
+                "nameLocation": "761:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "756:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 43,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "756:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46,
+                "mutability": "mutable",
+                "name": "_requiresRefrigeration",
+                "nameLocation": "795:22:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "781:36:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 45,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "781:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48,
+                "mutability": "mutable",
+                "name": "_bestConsumedDate",
+                "nameLocation": "842:17:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "828:31:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 47,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "828:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 50,
+                "mutability": "mutable",
+                "name": "_partialDonation",
+                "nameLocation": "884:16:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 77,
+                "src": "870:30:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 49,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "870:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "484:423:0"
+          },
+          "returnParameters":
+          {
+            "id": 52,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "926:0:0"
+          },
+          "scope": 87,
+          "src": "461:886:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 85,
+            "nodeType": "Block",
+            "src": "1408:42:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "expression":
+                  {
+                    "id": 82,
+                    "name": "donations",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 28,
+                    "src": "1426:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_struct$_Donation_$24_storage_$dyn_storage",
+                      "typeString": "struct DonationContract.Donation storage ref[] storage ref"
+                    }
+                  },
+                  "id": 83,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "memberName": "length",
+                  "nodeType": "MemberAccess",
+                  "src": "1426:16:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "functionReturnParameters": 81,
+                "id": 84,
+                "nodeType": "Return",
+                "src": "1419:23:0"
+              }
+            ]
+          },
+          "functionSelector": "e55a62a8",
+          "id": 86,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getDonationCount",
+          "nameLocation": "1362:16:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 78,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "1378:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 81,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 80,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 86,
+                "src": "1402:4:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 79,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1402:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "1401:6:0"
+          },
+          "scope": 87,
+          "src": "1353:97:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 88,
+      "src": "25:1428:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:1457:0"
+}

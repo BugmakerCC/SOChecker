@@ -1,0 +1,251 @@
+{
+  "absolutePath": "output/output_846.sol",
+  "exportedSymbols":
+  {
+    "Constants":
+    [
+      10
+    ],
+    "MyContract":
+    [
+      16
+    ]
+  },
+  "id": 17,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Constants",
+      "contractDependencies": [],
+      "contractKind": "library",
+      "fullyImplemented": true,
+      "id": 10,
+      "linearizedBaseContracts":
+      [
+        10
+      ],
+      "name": "Constants",
+      "nameLocation": "33:9:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 8,
+            "nodeType": "Block",
+            "src": "103:27:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "hexValue": "33",
+                  "id": 6,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "121:1:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_rational_3_by_1",
+                    "typeString": "int_const 3"
+                  },
+                  "value": "3"
+                },
+                "functionReturnParameters": 5,
+                "id": 7,
+                "nodeType": "Return",
+                "src": "114:8:0"
+              }
+            ]
+          },
+          "functionSelector": "f8a874bf",
+          "id": 9,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "MY_CONSTANT",
+          "nameLocation": "59:11:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 2,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "70:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 5,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 4,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 9,
+                "src": "94:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 3,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "94:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "93:9:0"
+          },
+          "scope": 10,
+          "src": "50:80:0",
+          "stateMutability": "pure",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 17,
+      "src": "25:108:0",
+      "usedErrors": []
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "MyContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 16,
+      "linearizedBaseContracts":
+      [
+        16
+      ],
+      "name": "MyContract",
+      "nameLocation": "146:10:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "id": 15,
+          "mutability": "mutable",
+          "name": "value",
+          "nameLocation": "190:5:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 16,
+          "src": "182:39:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 11,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "182:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "value":
+          {
+            "arguments": [],
+            "expression":
+            {
+              "argumentTypes": [],
+              "expression":
+              {
+                "id": 12,
+                "name": "Constants",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 10,
+                "src": "198:9:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_type$_t_contract$_Constants_$10_$",
+                  "typeString": "type(library Constants)"
+                }
+              },
+              "id": 13,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": false,
+              "lValueRequested": false,
+              "memberName": "MY_CONSTANT",
+              "nodeType": "MemberAccess",
+              "referencedDeclaration": 9,
+              "src": "198:21:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
+                "typeString": "function () pure returns (uint256)"
+              }
+            },
+            "id": 14,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": false,
+            "kind": "functionCall",
+            "lValueRequested": false,
+            "names": [],
+            "nodeType": "FunctionCall",
+            "src": "198:23:0",
+            "tryCall": false,
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "internal"
+        }
+      ],
+      "scope": 17,
+      "src": "137:88:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:229:0"
+}

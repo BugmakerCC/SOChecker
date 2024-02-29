@@ -1,0 +1,1360 @@
+{
+  "absolutePath": "output/output_301.sol",
+  "exportedSymbols":
+  {
+    "MeetingCreation":
+    [
+      97
+    ]
+  },
+  "id": 98,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "MeetingCreation",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 97,
+      "linearizedBaseContracts":
+      [
+        97
+      ],
+      "name": "MeetingCreation",
+      "nameLocation": "34:15:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "MeetingCreation.Meeting",
+          "id": 23,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "meeting_creator",
+              "nameLocation": "93:15:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "85:23:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "85:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "meetingID",
+              "nameLocation": "127:9:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "119:17:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "119:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "name",
+              "nameLocation": "154:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "147:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "147:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 9,
+              "mutability": "mutable",
+              "name": "description",
+              "nameLocation": "176:11:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "169:18:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 8,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "169:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 11,
+              "mutability": "mutable",
+              "name": "start_date",
+              "nameLocation": "206:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "198:18:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 10,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "198:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 13,
+              "mutability": "mutable",
+              "name": "end_date",
+              "nameLocation": "235:8:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "227:16:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 12,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "227:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 15,
+              "mutability": "mutable",
+              "name": "max_tickets",
+              "nameLocation": "262:11:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "254:19:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 14,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "254:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 17,
+              "mutability": "mutable",
+              "name": "ticket_price",
+              "nameLocation": "292:12:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "284:20:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 16,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "284:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 19,
+              "mutability": "mutable",
+              "name": "current_tickets_sold",
+              "nameLocation": "323:20:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "315:28:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 18,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "315:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 22,
+              "mutability": "mutable",
+              "name": "attendees",
+              "nameLocation": "364:9:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 23,
+              "src": "354:19:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              },
+              "typeName":
+              {
+                "baseType":
+                {
+                  "id": 20,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "354:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "id": 21,
+                "nodeType": "ArrayTypeName",
+                "src": "354:9:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                  "typeString": "address[]"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Meeting",
+          "nameLocation": "66:7:0",
+          "nodeType": "StructDefinition",
+          "scope": 97,
+          "src": "59:322:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 28,
+          "mutability": "mutable",
+          "name": "meetings",
+          "nameLocation": "414:8:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 97,
+          "src": "389:33:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Meeting_$23_storage_$",
+            "typeString": "mapping(uint256 => struct MeetingCreation.Meeting)"
+          },
+          "typeName":
+          {
+            "id": 27,
+            "keyType":
+            {
+              "id": 24,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "397:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "389:24:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Meeting_$23_storage_$",
+              "typeString": "mapping(uint256 => struct MeetingCreation.Meeting)"
+            },
+            "valueType":
+            {
+              "id": 26,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 25,
+                "name": "Meeting",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 23,
+                "src": "405:7:0"
+              },
+              "referencedDeclaration": 23,
+              "src": "405:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                "typeString": "struct MeetingCreation.Meeting"
+              }
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "body":
+          {
+            "id": 83,
+            "nodeType": "Block",
+            "src": "480:403:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  35
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 35,
+                    "mutability": "mutable",
+                    "name": "m",
+                    "nameLocation": "507:1:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 83,
+                    "src": "491:17:0",
+                    "stateVariable": false,
+                    "storageLocation": "storage",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                      "typeString": "struct MeetingCreation.Meeting"
+                    },
+                    "typeName":
+                    {
+                      "id": 34,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 33,
+                        "name": "Meeting",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 23,
+                        "src": "491:7:0"
+                      },
+                      "referencedDeclaration": 23,
+                      "src": "491:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                        "typeString": "struct MeetingCreation.Meeting"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 39,
+                "initialValue":
+                {
+                  "baseExpression":
+                  {
+                    "id": 36,
+                    "name": "meetings",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 28,
+                    "src": "511:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Meeting_$23_storage_$",
+                      "typeString": "mapping(uint256 => struct MeetingCreation.Meeting storage ref)"
+                    }
+                  },
+                  "id": 38,
+                  "indexExpression":
+                  {
+                    "id": 37,
+                    "name": "MEETINGID",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 30,
+                    "src": "520:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "511:19:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Meeting_$23_storage",
+                    "typeString": "struct MeetingCreation.Meeting storage ref"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "491:39:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "commonType":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 45,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression":
+                      {
+                        "expression":
+                        {
+                          "id": 41,
+                          "name": "m",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 35,
+                          "src": "551:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                            "typeString": "struct MeetingCreation.Meeting storage pointer"
+                          }
+                        },
+                        "id": 42,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "current_tickets_sold",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19,
+                        "src": "551:22:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "<",
+                      "rightExpression":
+                      {
+                        "expression":
+                        {
+                          "id": 43,
+                          "name": "m",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 35,
+                          "src": "576:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                            "typeString": "struct MeetingCreation.Meeting storage pointer"
+                          }
+                        },
+                        "id": 44,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "max_tickets",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 15,
+                        "src": "576:13:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "551:38:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    {
+                      "hexValue": "4e6f206d6f7265207469636b65747320617661696c61626c65",
+                      "id": 46,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "604:27:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_stringliteral_4dae705278dcf5da9cb730cff128583d1e8a72f8e39d4b598e39d7f51061b1d9",
+                        "typeString": "literal_string \"No more tickets available\""
+                      },
+                      "value": "No more tickets available"
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      {
+                        "typeIdentifier": "t_stringliteral_4dae705278dcf5da9cb730cff128583d1e8a72f8e39d4b598e39d7f51061b1d9",
+                        "typeString": "literal_string \"No more tickets available\""
+                      }
+                    ],
+                    "id": 40,
+                    "name": "require",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations":
+                    [
+                      -18,
+                      -18
+                    ],
+                    "referencedDeclaration": -18,
+                    "src": "543:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (bool,string memory) pure"
+                    }
+                  },
+                  "id": 47,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "543:99:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 48,
+                "nodeType": "ExpressionStatement",
+                "src": "543:99:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "commonType":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 55,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression":
+                      {
+                        "expression":
+                        {
+                          "expression":
+                          {
+                            "id": 50,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "663:3:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 51,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "663:10:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "id": 52,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "balance",
+                        "nodeType": "MemberAccess",
+                        "src": "663:18:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": ">=",
+                      "rightExpression":
+                      {
+                        "expression":
+                        {
+                          "id": 53,
+                          "name": "m",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 35,
+                          "src": "685:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                            "typeString": "struct MeetingCreation.Meeting storage pointer"
+                          }
+                        },
+                        "id": 54,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "ticket_price",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 17,
+                        "src": "685:14:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "663:36:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    {
+                      "hexValue": "4e6f7420656e6f7567682066756e6473",
+                      "id": 56,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "714:18:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_stringliteral_38fc6ba06c924208472ab053d62249a6a0165c760c073089bf019af8c267f725",
+                        "typeString": "literal_string \"Not enough funds\""
+                      },
+                      "value": "Not enough funds"
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      {
+                        "typeIdentifier": "t_stringliteral_38fc6ba06c924208472ab053d62249a6a0165c760c073089bf019af8c267f725",
+                        "typeString": "literal_string \"Not enough funds\""
+                      }
+                    ],
+                    "id": 49,
+                    "name": "require",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations":
+                    [
+                      -18,
+                      -18
+                    ],
+                    "referencedDeclaration": -18,
+                    "src": "655:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (bool,string memory) pure"
+                    }
+                  },
+                  "id": 57,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "655:88:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 58,
+                "nodeType": "ExpressionStatement",
+                "src": "655:88:0"
+              },
+              {
+                "assignments":
+                [
+                  63
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 63,
+                    "mutability": "mutable",
+                    "name": "adr",
+                    "nameLocation": "774:3:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 83,
+                    "src": "756:21:0",
+                    "stateVariable": false,
+                    "storageLocation": "storage",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    },
+                    "typeName":
+                    {
+                      "baseType":
+                      {
+                        "id": 61,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "756:7:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 62,
+                      "nodeType": "ArrayTypeName",
+                      "src": "756:9:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                        "typeString": "address[]"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 64,
+                "nodeType": "VariableDeclarationStatement",
+                "src": "756:21:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 68,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 65,
+                    "name": "adr",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 63,
+                    "src": "788:3:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[] storage pointer"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "expression":
+                    {
+                      "id": 66,
+                      "name": "m",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 35,
+                      "src": "794:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                        "typeString": "struct MeetingCreation.Meeting storage pointer"
+                      }
+                    },
+                    "id": 67,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "attendees",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 22,
+                    "src": "794:11:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                      "typeString": "address[] storage ref"
+                    }
+                  },
+                  "src": "788:17:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                    "typeString": "address[] storage pointer"
+                  }
+                },
+                "id": 69,
+                "nodeType": "ExpressionStatement",
+                "src": "788:17:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "expression":
+                      {
+                        "id": 73,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "825:3:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 74,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "825:10:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 70,
+                      "name": "adr",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 63,
+                      "src": "816:3:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                        "typeString": "address[] storage pointer"
+                      }
+                    },
+                    "id": 72,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "816:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                      "typeString": "function (address[] storage pointer,address)"
+                    }
+                  },
+                  "id": 75,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "816:20:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 76,
+                "nodeType": "ExpressionStatement",
+                "src": "816:20:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 81,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "expression":
+                    {
+                      "id": 77,
+                      "name": "m",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 35,
+                      "src": "848:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Meeting_$23_storage_ptr",
+                        "typeString": "struct MeetingCreation.Meeting storage pointer"
+                      }
+                    },
+                    "id": 79,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "memberName": "current_tickets_sold",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 19,
+                    "src": "848:22:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "+=",
+                  "rightHandSide":
+                  {
+                    "hexValue": "31",
+                    "id": 80,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "874:1:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_rational_1_by_1",
+                      "typeString": "int_const 1"
+                    },
+                    "value": "1"
+                  },
+                  "src": "848:27:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 82,
+                "nodeType": "ExpressionStatement",
+                "src": "848:27:0"
+              }
+            ]
+          },
+          "functionSelector": "55115f29",
+          "id": 84,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "RSVP",
+          "nameLocation": "440:4:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 31,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 30,
+                "mutability": "mutable",
+                "name": "MEETINGID",
+                "nameLocation": "454:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 84,
+                "src": "446:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 29,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "446:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "445:19:0"
+          },
+          "returnParameters":
+          {
+            "id": 32,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "480:0:0"
+          },
+          "scope": 97,
+          "src": "431:452:0",
+          "stateMutability": "payable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 95,
+            "nodeType": "Block",
+            "src": "954:47:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "expression":
+                  {
+                    "arguments":
+                    [
+                      {
+                        "id": 91,
+                        "name": "this",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -28,
+                        "src": "980:4:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_contract$_MeetingCreation_$97",
+                          "typeString": "contract MeetingCreation"
+                        }
+                      }
+                    ],
+                    "expression":
+                    {
+                      "argumentTypes":
+                      [
+                        {
+                          "typeIdentifier": "t_contract$_MeetingCreation_$97",
+                          "typeString": "contract MeetingCreation"
+                        }
+                      ],
+                      "id": 90,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "972:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName":
+                      {
+                        "id": 89,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "972:7:0",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 92,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "972:13:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 93,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "memberName": "balance",
+                  "nodeType": "MemberAccess",
+                  "src": "972:21:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "functionReturnParameters": 88,
+                "id": 94,
+                "nodeType": "Return",
+                "src": "965:28:0"
+              }
+            ]
+          },
+          "functionSelector": "5145cbc0",
+          "id": 96,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getSmartContractBalance",
+          "nameLocation": "900:23:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 85,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "923:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 88,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 87,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 96,
+                "src": "948:4:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 86,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "948:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "947:6:0"
+          },
+          "scope": 97,
+          "src": "891:110:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 98,
+      "src": "25:979:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:1010:0"
+}

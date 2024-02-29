@@ -1,0 +1,182 @@
+{
+  "absolutePath": "output/output_192.sol",
+  "exportedSymbols":
+  {
+    "Game":
+    [
+      12
+    ]
+  },
+  "id": 13,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Game",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 12,
+      "linearizedBaseContracts":
+      [
+        12
+      ],
+      "name": "Game",
+      "nameLocation": "34:4:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "Game.Game",
+          "id": 8,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 4,
+              "mutability": "mutable",
+              "name": "team1Score",
+              "nameLocation": "69:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 8,
+              "src": "63:16:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Teams_$11_storage_ptr",
+                "typeString": "struct Game.Teams"
+              },
+              "typeName":
+              {
+                "id": 3,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode":
+                {
+                  "id": 2,
+                  "name": "Teams",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 11,
+                  "src": "63:5:0"
+                },
+                "referencedDeclaration": 11,
+                "src": "63:5:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_struct$_Teams_$11_storage_ptr",
+                  "typeString": "struct Game.Teams"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "team2Score",
+              "nameLocation": "92:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 8,
+              "src": "86:16:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Teams_$11_storage_ptr",
+                "typeString": "struct Game.Teams"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode":
+                {
+                  "id": 5,
+                  "name": "Teams",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 11,
+                  "src": "86:5:0"
+                },
+                "referencedDeclaration": 11,
+                "src": "86:5:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_struct$_Teams_$11_storage_ptr",
+                  "typeString": "struct Game.Teams"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Game",
+          "nameLocation": "51:4:0",
+          "nodeType": "StructDefinition",
+          "scope": 12,
+          "src": "44:64:0",
+          "visibility": "public"
+        },
+        {
+          "canonicalName": "Game.Teams",
+          "id": 11,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 10,
+              "mutability": "mutable",
+              "name": "score",
+              "nameLocation": "141:5:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 11,
+              "src": "134:12:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              },
+              "typeName":
+              {
+                "id": 9,
+                "name": "int256",
+                "nodeType": "ElementaryTypeName",
+                "src": "134:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Teams",
+          "nameLocation": "121:5:0",
+          "nodeType": "StructDefinition",
+          "scope": 12,
+          "src": "114:38:0",
+          "visibility": "public"
+        }
+      ],
+      "scope": 13,
+      "src": "25:130:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:159:0"
+}

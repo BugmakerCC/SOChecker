@@ -1,0 +1,155 @@
+{
+  "absolutePath": "output/output_238.sol",
+  "exportedSymbols":
+  {
+    "SimpleStorage":
+    [
+      11
+    ]
+  },
+  "id": 12,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "SimpleStorage",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 11,
+      "linearizedBaseContracts":
+      [
+        11
+      ],
+      "name": "SimpleStorage",
+      "nameLocation": "34:13:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "functionSelector": "06661abd",
+          "id": 3,
+          "mutability": "mutable",
+          "name": "count",
+          "nameLocation": "72:5:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 11,
+          "src": "57:20:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 2,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "57:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 9,
+            "nodeType": "Block",
+            "src": "114:26:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 7,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "UnaryOperation",
+                  "operator": "++",
+                  "prefix": false,
+                  "src": "125:7:0",
+                  "subExpression":
+                  {
+                    "id": 6,
+                    "name": "count",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3,
+                    "src": "125:5:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 8,
+                "nodeType": "ExpressionStatement",
+                "src": "125:7:0"
+              }
+            ]
+          },
+          "functionSelector": "d09de08a",
+          "id": 10,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "increment",
+          "nameLocation": "95:9:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 4,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "104:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 5,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "114:0:0"
+          },
+          "scope": 11,
+          "src": "86:54:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 12,
+      "src": "25:118:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:147:0"
+}

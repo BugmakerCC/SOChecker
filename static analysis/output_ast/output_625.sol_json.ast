@@ -1,0 +1,163 @@
+{
+	"absolutePath" : "./output\\output_625.sol",
+	"exportedSymbols" : 
+	{
+		"IReverseLookup" : 
+		[
+			11
+		]
+	},
+	"id" : 12,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"^",
+				"0.4",
+				".20"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:24:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "interface",
+			"documentation" : null,
+			"fullyImplemented" : false,
+			"id" : 11,
+			"linearizedBaseContracts" : 
+			[
+				11
+			],
+			"name" : "IReverseLookup",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"body" : null,
+					"id" : 10,
+					"implemented" : false,
+					"isConstructor" : false,
+					"isDeclaredConst" : true,
+					"modifiers" : [],
+					"name" : "getNames",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 5,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 4,
+								"name" : "",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 10,
+								"src" : "76:9:0",
+								"stateVariable" : false,
+								"storageLocation" : "memory",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_array$_t_address_$dyn_memory_ptr",
+									"typeString" : "address[] memory"
+								},
+								"typeName" : 
+								{
+									"baseType" : 
+									{
+										"id" : 2,
+										"name" : "address",
+										"nodeType" : "ElementaryTypeName",
+										"src" : "76:7:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										}
+									},
+									"id" : 3,
+									"length" : null,
+									"nodeType" : "ArrayTypeName",
+									"src" : "76:9:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_array$_t_address_$dyn_storage_ptr",
+										"typeString" : "address[] storage pointer"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "75:18:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 9,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 8,
+								"name" : "",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 10,
+								"src" : "115:8:0",
+								"stateVariable" : false,
+								"storageLocation" : "memory",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_array$_t_string_memory_$dyn_memory_ptr",
+									"typeString" : "string memory[] memory"
+								},
+								"typeName" : 
+								{
+									"baseType" : 
+									{
+										"id" : 6,
+										"name" : "string",
+										"nodeType" : "ElementaryTypeName",
+										"src" : "115:6:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_string_storage_ptr",
+											"typeString" : "string storage pointer"
+										}
+									},
+									"id" : 7,
+									"length" : null,
+									"nodeType" : "ArrayTypeName",
+									"src" : "115:8:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_array$_t_string_storage_$dyn_storage_ptr",
+										"typeString" : "string storage ref[] storage pointer"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "114:17:0"
+					},
+					"scope" : 11,
+					"src" : "58:74:0",
+					"stateMutability" : "view",
+					"superFunction" : null,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 12,
+			"src" : "26:109:0"
+		}
+	],
+	"src" : "0:139:0"
+}

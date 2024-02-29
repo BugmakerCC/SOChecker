@@ -1,0 +1,462 @@
+{
+  "absolutePath": "output/output_158.sol",
+  "exportedSymbols":
+  {
+    "CreamFinance":
+    [
+      32
+    ]
+  },
+  "id": 33,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "CreamFinance",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 32,
+      "linearizedBaseContracts":
+      [
+        32
+      ],
+      "name": "CreamFinance",
+      "nameLocation": "34:12:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "functionSelector": "06fdde03",
+          "id": 3,
+          "mutability": "mutable",
+          "name": "name",
+          "nameLocation": "68:4:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 32,
+          "src": "54:18:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_string_storage",
+            "typeString": "string"
+          },
+          "typeName":
+          {
+            "id": 2,
+            "name": "string",
+            "nodeType": "ElementaryTypeName",
+            "src": "54:6:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "95d89b41",
+          "id": 5,
+          "mutability": "mutable",
+          "name": "symbol",
+          "nameLocation": "93:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 32,
+          "src": "79:20:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_string_storage",
+            "typeString": "string"
+          },
+          "typeName":
+          {
+            "id": 4,
+            "name": "string",
+            "nodeType": "ElementaryTypeName",
+            "src": "79:6:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "313ce567",
+          "id": 7,
+          "mutability": "mutable",
+          "name": "decimals",
+          "nameLocation": "119:8:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 32,
+          "src": "107:20:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 6,
+            "name": "uint",
+            "nodeType": "ElementaryTypeName",
+            "src": "107:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "18160ddd",
+          "id": 9,
+          "mutability": "mutable",
+          "name": "totalSupply",
+          "nameLocation": "152:11:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 32,
+          "src": "137:26:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 8,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "137:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 30,
+            "nodeType": "Block",
+            "src": "196:139:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 14,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 12,
+                    "name": "name",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3,
+                    "src": "207:4:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "hexValue": "437265616d46696e616e6365",
+                    "id": 13,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "214:14:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_stringliteral_7f3c04dbfb1711169db5b9ec7f0a8da1e6f3a6579b0ec8297d120a3357d9821d",
+                      "typeString": "literal_string \"CreamFinance\""
+                    },
+                    "value": "CreamFinance"
+                  },
+                  "src": "207:21:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage",
+                    "typeString": "string storage ref"
+                  }
+                },
+                "id": 15,
+                "nodeType": "ExpressionStatement",
+                "src": "207:21:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 18,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 16,
+                    "name": "symbol",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5,
+                    "src": "239:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "hexValue": "43414654",
+                    "id": 17,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "248:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_stringliteral_82b92608571949f65b93246c21e180d53bd236fb6fc1b84a9f581bfa773649e6",
+                      "typeString": "literal_string \"CAFT\""
+                    },
+                    "value": "CAFT"
+                  },
+                  "src": "239:15:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage",
+                    "typeString": "string storage ref"
+                  }
+                },
+                "id": 19,
+                "nodeType": "ExpressionStatement",
+                "src": "239:15:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 22,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 20,
+                    "name": "decimals",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7,
+                    "src": "265:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "hexValue": "3138",
+                    "id": 21,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "276:2:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_rational_18_by_1",
+                      "typeString": "int_const 18"
+                    },
+                    "value": "18"
+                  },
+                  "src": "265:13:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 23,
+                "nodeType": "ExpressionStatement",
+                "src": "265:13:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 28,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 24,
+                    "name": "totalSupply",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 9,
+                    "src": "291:11:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "commonType":
+                    {
+                      "typeIdentifier": "t_rational_1000000000000000000000000_by_1",
+                      "typeString": "int_const 1000000000000000000000000"
+                    },
+                    "id": 27,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "leftExpression":
+                    {
+                      "hexValue": "315f3030305f303030",
+                      "id": 25,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "305:9:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_rational_1000000_by_1",
+                        "typeString": "int_const 1000000"
+                      },
+                      "value": "1_000_000"
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "*",
+                    "rightExpression":
+                    {
+                      "hexValue": "31653138",
+                      "id": 26,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "317:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_rational_1000000000000000000_by_1",
+                        "typeString": "int_const 1000000000000000000"
+                      },
+                      "value": "1e18"
+                    },
+                    "src": "305:16:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_rational_1000000000000000000000000_by_1",
+                      "typeString": "int_const 1000000000000000000000000"
+                    }
+                  },
+                  "src": "291:30:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 29,
+                "nodeType": "ExpressionStatement",
+                "src": "291:30:0"
+              }
+            ]
+          },
+          "id": 31,
+          "implemented": true,
+          "kind": "constructor",
+          "modifiers": [],
+          "name": "",
+          "nameLocation": "-1:-1:-1",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 10,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "186:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 11,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "196:0:0"
+          },
+          "scope": 32,
+          "src": "175:160:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 33,
+      "src": "25:313:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:342:0"
+}

@@ -1,0 +1,910 @@
+{
+  "absolutePath": "output/output_936.sol",
+  "exportedSymbols":
+  {
+    "MuC":
+    [
+      68
+    ]
+  },
+  "id": 69,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "MuC",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 68,
+      "linearizedBaseContracts":
+      [
+        68
+      ],
+      "name": "MuC",
+      "nameLocation": "34:3:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "MuC.voter",
+          "id": 10,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "name",
+              "nameLocation": "75:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 10,
+              "src": "68:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "68:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "constituency",
+              "nameLocation": "98:12:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 10,
+              "src": "90:20:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "90:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "age",
+              "nameLocation": "126:3:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 10,
+              "src": "121:8:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "121:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 9,
+              "mutability": "mutable",
+              "name": "isVoted",
+              "nameLocation": "145:7:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 10,
+              "src": "140:12:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "typeName":
+              {
+                "id": 8,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "140:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "voter",
+          "nameLocation": "52:5:0",
+          "nodeType": "StructDefinition",
+          "scope": 68,
+          "src": "45:115:0",
+          "visibility": "public"
+        },
+        {
+          "canonicalName": "MuC.constituency",
+          "id": 17,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 12,
+              "mutability": "mutable",
+              "name": "name",
+              "nameLocation": "205:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 17,
+              "src": "198:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 11,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "198:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 16,
+              "mutability": "mutable",
+              "name": "candidates",
+              "nameLocation": "228:10:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 17,
+              "src": "220:18:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_array$_t_struct$_voter_$10_storage_$dyn_storage_ptr",
+                "typeString": "struct MuC.voter[]"
+              },
+              "typeName":
+              {
+                "baseType":
+                {
+                  "id": 14,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 13,
+                    "name": "voter",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 10,
+                    "src": "220:5:0"
+                  },
+                  "referencedDeclaration": 10,
+                  "src": "220:5:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_voter_$10_storage_ptr",
+                    "typeString": "struct MuC.voter"
+                  }
+                },
+                "id": 15,
+                "nodeType": "ArrayTypeName",
+                "src": "220:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_array$_t_struct$_voter_$10_storage_$dyn_storage_ptr",
+                  "typeString": "struct MuC.voter[]"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "constituency",
+          "nameLocation": "175:12:0",
+          "nodeType": "StructDefinition",
+          "scope": 68,
+          "src": "168:78:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "f482a13a",
+          "id": 21,
+          "mutability": "mutable",
+          "name": "constituencyRegister",
+          "nameLocation": "276:20:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 68,
+          "src": "254:42:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_constituency_$17_storage_$dyn_storage",
+            "typeString": "struct MuC.constituency[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 19,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 18,
+                "name": "constituency",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 17,
+                "src": "254:12:0"
+              },
+              "referencedDeclaration": 17,
+              "src": "254:12:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_constituency_$17_storage_ptr",
+                "typeString": "struct MuC.constituency"
+              }
+            },
+            "id": 20,
+            "nodeType": "ArrayTypeName",
+            "src": "254:14:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_constituency_$17_storage_$dyn_storage_ptr",
+              "typeString": "struct MuC.constituency[]"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 66,
+            "nodeType": "Block",
+            "src": "397:211:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  32
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 32,
+                    "mutability": "mutable",
+                    "name": "c",
+                    "nameLocation": "429:1:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 66,
+                    "src": "408:22:0",
+                    "stateVariable": false,
+                    "storageLocation": "storage",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_constituency_$17_storage_ptr",
+                      "typeString": "struct MuC.constituency"
+                    },
+                    "typeName":
+                    {
+                      "id": 31,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 30,
+                        "name": "constituency",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 17,
+                        "src": "408:12:0"
+                      },
+                      "referencedDeclaration": 17,
+                      "src": "408:12:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_constituency_$17_storage_ptr",
+                        "typeString": "struct MuC.constituency"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 36,
+                "initialValue":
+                {
+                  "arguments": [],
+                  "expression":
+                  {
+                    "argumentTypes": [],
+                    "expression":
+                    {
+                      "id": 33,
+                      "name": "constituencyRegister",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 21,
+                      "src": "433:20:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_constituency_$17_storage_$dyn_storage",
+                        "typeString": "struct MuC.constituency storage ref[] storage ref"
+                      }
+                    },
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "433:25:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_constituency_$17_storage_$dyn_storage_ptr_$returns$_t_struct$_constituency_$17_storage_$bound_to$_t_array$_t_struct$_constituency_$17_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct MuC.constituency storage ref[] storage pointer) returns (struct MuC.constituency storage ref)"
+                    }
+                  },
+                  "id": 35,
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "433:27:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_constituency_$17_storage",
+                    "typeString": "struct MuC.constituency storage ref"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "408:52:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 41,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "expression":
+                    {
+                      "id": 37,
+                      "name": "c",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32,
+                      "src": "471:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_constituency_$17_storage_ptr",
+                        "typeString": "struct MuC.constituency storage pointer"
+                      }
+                    },
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "memberName": "name",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 12,
+                    "src": "471:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 40,
+                    "name": "_name",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 23,
+                    "src": "480:5:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "src": "471:14:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage",
+                    "typeString": "string storage ref"
+                  }
+                },
+                "id": 42,
+                "nodeType": "ExpressionStatement",
+                "src": "471:14:0"
+              },
+              {
+                "body":
+                {
+                  "id": 64,
+                  "nodeType": "Block",
+                  "src": "541:60:0",
+                  "statements":
+                  [
+                    {
+                      "expression":
+                      {
+                        "arguments":
+                        [
+                          {
+                            "baseExpression":
+                            {
+                              "id": 59,
+                              "name": "_candidates",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 27,
+                              "src": "574:11:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_array$_t_struct$_voter_$10_memory_ptr_$dyn_memory_ptr",
+                                "typeString": "struct MuC.voter memory[] memory"
+                              }
+                            },
+                            "id": 61,
+                            "indexExpression":
+                            {
+                              "id": 60,
+                              "name": "i",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 44,
+                              "src": "586:1:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "nodeType": "IndexAccess",
+                            "src": "574:14:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_struct$_voter_$10_memory_ptr",
+                              "typeString": "struct MuC.voter memory"
+                            }
+                          }
+                        ],
+                        "expression":
+                        {
+                          "argumentTypes":
+                          [
+                            {
+                              "typeIdentifier": "t_struct$_voter_$10_memory_ptr",
+                              "typeString": "struct MuC.voter memory"
+                            }
+                          ],
+                          "expression":
+                          {
+                            "expression":
+                            {
+                              "id": 54,
+                              "name": "c",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 32,
+                              "src": "556:1:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_struct$_constituency_$17_storage_ptr",
+                                "typeString": "struct MuC.constituency storage pointer"
+                              }
+                            },
+                            "id": 57,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "candidates",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 16,
+                            "src": "556:12:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_array$_t_struct$_voter_$10_storage_$dyn_storage",
+                              "typeString": "struct MuC.voter storage ref[] storage ref"
+                            }
+                          },
+                          "id": 58,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "push",
+                          "nodeType": "MemberAccess",
+                          "src": "556:17:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_voter_$10_storage_$dyn_storage_ptr_$_t_struct$_voter_$10_storage_$returns$__$bound_to$_t_array$_t_struct$_voter_$10_storage_$dyn_storage_ptr_$",
+                            "typeString": "function (struct MuC.voter storage ref[] storage pointer,struct MuC.voter storage ref)"
+                          }
+                        },
+                        "id": 62,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "556:33:0",
+                        "tryCall": false,
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_tuple$__$",
+                          "typeString": "tuple()"
+                        }
+                      },
+                      "id": 63,
+                      "nodeType": "ExpressionStatement",
+                      "src": "556:33:0"
+                    }
+                  ]
+                },
+                "condition":
+                {
+                  "commonType":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "id": 50,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression":
+                  {
+                    "id": 47,
+                    "name": "i",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 44,
+                    "src": "512:1:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "<",
+                  "rightExpression":
+                  {
+                    "expression":
+                    {
+                      "id": 48,
+                      "name": "_candidates",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27,
+                      "src": "516:11:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_voter_$10_memory_ptr_$dyn_memory_ptr",
+                        "typeString": "struct MuC.voter memory[] memory"
+                      }
+                    },
+                    "id": 49,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "src": "516:18:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "src": "512:22:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "id": 65,
+                "initializationExpression":
+                {
+                  "assignments":
+                  [
+                    44
+                  ],
+                  "declarations":
+                  [
+                    {
+                      "constant": false,
+                      "id": 44,
+                      "mutability": "mutable",
+                      "name": "i",
+                      "nameLocation": "505:1:0",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 65,
+                      "src": "500:6:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName":
+                      {
+                        "id": 43,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "500:4:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 46,
+                  "initialValue":
+                  {
+                    "hexValue": "30",
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "509:1:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_rational_0_by_1",
+                      "typeString": "int_const 0"
+                    },
+                    "value": "0"
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "500:10:0"
+                },
+                "loopExpression":
+                {
+                  "expression":
+                  {
+                    "id": 52,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "536:3:0",
+                    "subExpression":
+                    {
+                      "id": 51,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44,
+                      "src": "536:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 53,
+                  "nodeType": "ExpressionStatement",
+                  "src": "536:3:0"
+                },
+                "nodeType": "ForStatement",
+                "src": "496:105:0"
+              }
+            ]
+          },
+          "functionSelector": "c17fb2d5",
+          "id": 67,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addConstituency",
+          "nameLocation": "312:15:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 28,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 23,
+                "mutability": "mutable",
+                "name": "_name",
+                "nameLocation": "342:5:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "328:19:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 22,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "328:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 27,
+                "mutability": "mutable",
+                "name": "_candidates",
+                "nameLocation": "363:11:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 67,
+                "src": "348:26:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_array$_t_struct$_voter_$10_memory_ptr_$dyn_memory_ptr",
+                  "typeString": "struct MuC.voter[]"
+                },
+                "typeName":
+                {
+                  "baseType":
+                  {
+                    "id": 25,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode":
+                    {
+                      "id": 24,
+                      "name": "voter",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 10,
+                      "src": "348:5:0"
+                    },
+                    "referencedDeclaration": 10,
+                    "src": "348:5:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_voter_$10_storage_ptr",
+                      "typeString": "struct MuC.voter"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ArrayTypeName",
+                  "src": "348:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_struct$_voter_$10_storage_$dyn_storage_ptr",
+                    "typeString": "struct MuC.voter[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "327:48:0"
+          },
+          "returnParameters":
+          {
+            "id": 29,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "397:0:0"
+          },
+          "scope": 68,
+          "src": "303:305:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 69,
+      "src": "25:586:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:615:0"
+}

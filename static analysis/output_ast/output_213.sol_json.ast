@@ -1,0 +1,349 @@
+{
+	"absolutePath" : "./output/output_213.sol",
+	"exportedSymbols" : 
+	{
+		"CWC" : 
+		[
+			20
+		],
+		"ITokenDeposit" : 
+		[
+			2
+		],
+		"trcToken" : 
+		[
+			3
+		]
+	},
+	"id" : 21,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"0.5",
+				".8"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:22:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "interface",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 2,
+			"linearizedBaseContracts" : 
+			[
+				2
+			],
+			"name" : "ITokenDeposit",
+			"nodeType" : "ContractDefinition",
+			"nodes" : [],
+			"scope" : 21,
+			"src" : "26:26:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "interface",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 3,
+			"linearizedBaseContracts" : 
+			[
+				3
+			],
+			"name" : "trcToken",
+			"nodeType" : "ContractDefinition",
+			"nodes" : [],
+			"scope" : 21,
+			"src" : "56:21:0"
+		},
+		{
+			"baseContracts" : 
+			[
+				{
+					"arguments" : null,
+					"baseName" : 
+					{
+						"contractScope" : null,
+						"id" : 4,
+						"name" : "ITokenDeposit",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 2,
+						"src" : "97:13:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_ITokenDeposit_$2",
+							"typeString" : "contract ITokenDeposit"
+						}
+					},
+					"id" : 5,
+					"nodeType" : "InheritanceSpecifier",
+					"src" : "97:13:0"
+				}
+			],
+			"contractDependencies" : 
+			[
+				2
+			],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 20,
+			"linearizedBaseContracts" : 
+			[
+				20,
+				2
+			],
+			"name" : "CWC",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"constant" : false,
+					"id" : 8,
+					"name" : "name",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 20,
+					"src" : "149:40:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_string_storage",
+						"typeString" : "string"
+					},
+					"typeName" : 
+					{
+						"id" : 6,
+						"name" : "string",
+						"nodeType" : "ElementaryTypeName",
+						"src" : "149:6:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_string_storage_ptr",
+							"typeString" : "string"
+						}
+					},
+					"value" : 
+					{
+						"argumentTypes" : null,
+						"hexValue" : "446563656e7472616c697a656420435743",
+						"id" : 7,
+						"isConstant" : false,
+						"isLValue" : false,
+						"isPure" : true,
+						"kind" : "string",
+						"lValueRequested" : false,
+						"nodeType" : "Literal",
+						"src" : "170:19:0",
+						"subdenomination" : null,
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_stringliteral_876f1b019eb2895b8baf55069b394a7b394c7591867b89f0baa6221b4cdb3347",
+							"typeString" : "literal_string \"Decentralized CWC\""
+						},
+						"value" : "Decentralized CWC"
+					},
+					"visibility" : "public"
+				},
+				{
+					"constant" : false,
+					"id" : 11,
+					"name" : "symbol",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 20,
+					"src" : "194:28:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_string_storage",
+						"typeString" : "string"
+					},
+					"typeName" : 
+					{
+						"id" : 9,
+						"name" : "string",
+						"nodeType" : "ElementaryTypeName",
+						"src" : "194:6:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_string_storage_ptr",
+							"typeString" : "string"
+						}
+					},
+					"value" : 
+					{
+						"argumentTypes" : null,
+						"hexValue" : "435743",
+						"id" : 10,
+						"isConstant" : false,
+						"isLValue" : false,
+						"isPure" : true,
+						"kind" : "string",
+						"lValueRequested" : false,
+						"nodeType" : "Literal",
+						"src" : "217:5:0",
+						"subdenomination" : null,
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_stringliteral_85416d3865f80363eab3107e49946bdd6b39534deee7ec11459f51c7243f1a52",
+							"typeString" : "literal_string \"CWC\""
+						},
+						"value" : "CWC"
+					},
+					"visibility" : "public"
+				},
+				{
+					"constant" : false,
+					"id" : 14,
+					"name" : "decimals",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 20,
+					"src" : "227:27:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_uint8",
+						"typeString" : "uint8"
+					},
+					"typeName" : 
+					{
+						"id" : 12,
+						"name" : "uint8",
+						"nodeType" : "ElementaryTypeName",
+						"src" : "227:5:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_uint8",
+							"typeString" : "uint8"
+						}
+					},
+					"value" : 
+					{
+						"argumentTypes" : null,
+						"hexValue" : "3138",
+						"id" : 13,
+						"isConstant" : false,
+						"isLValue" : false,
+						"isPure" : true,
+						"kind" : "number",
+						"lValueRequested" : false,
+						"nodeType" : "Literal",
+						"src" : "252:2:0",
+						"subdenomination" : null,
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_rational_18_by_1",
+							"typeString" : "int_const 18"
+						},
+						"value" : "18"
+					},
+					"visibility" : "public"
+				},
+				{
+					"constant" : false,
+					"id" : 19,
+					"name" : "usddTokenId",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 20,
+					"src" : "259:48:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_contract$_trcToken_$3",
+						"typeString" : "contract trcToken"
+					},
+					"typeName" : 
+					{
+						"contractScope" : null,
+						"id" : 15,
+						"name" : "trcToken",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 3,
+						"src" : "259:8:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_trcToken_$3",
+							"typeString" : "contract trcToken"
+						}
+					},
+					"value" : 
+					{
+						"argumentTypes" : null,
+						"arguments" : 
+						[
+							{
+								"argumentTypes" : null,
+								"hexValue" : "31303034373737",
+								"id" : 17,
+								"isConstant" : false,
+								"isLValue" : false,
+								"isPure" : true,
+								"kind" : "number",
+								"lValueRequested" : false,
+								"nodeType" : "Literal",
+								"src" : "299:7:0",
+								"subdenomination" : null,
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_rational_1004777_by_1",
+									"typeString" : "int_const 1004777"
+								},
+								"value" : "1004777"
+							}
+						],
+						"expression" : 
+						{
+							"argumentTypes" : 
+							[
+								{
+									"typeIdentifier" : "t_rational_1004777_by_1",
+									"typeString" : "int_const 1004777"
+								}
+							],
+							"id" : 16,
+							"name" : "trcToken",
+							"nodeType" : "Identifier",
+							"overloadedDeclarations" : [],
+							"referencedDeclaration" : 3,
+							"src" : "290:8:0",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_type$_t_contract$_trcToken_$3_$",
+								"typeString" : "type(contract trcToken)"
+							}
+						},
+						"id" : 18,
+						"isConstant" : false,
+						"isLValue" : false,
+						"isPure" : true,
+						"kind" : "typeConversion",
+						"lValueRequested" : false,
+						"names" : [],
+						"nodeType" : "FunctionCall",
+						"src" : "290:17:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_trcToken_$3",
+							"typeString" : "contract trcToken"
+						}
+					},
+					"visibility" : "public"
+				}
+			],
+			"scope" : 21,
+			"src" : "81:230:0"
+		}
+	],
+	"src" : "0:315:0"
+}

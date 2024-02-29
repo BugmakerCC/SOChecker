@@ -1,0 +1,483 @@
+{
+	"absolutePath" : "./output\\output_419.sol",
+	"exportedSymbols" : 
+	{
+		"ContractA" : 
+		[
+			12
+		],
+		"ContractB" : 
+		[
+			36
+		]
+	},
+	"id" : 37,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"^",
+				"0.4",
+				".25"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:24:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 12,
+			"linearizedBaseContracts" : 
+			[
+				12
+			],
+			"name" : "ContractA",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"constant" : false,
+					"id" : 3,
+					"name" : "variableYouWantToAccess",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 12,
+					"src" : "52:37:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_string_storage",
+						"typeString" : "string"
+					},
+					"typeName" : 
+					{
+						"id" : 2,
+						"name" : "string",
+						"nodeType" : "ElementaryTypeName",
+						"src" : "52:6:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_string_storage_ptr",
+							"typeString" : "string"
+						}
+					},
+					"value" : null,
+					"visibility" : "public"
+				},
+				{
+					"body" : 
+					{
+						"id" : 10,
+						"nodeType" : "Block",
+						"src" : "165:49:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 8,
+									"name" : "variableYouWantToAccess",
+									"nodeType" : "Identifier",
+									"overloadedDeclarations" : 
+									[
+										3
+									],
+									"referencedDeclaration" : 3,
+									"src" : "183:23:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_string_storage",
+										"typeString" : "string storage ref"
+									}
+								},
+								"functionReturnParameters" : 7,
+								"id" : 9,
+								"nodeType" : "Return",
+								"src" : "176:30:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 11,
+					"implemented" : true,
+					"isConstructor" : false,
+					"isDeclaredConst" : true,
+					"modifiers" : [],
+					"name" : "variableYouWantToAccess",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 4,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "134:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 7,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 6,
+								"name" : "",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 11,
+								"src" : "157:6:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_string_memory_ptr",
+									"typeString" : "string"
+								},
+								"typeName" : 
+								{
+									"id" : 5,
+									"name" : "string",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "157:6:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_string_storage_ptr",
+										"typeString" : "string"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "156:8:0"
+					},
+					"scope" : 12,
+					"src" : "102:112:0",
+					"stateMutability" : "view",
+					"superFunction" : null,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 37,
+			"src" : "26:191:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 36,
+			"linearizedBaseContracts" : 
+			[
+				36
+			],
+			"name" : "ContractB",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"constant" : false,
+					"id" : 14,
+					"name" : "instanceOfA",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 36,
+					"src" : "246:21:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_contract$_ContractA_$12",
+						"typeString" : "contract ContractA"
+					},
+					"typeName" : 
+					{
+						"contractScope" : null,
+						"id" : 13,
+						"name" : "ContractA",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 12,
+						"src" : "246:9:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_ContractA_$12",
+							"typeString" : "contract ContractA"
+						}
+					},
+					"value" : null,
+					"visibility" : "internal"
+				},
+				{
+					"body" : 
+					{
+						"id" : 22,
+						"nodeType" : "Block",
+						"src" : "302:54:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"arguments" : [],
+									"expression" : 
+									{
+										"argumentTypes" : [],
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 17,
+											"name" : "instanceOfA",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 14,
+											"src" : "312:11:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_contract$_ContractA_$12",
+												"typeString" : "contract ContractA"
+											}
+										},
+										"id" : 19,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"lValueRequested" : false,
+										"memberName" : "variableYouWantToAccess",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : 11,
+										"src" : "312:35:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_function_external_view$__$returns$_t_string_memory_ptr_$",
+											"typeString" : "function () view external returns (string memory)"
+										}
+									},
+									"id" : 20,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"kind" : "functionCall",
+									"lValueRequested" : false,
+									"names" : [],
+									"nodeType" : "FunctionCall",
+									"src" : "312:37:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_string_memory_ptr",
+										"typeString" : "string memory"
+									}
+								},
+								"id" : 21,
+								"nodeType" : "ExpressionStatement",
+								"src" : "312:37:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 23,
+					"implemented" : true,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "callA",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 15,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "292:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 16,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "302:0:0"
+					},
+					"scope" : 36,
+					"src" : "278:78:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "public"
+				},
+				{
+					"body" : 
+					{
+						"id" : 34,
+						"nodeType" : "Block",
+						"src" : "419:54:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 32,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"id" : 28,
+										"name" : "instanceOfA",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 14,
+										"src" : "429:11:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_contract$_ContractA_$12",
+											"typeString" : "contract ContractA"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"arguments" : 
+										[
+											{
+												"argumentTypes" : null,
+												"id" : 30,
+												"name" : "_instanceOfA",
+												"nodeType" : "Identifier",
+												"overloadedDeclarations" : [],
+												"referencedDeclaration" : 25,
+												"src" : "453:12:0",
+												"typeDescriptions" : 
+												{
+													"typeIdentifier" : "t_address",
+													"typeString" : "address"
+												}
+											}
+										],
+										"expression" : 
+										{
+											"argumentTypes" : 
+											[
+												{
+													"typeIdentifier" : "t_address",
+													"typeString" : "address"
+												}
+											],
+											"id" : 29,
+											"name" : "ContractA",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 12,
+											"src" : "443:9:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_type$_t_contract$_ContractA_$12_$",
+												"typeString" : "type(contract ContractA)"
+											}
+										},
+										"id" : 31,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"kind" : "typeConversion",
+										"lValueRequested" : false,
+										"names" : [],
+										"nodeType" : "FunctionCall",
+										"src" : "443:23:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_contract$_ContractA_$12",
+											"typeString" : "contract ContractA"
+										}
+									},
+									"src" : "429:37:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_contract$_ContractA_$12",
+										"typeString" : "contract ContractA"
+									}
+								},
+								"id" : 33,
+								"nodeType" : "ExpressionStatement",
+								"src" : "429:37:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 35,
+					"implemented" : true,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "setInstanceOfA",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 26,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 25,
+								"name" : "_instanceOfA",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 35,
+								"src" : "390:20:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_address",
+									"typeString" : "address"
+								},
+								"typeName" : 
+								{
+									"id" : 24,
+									"name" : "address",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "390:7:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_address",
+										"typeString" : "address"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "389:22:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 27,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "419:0:0"
+					},
+					"scope" : 36,
+					"src" : "366:107:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 37,
+			"src" : "221:255:0"
+		}
+	],
+	"src" : "0:480:0"
+}

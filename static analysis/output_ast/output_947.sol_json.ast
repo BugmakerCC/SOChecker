@@ -1,0 +1,155 @@
+{
+  "absolutePath": "output/output_947.sol",
+  "exportedSymbols":
+  {
+    "ERC1155":
+    [
+      10
+    ]
+  },
+  "id": 11,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "ERC1155",
+      "contractDependencies": [],
+      "contractKind": "interface",
+      "fullyImplemented": false,
+      "id": 10,
+      "linearizedBaseContracts":
+      [
+        10
+      ],
+      "name": "ERC1155",
+      "nameLocation": "35:7:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "functionSelector": "5a3f2672",
+          "id": 9,
+          "implemented": false,
+          "kind": "function",
+          "modifiers": [],
+          "name": "tokensOf",
+          "nameLocation": "59:8:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 4,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "tokenOwner",
+                "nameLocation": "76:10:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 9,
+                "src": "68:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName":
+                {
+                  "id": 2,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "68:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "67:20:0"
+          },
+          "returnParameters":
+          {
+            "id": 8,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 7,
+                "mutability": "mutable",
+                "name": "tokens",
+                "nameLocation": "128:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 9,
+                "src": "111:23:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                  "typeString": "uint256[]"
+                },
+                "typeName":
+                {
+                  "baseType":
+                  {
+                    "id": 5,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "111:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 6,
+                  "nodeType": "ArrayTypeName",
+                  "src": "111:9:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                    "typeString": "uint256[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "110:25:0"
+          },
+          "scope": 10,
+          "src": "50:86:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 11,
+      "src": "25:114:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:143:0"
+}

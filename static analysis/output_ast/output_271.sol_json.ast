@@ -1,0 +1,209 @@
+{
+  "absolutePath": "output/output_271.sol",
+  "exportedSymbols":
+  {
+    "NumberProvider":
+    [
+      14
+    ]
+  },
+  "id": 15,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "NumberProvider",
+      "contractDependencies": [],
+      "contractKind": "library",
+      "fullyImplemented": true,
+      "id": 14,
+      "linearizedBaseContracts":
+      [
+        14
+      ],
+      "name": "NumberProvider",
+      "nameLocation": "33:14:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 12,
+            "nodeType": "Block",
+            "src": "112:30:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "components":
+                  [
+                    {
+                      "hexValue": "35",
+                      "id": 8,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "127:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_rational_5_by_1",
+                        "typeString": "int_const 5"
+                      },
+                      "value": "5"
+                    },
+                    {
+                      "hexValue": "66616c7365",
+                      "id": 9,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "130:5:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    }
+                  ],
+                  "id": 10,
+                  "isConstant": false,
+                  "isInlineArray": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "nodeType": "TupleExpression",
+                  "src": "126:10:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$_t_rational_5_by_1_$_t_bool_$",
+                    "typeString": "tuple(int_const 5,bool)"
+                  }
+                },
+                "functionReturnParameters": 7,
+                "id": 11,
+                "nodeType": "Return",
+                "src": "119:17:0"
+              }
+            ]
+          },
+          "functionSelector": "f2c9ecd8",
+          "id": 13,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getNumber",
+          "nameLocation": "64:9:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 2,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "73:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 7,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 4,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "97:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 3,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "97:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "106:4:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName":
+                {
+                  "id": 5,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "106:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "96:15:0"
+          },
+          "scope": 14,
+          "src": "55:87:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 15,
+      "src": "25:120:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:149:0"
+}

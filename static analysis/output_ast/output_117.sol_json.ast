@@ -1,0 +1,1798 @@
+{
+  "absolutePath": "output/output_117.sol",
+  "exportedSymbols":
+  {
+    "CarShop":
+    [
+      133
+    ]
+  },
+  "id": 134,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "CarShop",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 133,
+      "linearizedBaseContracts":
+      [
+        133
+      ],
+      "name": "CarShop",
+      "nameLocation": "34:7:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "id": 3,
+          "mutability": "mutable",
+          "name": "owner",
+          "nameLocation": "57:5:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 133,
+          "src": "49:13:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_address",
+            "typeString": "address"
+          },
+          "typeName":
+          {
+            "id": 2,
+            "name": "address",
+            "nodeType": "ElementaryTypeName",
+            "src": "49:7:0",
+            "stateMutability": "nonpayable",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 5,
+          "mutability": "mutable",
+          "name": "toyotaCount",
+          "nameLocation": "77:11:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 133,
+          "src": "69:19:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 4,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "69:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 7,
+          "mutability": "mutable",
+          "name": "audiCount",
+          "nameLocation": "103:9:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 133,
+          "src": "95:17:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 6,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "95:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 9,
+          "mutability": "mutable",
+          "name": "bmwCount",
+          "nameLocation": "127:8:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 133,
+          "src": "119:16:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 8,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "119:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "functionSelector": "41041b94",
+          "id": 12,
+          "mutability": "mutable",
+          "name": "toyota",
+          "nameLocation": "156:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 133,
+          "src": "144:18:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_struct$_Cars_$28_storage",
+            "typeString": "struct CarShop.Cars"
+          },
+          "typeName":
+          {
+            "id": 11,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 10,
+              "name": "Cars",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 28,
+              "src": "144:4:0"
+            },
+            "referencedDeclaration": 28,
+            "src": "144:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_Cars_$28_storage_ptr",
+              "typeString": "struct CarShop.Cars"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "36143f81",
+          "id": 15,
+          "mutability": "mutable",
+          "name": "audi",
+          "nameLocation": "181:4:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 133,
+          "src": "169:16:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_struct$_Cars_$28_storage",
+            "typeString": "struct CarShop.Cars"
+          },
+          "typeName":
+          {
+            "id": 14,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 13,
+              "name": "Cars",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 28,
+              "src": "169:4:0"
+            },
+            "referencedDeclaration": 28,
+            "src": "169:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_Cars_$28_storage_ptr",
+              "typeString": "struct CarShop.Cars"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "afb43b17",
+          "id": 18,
+          "mutability": "mutable",
+          "name": "bmw",
+          "nameLocation": "204:3:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 133,
+          "src": "192:15:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_struct$_Cars_$28_storage",
+            "typeString": "struct CarShop.Cars"
+          },
+          "typeName":
+          {
+            "id": 17,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 16,
+              "name": "Cars",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 28,
+              "src": "192:4:0"
+            },
+            "referencedDeclaration": 28,
+            "src": "192:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_struct$_Cars_$28_storage_ptr",
+              "typeString": "struct CarShop.Cars"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "canonicalName": "CarShop.CarType",
+          "id": 22,
+          "members":
+          [
+            {
+              "id": 19,
+              "name": "Toyota",
+              "nameLocation": "230:6:0",
+              "nodeType": "EnumValue",
+              "src": "230:6:0"
+            },
+            {
+              "id": 20,
+              "name": "Audi",
+              "nameLocation": "238:4:0",
+              "nodeType": "EnumValue",
+              "src": "238:4:0"
+            },
+            {
+              "id": 21,
+              "name": "Bmw",
+              "nameLocation": "244:3:0",
+              "nodeType": "EnumValue",
+              "src": "244:3:0"
+            }
+          ],
+          "name": "CarType",
+          "nameLocation": "221:7:0",
+          "nodeType": "EnumDefinition",
+          "src": "216:32:0"
+        },
+        {
+          "canonicalName": "CarShop.Cars",
+          "id": 28,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 25,
+              "mutability": "mutable",
+              "name": "carType",
+              "nameLocation": "287:7:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 28,
+              "src": "279:15:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_enum$_CarType_$22",
+                "typeString": "enum CarShop.CarType"
+              },
+              "typeName":
+              {
+                "id": 24,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode":
+                {
+                  "id": 23,
+                  "name": "CarType",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 22,
+                  "src": "279:7:0"
+                },
+                "referencedDeclaration": 22,
+                "src": "279:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_enum$_CarType_$22",
+                  "typeString": "enum CarShop.CarType"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 27,
+              "mutability": "mutable",
+              "name": "count",
+              "nameLocation": "310:5:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 28,
+              "src": "305:10:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 26,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "305:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Cars",
+          "nameLocation": "263:4:0",
+          "nodeType": "StructDefinition",
+          "scope": 133,
+          "src": "256:67:0",
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 78,
+            "nodeType": "Block",
+            "src": "404:287:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 40,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 37,
+                    "name": "owner",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3,
+                    "src": "415:5:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "expression":
+                    {
+                      "id": 38,
+                      "name": "msg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -15,
+                      "src": "423:3:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_magic_message",
+                        "typeString": "msg"
+                      }
+                    },
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "sender",
+                    "nodeType": "MemberAccess",
+                    "src": "423:10:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "src": "415:18:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "id": 41,
+                "nodeType": "ExpressionStatement",
+                "src": "415:18:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 44,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 42,
+                    "name": "toyotaCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5,
+                    "src": "444:11:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 43,
+                    "name": "_toyotaCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 30,
+                    "src": "458:12:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "src": "444:26:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 45,
+                "nodeType": "ExpressionStatement",
+                "src": "444:26:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 48,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 46,
+                    "name": "audiCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7,
+                    "src": "481:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 47,
+                    "name": "_audiCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 32,
+                    "src": "493:10:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "src": "481:22:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 49,
+                "nodeType": "ExpressionStatement",
+                "src": "481:22:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 52,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 50,
+                    "name": "bmwCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 9,
+                    "src": "514:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 51,
+                    "name": "_bmwCount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 34,
+                    "src": "525:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "src": "514:20:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 53,
+                "nodeType": "ExpressionStatement",
+                "src": "514:20:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 60,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 54,
+                    "name": "toyota",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 12,
+                    "src": "547:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Cars_$28_storage",
+                      "typeString": "struct CarShop.Cars storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "arguments":
+                    [
+                      {
+                        "expression":
+                        {
+                          "id": 56,
+                          "name": "CarType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22,
+                          "src": "561:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_type$_t_enum$_CarType_$22_$",
+                            "typeString": "type(enum CarShop.CarType)"
+                          }
+                        },
+                        "id": 57,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "Toyota",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 19,
+                        "src": "561:14:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        }
+                      },
+                      {
+                        "id": 58,
+                        "name": "_toyotaCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 30,
+                        "src": "577:12:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression":
+                    {
+                      "argumentTypes":
+                      [
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 55,
+                      "name": "Cars",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 28,
+                      "src": "556:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_struct$_Cars_$28_storage_ptr_$",
+                        "typeString": "type(struct CarShop.Cars storage pointer)"
+                      }
+                    },
+                    "id": 59,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "556:34:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Cars_$28_memory_ptr",
+                      "typeString": "struct CarShop.Cars memory"
+                    }
+                  },
+                  "src": "547:43:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Cars_$28_storage",
+                    "typeString": "struct CarShop.Cars storage ref"
+                  }
+                },
+                "id": 61,
+                "nodeType": "ExpressionStatement",
+                "src": "547:43:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 68,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 62,
+                    "name": "audi",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 15,
+                    "src": "601:4:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Cars_$28_storage",
+                      "typeString": "struct CarShop.Cars storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "arguments":
+                    [
+                      {
+                        "expression":
+                        {
+                          "id": 64,
+                          "name": "CarType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22,
+                          "src": "613:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_type$_t_enum$_CarType_$22_$",
+                            "typeString": "type(enum CarShop.CarType)"
+                          }
+                        },
+                        "id": 65,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "Audi",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 20,
+                        "src": "613:12:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        }
+                      },
+                      {
+                        "id": 66,
+                        "name": "_audiCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 32,
+                        "src": "627:10:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression":
+                    {
+                      "argumentTypes":
+                      [
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 63,
+                      "name": "Cars",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 28,
+                      "src": "608:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_struct$_Cars_$28_storage_ptr_$",
+                        "typeString": "type(struct CarShop.Cars storage pointer)"
+                      }
+                    },
+                    "id": 67,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "608:30:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Cars_$28_memory_ptr",
+                      "typeString": "struct CarShop.Cars memory"
+                    }
+                  },
+                  "src": "601:37:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Cars_$28_storage",
+                    "typeString": "struct CarShop.Cars storage ref"
+                  }
+                },
+                "id": 69,
+                "nodeType": "ExpressionStatement",
+                "src": "601:37:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 76,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 70,
+                    "name": "bmw",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 18,
+                    "src": "649:3:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Cars_$28_storage",
+                      "typeString": "struct CarShop.Cars storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "arguments":
+                    [
+                      {
+                        "expression":
+                        {
+                          "id": 72,
+                          "name": "CarType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22,
+                          "src": "660:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_type$_t_enum$_CarType_$22_$",
+                            "typeString": "type(enum CarShop.CarType)"
+                          }
+                        },
+                        "id": 73,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "Bmw",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 21,
+                        "src": "660:11:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        }
+                      },
+                      {
+                        "id": 74,
+                        "name": "_bmwCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34,
+                        "src": "673:9:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression":
+                    {
+                      "argumentTypes":
+                      [
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 71,
+                      "name": "Cars",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 28,
+                      "src": "655:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_struct$_Cars_$28_storage_ptr_$",
+                        "typeString": "type(struct CarShop.Cars storage pointer)"
+                      }
+                    },
+                    "id": 75,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "655:28:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Cars_$28_memory_ptr",
+                      "typeString": "struct CarShop.Cars memory"
+                    }
+                  },
+                  "src": "649:34:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Cars_$28_storage",
+                    "typeString": "struct CarShop.Cars storage ref"
+                  }
+                },
+                "id": 77,
+                "nodeType": "ExpressionStatement",
+                "src": "649:34:0"
+              }
+            ]
+          },
+          "id": 79,
+          "implemented": true,
+          "kind": "constructor",
+          "modifiers": [],
+          "name": "",
+          "nameLocation": "-1:-1:-1",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 35,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 30,
+                "mutability": "mutable",
+                "name": "_toyotaCount",
+                "nameLocation": "351:12:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 79,
+                "src": "343:20:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 29,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "343:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 32,
+                "mutability": "mutable",
+                "name": "_audiCount",
+                "nameLocation": "373:10:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 79,
+                "src": "365:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 31,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "365:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 34,
+                "mutability": "mutable",
+                "name": "_bmwCount",
+                "nameLocation": "393:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 79,
+                "src": "385:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 33,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "385:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "342:61:0"
+          },
+          "returnParameters":
+          {
+            "id": 36,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "404:0:0"
+          },
+          "scope": 133,
+          "src": "331:360:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 131,
+            "nodeType": "Block",
+            "src": "767:331:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "commonType":
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "id": 91,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression":
+                      {
+                        "expression":
+                        {
+                          "id": 88,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "786:3:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 89,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "786:10:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression":
+                      {
+                        "id": 90,
+                        "name": "owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3,
+                        "src": "800:5:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "src": "786:19:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    {
+                      "hexValue": "4f6e6c79206f776e65722063616e206164642063617220636f756e74",
+                      "id": 92,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "807:30:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_stringliteral_fde3e614ad6eb7defcfbde3a1e4cd0bb28359d68c7f1aac462504c22f2e7ab9c",
+                        "typeString": "literal_string \"Only owner can add car count\""
+                      },
+                      "value": "Only owner can add car count"
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      {
+                        "typeIdentifier": "t_stringliteral_fde3e614ad6eb7defcfbde3a1e4cd0bb28359d68c7f1aac462504c22f2e7ab9c",
+                        "typeString": "literal_string \"Only owner can add car count\""
+                      }
+                    ],
+                    "id": 87,
+                    "name": "require",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations":
+                    [
+                      -18,
+                      -18
+                    ],
+                    "referencedDeclaration": -18,
+                    "src": "778:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (bool,string memory) pure"
+                    }
+                  },
+                  "id": 93,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "778:60:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 94,
+                "nodeType": "ExpressionStatement",
+                "src": "778:60:0"
+              },
+              {
+                "condition":
+                {
+                  "commonType":
+                  {
+                    "typeIdentifier": "t_enum$_CarType_$22",
+                    "typeString": "enum CarShop.CarType"
+                  },
+                  "id": 98,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression":
+                  {
+                    "id": 95,
+                    "name": "_carType",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 82,
+                    "src": "852:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_enum$_CarType_$22",
+                      "typeString": "enum CarShop.CarType"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "==",
+                  "rightExpression":
+                  {
+                    "expression":
+                    {
+                      "id": 96,
+                      "name": "CarType",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22,
+                      "src": "864:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_enum$_CarType_$22_$",
+                        "typeString": "type(enum CarShop.CarType)"
+                      }
+                    },
+                    "id": 97,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberName": "Toyota",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 19,
+                    "src": "864:14:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_enum$_CarType_$22",
+                      "typeString": "enum CarShop.CarType"
+                    }
+                  },
+                  "src": "852:26:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "falseBody":
+                {
+                  "condition":
+                  {
+                    "commonType":
+                    {
+                      "typeIdentifier": "t_enum$_CarType_$22",
+                      "typeString": "enum CarShop.CarType"
+                    },
+                    "id": 109,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression":
+                    {
+                      "id": 106,
+                      "name": "_carType",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 82,
+                      "src": "938:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_enum$_CarType_$22",
+                        "typeString": "enum CarShop.CarType"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression":
+                    {
+                      "expression":
+                      {
+                        "id": 107,
+                        "name": "CarType",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 22,
+                        "src": "950:7:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_enum$_CarType_$22_$",
+                          "typeString": "type(enum CarShop.CarType)"
+                        }
+                      },
+                      "id": 108,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Audi",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 20,
+                      "src": "950:12:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_enum$_CarType_$22",
+                        "typeString": "enum CarShop.CarType"
+                      }
+                    },
+                    "src": "938:24:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody":
+                  {
+                    "condition":
+                    {
+                      "commonType":
+                      {
+                        "typeIdentifier": "t_enum$_CarType_$22",
+                        "typeString": "enum CarShop.CarType"
+                      },
+                      "id": 120,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression":
+                      {
+                        "id": 117,
+                        "name": "_carType",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 82,
+                        "src": "1020:8:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression":
+                      {
+                        "expression":
+                        {
+                          "id": 118,
+                          "name": "CarType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 22,
+                          "src": "1032:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_type$_t_enum$_CarType_$22_$",
+                            "typeString": "type(enum CarShop.CarType)"
+                          }
+                        },
+                        "id": 119,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberName": "Bmw",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 21,
+                        "src": "1032:11:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_enum$_CarType_$22",
+                          "typeString": "enum CarShop.CarType"
+                        }
+                      },
+                      "src": "1020:23:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "id": 128,
+                    "nodeType": "IfStatement",
+                    "src": "1017:74:0",
+                    "trueBody":
+                    {
+                      "id": 127,
+                      "nodeType": "Block",
+                      "src": "1045:46:0",
+                      "statements":
+                      [
+                        {
+                          "expression":
+                          {
+                            "id": 125,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftHandSide":
+                            {
+                              "expression":
+                              {
+                                "id": 121,
+                                "name": "bmw",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 18,
+                                "src": "1060:3:0",
+                                "typeDescriptions":
+                                {
+                                  "typeIdentifier": "t_struct$_Cars_$28_storage",
+                                  "typeString": "struct CarShop.Cars storage ref"
+                                }
+                              },
+                              "id": 123,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "memberName": "count",
+                              "nodeType": "MemberAccess",
+                              "referencedDeclaration": 27,
+                              "src": "1060:9:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "Assignment",
+                            "operator": "+=",
+                            "rightHandSide":
+                            {
+                              "id": 124,
+                              "name": "_count",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 84,
+                              "src": "1073:6:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "1060:19:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 126,
+                          "nodeType": "ExpressionStatement",
+                          "src": "1060:19:0"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 129,
+                  "nodeType": "IfStatement",
+                  "src": "935:156:0",
+                  "trueBody":
+                  {
+                    "id": 116,
+                    "nodeType": "Block",
+                    "src": "964:47:0",
+                    "statements":
+                    [
+                      {
+                        "expression":
+                        {
+                          "id": 114,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide":
+                          {
+                            "expression":
+                            {
+                              "id": 110,
+                              "name": "audi",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 15,
+                              "src": "979:4:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_struct$_Cars_$28_storage",
+                                "typeString": "struct CarShop.Cars storage ref"
+                              }
+                            },
+                            "id": 112,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "count",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 27,
+                            "src": "979:10:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "+=",
+                          "rightHandSide":
+                          {
+                            "id": 113,
+                            "name": "_count",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 84,
+                            "src": "993:6:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "979:20:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 115,
+                        "nodeType": "ExpressionStatement",
+                        "src": "979:20:0"
+                      }
+                    ]
+                  }
+                },
+                "id": 130,
+                "nodeType": "IfStatement",
+                "src": "849:242:0",
+                "trueBody":
+                {
+                  "id": 105,
+                  "nodeType": "Block",
+                  "src": "880:49:0",
+                  "statements":
+                  [
+                    {
+                      "expression":
+                      {
+                        "id": 103,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftHandSide":
+                        {
+                          "expression":
+                          {
+                            "id": 99,
+                            "name": "toyota",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 12,
+                            "src": "895:6:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_struct$_Cars_$28_storage",
+                              "typeString": "struct CarShop.Cars storage ref"
+                            }
+                          },
+                          "id": 101,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": true,
+                          "memberName": "count",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 27,
+                          "src": "895:12:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "Assignment",
+                        "operator": "+=",
+                        "rightHandSide":
+                        {
+                          "id": 102,
+                          "name": "_count",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 84,
+                          "src": "911:6:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "895:22:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 104,
+                      "nodeType": "ExpressionStatement",
+                      "src": "895:22:0"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "functionSelector": "89a1681a",
+          "id": 132,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addCarCount",
+          "nameLocation": "714:11:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 85,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 82,
+                "mutability": "mutable",
+                "name": "_carType",
+                "nameLocation": "734:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 132,
+                "src": "726:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_enum$_CarType_$22",
+                  "typeString": "enum CarShop.CarType"
+                },
+                "typeName":
+                {
+                  "id": 81,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 80,
+                    "name": "CarType",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 22,
+                    "src": "726:7:0"
+                  },
+                  "referencedDeclaration": 22,
+                  "src": "726:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_enum$_CarType_$22",
+                    "typeString": "enum CarShop.CarType"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 84,
+                "mutability": "mutable",
+                "name": "_count",
+                "nameLocation": "752:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 132,
+                "src": "744:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 83,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "744:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "725:34:0"
+          },
+          "returnParameters":
+          {
+            "id": 86,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "767:0:0"
+          },
+          "scope": 133,
+          "src": "705:393:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 134,
+      "src": "25:1076:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:1105:0"
+}

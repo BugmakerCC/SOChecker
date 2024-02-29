@@ -1,0 +1,635 @@
+{
+  "absolutePath": "output/output_358.sol",
+  "exportedSymbols":
+  {
+    "Cloth":
+    [
+      42
+    ]
+  },
+  "id": 43,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Cloth",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 42,
+      "linearizedBaseContracts":
+      [
+        42
+      ],
+      "name": "Cloth",
+      "nameLocation": "34:5:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "Cloth.Clothes",
+          "id": 6,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "name",
+              "nameLocation": "80:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "73:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "73:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "color",
+              "nameLocation": "102:5:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "95:12:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "95:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Clothes",
+          "nameLocation": "54:7:0",
+          "nodeType": "StructDefinition",
+          "scope": 42,
+          "src": "47:68:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "e1bf8c51",
+          "id": 11,
+          "mutability": "mutable",
+          "name": "clothes",
+          "nameLocation": "141:7:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 42,
+          "src": "123:25:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_Clothes_$6_storage_$5_storage",
+            "typeString": "struct Cloth.Clothes[5]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 8,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 7,
+                "name": "Clothes",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 6,
+                "src": "123:7:0"
+              },
+              "referencedDeclaration": 6,
+              "src": "123:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Clothes_$6_storage_ptr",
+                "typeString": "struct Cloth.Clothes"
+              }
+            },
+            "id": 10,
+            "length":
+            {
+              "hexValue": "35",
+              "id": 9,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "131:1:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_rational_5_by_1",
+                "typeString": "int_const 5"
+              },
+              "value": "5"
+            },
+            "nodeType": "ArrayTypeName",
+            "src": "123:10:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_Clothes_$6_storage_$5_storage_ptr",
+              "typeString": "struct Cloth.Clothes[5]"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 14,
+          "mutability": "mutable",
+          "name": "counter",
+          "nameLocation": "160:7:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 42,
+          "src": "155:16:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 12,
+            "name": "uint",
+            "nodeType": "ElementaryTypeName",
+            "src": "155:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "value":
+          {
+            "hexValue": "30",
+            "id": 13,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "number",
+            "lValueRequested": false,
+            "nodeType": "Literal",
+            "src": "170:1:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_rational_0_by_1",
+              "typeString": "int_const 0"
+            },
+            "value": "0"
+          },
+          "visibility": "internal"
+        },
+        {
+          "body":
+          {
+            "id": 40,
+            "nodeType": "Block",
+            "src": "252:165:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "commonType":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression":
+                      {
+                        "id": 22,
+                        "name": "counter",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "271:7:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "<",
+                      "rightExpression":
+                      {
+                        "hexValue": "35",
+                        "id": 23,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "281:1:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_rational_5_by_1",
+                          "typeString": "int_const 5"
+                        },
+                        "value": "5"
+                      },
+                      "src": "271:11:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    {
+                      "hexValue": "43616e277420616464206d6f726520636c6f746865732e204c696d6974206f662074686520617272617920726561636865642e",
+                      "id": 25,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "284:53:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_stringliteral_36d33b990d8968517f6d38216142bfde4f86068b628adf919a7f2c2820e37ea4",
+                        "typeString": "literal_string \"Can't add more clothes. Limit of the array reached.\""
+                      },
+                      "value": "Can't add more clothes. Limit of the array reached."
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      {
+                        "typeIdentifier": "t_stringliteral_36d33b990d8968517f6d38216142bfde4f86068b628adf919a7f2c2820e37ea4",
+                        "typeString": "literal_string \"Can't add more clothes. Limit of the array reached.\""
+                      }
+                    ],
+                    "id": 21,
+                    "name": "require",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations":
+                    [
+                      -18,
+                      -18
+                    ],
+                    "referencedDeclaration": -18,
+                    "src": "263:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (bool,string memory) pure"
+                    }
+                  },
+                  "id": 26,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "263:75:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 27,
+                "nodeType": "ExpressionStatement",
+                "src": "263:75:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 35,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "baseExpression":
+                    {
+                      "id": 28,
+                      "name": "clothes",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 11,
+                      "src": "349:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_Clothes_$6_storage_$5_storage",
+                        "typeString": "struct Cloth.Clothes storage ref[5] storage ref"
+                      }
+                    },
+                    "id": 30,
+                    "indexExpression":
+                    {
+                      "id": 29,
+                      "name": "counter",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "357:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "nodeType": "IndexAccess",
+                    "src": "349:16:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Clothes_$6_storage",
+                      "typeString": "struct Cloth.Clothes storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "arguments":
+                    [
+                      {
+                        "id": 32,
+                        "name": "_name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 16,
+                        "src": "376:5:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_string_calldata_ptr",
+                          "typeString": "string calldata"
+                        }
+                      },
+                      {
+                        "id": 33,
+                        "name": "_color",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18,
+                        "src": "382:6:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_string_calldata_ptr",
+                          "typeString": "string calldata"
+                        }
+                      }
+                    ],
+                    "expression":
+                    {
+                      "argumentTypes":
+                      [
+                        {
+                          "typeIdentifier": "t_string_calldata_ptr",
+                          "typeString": "string calldata"
+                        },
+                        {
+                          "typeIdentifier": "t_string_calldata_ptr",
+                          "typeString": "string calldata"
+                        }
+                      ],
+                      "id": 31,
+                      "name": "Clothes",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "368:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_type$_t_struct$_Clothes_$6_storage_ptr_$",
+                        "typeString": "type(struct Cloth.Clothes storage pointer)"
+                      }
+                    },
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "368:21:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Clothes_$6_memory_ptr",
+                      "typeString": "struct Cloth.Clothes memory"
+                    }
+                  },
+                  "src": "349:40:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Clothes_$6_storage",
+                    "typeString": "struct Cloth.Clothes storage ref"
+                  }
+                },
+                "id": 36,
+                "nodeType": "ExpressionStatement",
+                "src": "349:40:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 38,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "UnaryOperation",
+                  "operator": "++",
+                  "prefix": false,
+                  "src": "400:9:0",
+                  "subExpression":
+                  {
+                    "id": 37,
+                    "name": "counter",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 14,
+                    "src": "400:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 39,
+                "nodeType": "ExpressionStatement",
+                "src": "400:9:0"
+              }
+            ]
+          },
+          "functionSelector": "e2291c3b",
+          "id": 41,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addCloth",
+          "nameLocation": "189:8:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 19,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 16,
+                "mutability": "mutable",
+                "name": "_name",
+                "nameLocation": "214:5:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 41,
+                "src": "198:21:0",
+                "stateVariable": false,
+                "storageLocation": "calldata",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_calldata_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 15,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "198:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18,
+                "mutability": "mutable",
+                "name": "_color",
+                "nameLocation": "237:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 41,
+                "src": "221:22:0",
+                "stateVariable": false,
+                "storageLocation": "calldata",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_calldata_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 17,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "221:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "197:47:0"
+          },
+          "returnParameters":
+          {
+            "id": 20,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "252:0:0"
+          },
+          "scope": 42,
+          "src": "180:237:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 43,
+      "src": "25:395:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:422:0"
+}

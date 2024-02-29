@@ -1,0 +1,725 @@
+{
+  "absolutePath": "output/output_882.sol",
+  "exportedSymbols":
+  {
+    "WRequestContract":
+    [
+      50
+    ]
+  },
+  "id": 51,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "WRequestContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 50,
+      "linearizedBaseContracts":
+      [
+        50
+      ],
+      "name": "WRequestContract",
+      "nameLocation": "34:16:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "WRequestContract.WRequest",
+          "id": 8,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "id",
+              "nameLocation": "90:2:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 8,
+              "src": "85:7:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "85:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "description",
+              "nameLocation": "110:11:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 8,
+              "src": "103:18:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "103:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "completed",
+              "nameLocation": "137:9:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 8,
+              "src": "132:14:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "132:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "WRequest",
+          "nameLocation": "65:8:0",
+          "nodeType": "StructDefinition",
+          "scope": 50,
+          "src": "58:96:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "b9652989",
+          "id": 12,
+          "mutability": "mutable",
+          "name": "WRequestList",
+          "nameLocation": "180:12:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 50,
+          "src": "162:30:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_WRequest_$8_storage_$dyn_storage",
+            "typeString": "struct WRequestContract.WRequest[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 10,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 9,
+                "name": "WRequest",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 8,
+                "src": "162:8:0"
+              },
+              "referencedDeclaration": 8,
+              "src": "162:8:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_WRequest_$8_storage_ptr",
+                "typeString": "struct WRequestContract.WRequest"
+              }
+            },
+            "id": 11,
+            "nodeType": "ArrayTypeName",
+            "src": "162:10:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_WRequest_$8_storage_$dyn_storage_ptr",
+              "typeString": "struct WRequestContract.WRequest[]"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 35,
+            "nodeType": "Block",
+            "src": "222:180:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments":
+                      [
+                        {
+                          "hexValue": "31",
+                          "id": 19,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "299:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        {
+                          "hexValue": "4669727374205752657175657374",
+                          "id": 20,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "302:16:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_stringliteral_e3c540a59de444c373d7cb4dc58cb8b7cbdfd68ffca8c1ff0d1c1cb997202b1d",
+                            "typeString": "literal_string \"First WRequest\""
+                          },
+                          "value": "First WRequest"
+                        },
+                        {
+                          "hexValue": "66616c7365",
+                          "id": 21,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "320:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "false"
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          {
+                            "typeIdentifier": "t_stringliteral_e3c540a59de444c373d7cb4dc58cb8b7cbdfd68ffca8c1ff0d1c1cb997202b1d",
+                            "typeString": "literal_string \"First WRequest\""
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        ],
+                        "id": 18,
+                        "name": "WRequest",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "290:8:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_struct$_WRequest_$8_storage_ptr_$",
+                          "typeString": "type(struct WRequestContract.WRequest storage pointer)"
+                        }
+                      },
+                      "id": 22,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "290:36:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_WRequest_$8_memory_ptr",
+                        "typeString": "struct WRequestContract.WRequest memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_WRequest_$8_memory_ptr",
+                        "typeString": "struct WRequestContract.WRequest memory"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 15,
+                      "name": "WRequestList",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12,
+                      "src": "272:12:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_WRequest_$8_storage_$dyn_storage",
+                        "typeString": "struct WRequestContract.WRequest storage ref[] storage ref"
+                      }
+                    },
+                    "id": 17,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "272:17:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_WRequest_$8_storage_$dyn_storage_ptr_$_t_struct$_WRequest_$8_storage_$returns$__$bound_to$_t_array$_t_struct$_WRequest_$8_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct WRequestContract.WRequest storage ref[] storage pointer,struct WRequestContract.WRequest storage ref)"
+                    }
+                  },
+                  "id": 23,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "272:55:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 24,
+                "nodeType": "ExpressionStatement",
+                "src": "272:55:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments":
+                      [
+                        {
+                          "hexValue": "32",
+                          "id": 29,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "365:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_2_by_1",
+                            "typeString": "int_const 2"
+                          },
+                          "value": "2"
+                        },
+                        {
+                          "hexValue": "5365636f6e64205752657175657374",
+                          "id": 30,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "368:17:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_stringliteral_a6128b7f3f375511a2b52c9bbf677fc23c751cfea4b95462ad6f48f30e34dc26",
+                            "typeString": "literal_string \"Second WRequest\""
+                          },
+                          "value": "Second WRequest"
+                        },
+                        {
+                          "hexValue": "66616c7365",
+                          "id": 31,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "387:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "false"
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_rational_2_by_1",
+                            "typeString": "int_const 2"
+                          },
+                          {
+                            "typeIdentifier": "t_stringliteral_a6128b7f3f375511a2b52c9bbf677fc23c751cfea4b95462ad6f48f30e34dc26",
+                            "typeString": "literal_string \"Second WRequest\""
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        ],
+                        "id": 28,
+                        "name": "WRequest",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "356:8:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_struct$_WRequest_$8_storage_ptr_$",
+                          "typeString": "type(struct WRequestContract.WRequest storage pointer)"
+                        }
+                      },
+                      "id": 32,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "356:37:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_WRequest_$8_memory_ptr",
+                        "typeString": "struct WRequestContract.WRequest memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_WRequest_$8_memory_ptr",
+                        "typeString": "struct WRequestContract.WRequest memory"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 25,
+                      "name": "WRequestList",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12,
+                      "src": "338:12:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_WRequest_$8_storage_$dyn_storage",
+                        "typeString": "struct WRequestContract.WRequest storage ref[] storage ref"
+                      }
+                    },
+                    "id": 27,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "338:17:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_WRequest_$8_storage_$dyn_storage_ptr_$_t_struct$_WRequest_$8_storage_$returns$__$bound_to$_t_array$_t_struct$_WRequest_$8_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct WRequestContract.WRequest storage ref[] storage pointer,struct WRequestContract.WRequest storage ref)"
+                    }
+                  },
+                  "id": 33,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "338:56:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 34,
+                "nodeType": "ExpressionStatement",
+                "src": "338:56:0"
+              }
+            ]
+          },
+          "id": 36,
+          "implemented": true,
+          "kind": "constructor",
+          "modifiers": [],
+          "name": "",
+          "nameLocation": "-1:-1:-1",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 13,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "212:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 14,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "222:0:0"
+          },
+          "scope": 50,
+          "src": "201:201:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 48,
+            "nodeType": "Block",
+            "src": "481:46:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "baseExpression":
+                  {
+                    "id": 44,
+                    "name": "WRequestList",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 12,
+                    "src": "499:12:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_struct$_WRequest_$8_storage_$dyn_storage",
+                      "typeString": "struct WRequestContract.WRequest storage ref[] storage ref"
+                    }
+                  },
+                  "id": 46,
+                  "indexExpression":
+                  {
+                    "id": 45,
+                    "name": "_index",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 38,
+                    "src": "512:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "499:20:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_WRequest_$8_storage",
+                    "typeString": "struct WRequestContract.WRequest storage ref"
+                  }
+                },
+                "functionReturnParameters": 43,
+                "id": 47,
+                "nodeType": "Return",
+                "src": "492:27:0"
+              }
+            ]
+          },
+          "functionSelector": "73180ebf",
+          "id": 49,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getWRequest",
+          "nameLocation": "419:11:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 39,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 38,
+                "mutability": "mutable",
+                "name": "_index",
+                "nameLocation": "436:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 49,
+                "src": "431:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 37,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "431:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "430:13:0"
+          },
+          "returnParameters":
+          {
+            "id": 43,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 42,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 49,
+                "src": "464:15:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_struct$_WRequest_$8_memory_ptr",
+                  "typeString": "struct WRequestContract.WRequest"
+                },
+                "typeName":
+                {
+                  "id": 41,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 40,
+                    "name": "WRequest",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 8,
+                    "src": "464:8:0"
+                  },
+                  "referencedDeclaration": 8,
+                  "src": "464:8:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_WRequest_$8_storage_ptr",
+                    "typeString": "struct WRequestContract.WRequest"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "463:17:0"
+          },
+          "scope": 50,
+          "src": "410:117:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 51,
+      "src": "25:505:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:534:0"
+}

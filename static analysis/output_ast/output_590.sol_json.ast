@@ -1,0 +1,169 @@
+{
+  "absolutePath": "output/output_590.sol",
+  "exportedSymbols":
+  {
+    "Payment":
+    [
+      13
+    ]
+  },
+  "id": 14,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Payment",
+      "contractDependencies": [],
+      "contractKind": "interface",
+      "fullyImplemented": false,
+      "id": 13,
+      "linearizedBaseContracts":
+      [
+        13
+      ],
+      "name": "Payment",
+      "nameLocation": "35:7:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "functionSelector": "a2e3a561",
+          "id": 4,
+          "implemented": false,
+          "kind": "function",
+          "modifiers": [],
+          "name": "setYearlySalary",
+          "nameLocation": "59:15:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 2,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "74:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 3,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "93:0:0"
+          },
+          "scope": 13,
+          "src": "50:44:0",
+          "stateMutability": "nonpayable",
+          "virtual": true,
+          "visibility": "external"
+        },
+        {
+          "functionSelector": "aa9bd81c",
+          "id": 7,
+          "implemented": false,
+          "kind": "function",
+          "modifiers": [],
+          "name": "setMonthlySalary",
+          "nameLocation": "111:16:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 5,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "127:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 6,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "146:0:0"
+          },
+          "scope": 13,
+          "src": "102:45:0",
+          "stateMutability": "nonpayable",
+          "virtual": true,
+          "visibility": "external"
+        },
+        {
+          "functionSelector": "127ed074",
+          "id": 12,
+          "implemented": false,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getMonthlySalary",
+          "nameLocation": "164:16:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 8,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "180:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 11,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 10,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 12,
+                "src": "206:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 9,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "206:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "205:9:0"
+          },
+          "scope": 13,
+          "src": "155:60:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 14,
+      "src": "25:193:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:222:0"
+}

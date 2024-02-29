@@ -1,0 +1,248 @@
+{
+  "absolutePath": "output/output_730.sol",
+  "exportedSymbols":
+  {
+    "MyContract":
+    [
+      17
+    ]
+  },
+  "id": 18,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "MyContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 17,
+      "linearizedBaseContracts":
+      [
+        17
+      ],
+      "name": "MyContract",
+      "nameLocation": "34:10:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "functionSelector": "bd85f55f",
+          "id": 3,
+          "mutability": "mutable",
+          "name": "svg",
+          "nameLocation": "66:3:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 17,
+          "src": "52:17:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_string_storage",
+            "typeString": "string"
+          },
+          "typeName":
+          {
+            "id": 2,
+            "name": "string",
+            "nodeType": "ElementaryTypeName",
+            "src": "52:6:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 12,
+            "nodeType": "Block",
+            "src": "124:25:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 10,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 8,
+                    "name": "svg",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3,
+                    "src": "133:3:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 9,
+                    "name": "_svg",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 16,
+                    "src": "139:4:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "src": "133:10:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage",
+                    "typeString": "string storage ref"
+                  }
+                },
+                "id": 11,
+                "nodeType": "ExpressionStatement",
+                "src": "133:10:0"
+              }
+            ]
+          },
+          "functionSelector": "0de788ee",
+          "id": 13,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "setSvg",
+          "nameLocation": "86:6:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 6,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 5,
+                "mutability": "mutable",
+                "name": "svg_",
+                "nameLocation": "109:4:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "93:20:0",
+                "stateVariable": false,
+                "storageLocation": "calldata",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_calldata_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "93:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "92:22:0"
+          },
+          "returnParameters":
+          {
+            "id": 7,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "124:0:0"
+          },
+          "scope": 17,
+          "src": "77:72:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "external"
+        },
+        {
+          "constant": true,
+          "id": 16,
+          "mutability": "constant",
+          "name": "_svg",
+          "nameLocation": "183:4:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 17,
+          "src": "159:61:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_string_memory_ptr",
+            "typeString": "string"
+          },
+          "typeName":
+          {
+            "id": 14,
+            "name": "string",
+            "nodeType": "ElementaryTypeName",
+            "src": "159:6:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            }
+          },
+          "value":
+          {
+            "hexValue": "68747470733a2f2f6578616d706c652e636f6d2f69636f6e2e737667",
+            "id": 15,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "string",
+            "lValueRequested": false,
+            "nodeType": "Literal",
+            "src": "190:30:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_stringliteral_da147face86b438edf8adeb8e724c0efc87a1ef2f29715f50e4b67f497fdfee5",
+              "typeString": "literal_string \"https://example.com/icon.svg\""
+            },
+            "value": "https://example.com/icon.svg"
+          },
+          "visibility": "private"
+        }
+      ],
+      "scope": 18,
+      "src": "25:201:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:228:0"
+}

@@ -1,0 +1,432 @@
+{
+  "absolutePath": "output/output_794.sol",
+  "exportedSymbols":
+  {
+    "Lib_DecrementAnimals":
+    [
+      34
+    ]
+  },
+  "id": 35,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Lib_DecrementAnimals",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 34,
+      "linearizedBaseContracts":
+      [
+        34
+      ],
+      "name": "Lib_DecrementAnimals",
+      "nameLocation": "34:20:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "Lib_DecrementAnimals.Animal",
+          "id": 4,
+          "members":
+          [
+            {
+              "id": 2,
+              "name": "CAT",
+              "nameLocation": "75:3:0",
+              "nodeType": "EnumValue",
+              "src": "75:3:0"
+            },
+            {
+              "id": 3,
+              "name": "DOG",
+              "nameLocation": "80:3:0",
+              "nodeType": "EnumValue",
+              "src": "80:3:0"
+            }
+          ],
+          "name": "Animal",
+          "nameLocation": "67:6:0",
+          "nodeType": "EnumDefinition",
+          "src": "62:22:0"
+        },
+        {
+          "constant": false,
+          "id": 9,
+          "mutability": "mutable",
+          "name": "maps",
+          "nameLocation": "114:4:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 34,
+          "src": "90:28:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_enum$_Animal_$4_$_t_int8_$",
+            "typeString": "mapping(enum Lib_DecrementAnimals.Animal => int8)"
+          },
+          "typeName":
+          {
+            "id": 8,
+            "keyType":
+            {
+              "id": 6,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 5,
+                "name": "Animal",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 4,
+                "src": "98:6:0"
+              },
+              "referencedDeclaration": 4,
+              "src": "98:6:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_enum$_Animal_$4",
+                "typeString": "enum Lib_DecrementAnimals.Animal"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "90:23:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_enum$_Animal_$4_$_t_int8_$",
+              "typeString": "mapping(enum Lib_DecrementAnimals.Animal => int8)"
+            },
+            "valueType":
+            {
+              "id": 7,
+              "name": "int8",
+              "nodeType": "ElementaryTypeName",
+              "src": "108:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_int8",
+                "typeString": "int8"
+              }
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "body":
+          {
+            "id": 19,
+            "nodeType": "Block",
+            "src": "141:44:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 17,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "baseExpression":
+                    {
+                      "id": 12,
+                      "name": "maps",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9,
+                      "src": "156:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_mapping$_t_enum$_Animal_$4_$_t_int8_$",
+                        "typeString": "mapping(enum Lib_DecrementAnimals.Animal => int8)"
+                      }
+                    },
+                    "id": 15,
+                    "indexExpression":
+                    {
+                      "expression":
+                      {
+                        "id": 13,
+                        "name": "Animal",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4,
+                        "src": "161:6:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_enum$_Animal_$4_$",
+                          "typeString": "type(enum Lib_DecrementAnimals.Animal)"
+                        }
+                      },
+                      "id": 14,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "CAT",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2,
+                      "src": "161:10:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_enum$_Animal_$4",
+                        "typeString": "enum Lib_DecrementAnimals.Animal"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "nodeType": "IndexAccess",
+                    "src": "156:16:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "hexValue": "3130",
+                    "id": 16,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "175:2:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_rational_10_by_1",
+                      "typeString": "int_const 10"
+                    },
+                    "value": "10"
+                  },
+                  "src": "156:21:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  }
+                },
+                "id": 18,
+                "nodeType": "ExpressionStatement",
+                "src": "156:21:0"
+              }
+            ]
+          },
+          "id": 20,
+          "implemented": true,
+          "kind": "constructor",
+          "modifiers": [],
+          "name": "",
+          "nameLocation": "-1:-1:-1",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 10,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "138:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 11,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "141:0:0"
+          },
+          "scope": 34,
+          "src": "127:58:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 32,
+            "nodeType": "Block",
+            "src": "241:41:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 30,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "baseExpression":
+                    {
+                      "id": 26,
+                      "name": "maps",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9,
+                      "src": "256:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_mapping$_t_enum$_Animal_$4_$_t_int8_$",
+                        "typeString": "mapping(enum Lib_DecrementAnimals.Animal => int8)"
+                      }
+                    },
+                    "id": 28,
+                    "indexExpression":
+                    {
+                      "id": 27,
+                      "name": "_animal",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 23,
+                      "src": "261:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_enum$_Animal_$4",
+                        "typeString": "enum Lib_DecrementAnimals.Animal"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "nodeType": "IndexAccess",
+                    "src": "256:13:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_int8",
+                      "typeString": "int8"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "-=",
+                  "rightHandSide":
+                  {
+                    "hexValue": "31",
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "273:1:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_rational_1_by_1",
+                      "typeString": "int_const 1"
+                    },
+                    "value": "1"
+                  },
+                  "src": "256:18:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int8",
+                    "typeString": "int8"
+                  }
+                },
+                "id": 31,
+                "nodeType": "ExpressionStatement",
+                "src": "256:18:0"
+              }
+            ]
+          },
+          "functionSelector": "de5147a3",
+          "id": 33,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "decrementAnimal",
+          "nameLocation": "202:15:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 24,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 23,
+                "mutability": "mutable",
+                "name": "_animal",
+                "nameLocation": "225:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 33,
+                "src": "218:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_enum$_Animal_$4",
+                  "typeString": "enum Lib_DecrementAnimals.Animal"
+                },
+                "typeName":
+                {
+                  "id": 22,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 21,
+                    "name": "Animal",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 4,
+                    "src": "218:6:0"
+                  },
+                  "referencedDeclaration": 4,
+                  "src": "218:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_enum$_Animal_$4",
+                    "typeString": "enum Lib_DecrementAnimals.Animal"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "217:16:0"
+          },
+          "returnParameters":
+          {
+            "id": 25,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "241:0:0"
+          },
+          "scope": 34,
+          "src": "193:89:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 35,
+      "src": "25:260:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:289:0"
+}

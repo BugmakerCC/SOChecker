@@ -1,0 +1,615 @@
+{
+  "absolutePath": "output/output_493.sol",
+  "exportedSymbols":
+  {
+    "RecordsManager":
+    [
+      43
+    ]
+  },
+  "id": 44,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "RecordsManager",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 43,
+      "linearizedBaseContracts":
+      [
+        43
+      ],
+      "name": "RecordsManager",
+      "nameLocation": "34:14:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "RecordsManager.Records",
+          "id": 14,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "patientAddress",
+              "nameLocation": "92:14:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "84:22:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "84:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "status",
+              "nameLocation": "118:6:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "113:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "113:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "hospital",
+              "nameLocation": "139:8:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "131:16:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "131:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 9,
+              "mutability": "mutable",
+              "name": "admissionDate",
+              "nameLocation": "159:13:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "154:18:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 8,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "154:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 11,
+              "mutability": "mutable",
+              "name": "dischargeDate",
+              "nameLocation": "184:13:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "179:18:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 10,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "179:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 13,
+              "mutability": "mutable",
+              "name": "visitReason",
+              "nameLocation": "209:11:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "204:16:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 12,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "204:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Records",
+          "nameLocation": "65:7:0",
+          "nodeType": "StructDefinition",
+          "scope": 43,
+          "src": "58:168:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 18,
+          "mutability": "mutable",
+          "name": "records",
+          "nameLocation": "254:7:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "235:26:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_Records_$14_storage_$dyn_storage",
+            "typeString": "struct RecordsManager.Records[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 16,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 15,
+                "name": "Records",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 14,
+                "src": "235:7:0"
+              },
+              "referencedDeclaration": 14,
+              "src": "235:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Records_$14_storage_ptr",
+                "typeString": "struct RecordsManager.Records"
+              }
+            },
+            "id": 17,
+            "nodeType": "ArrayTypeName",
+            "src": "235:9:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_Records_$14_storage_$dyn_storage_ptr",
+              "typeString": "struct RecordsManager.Records[]"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 22,
+          "mutability": "mutable",
+          "name": "record",
+          "nameLocation": "287:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "268:25:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_Records_$14_storage_$dyn_storage",
+            "typeString": "struct RecordsManager.Records[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 20,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 19,
+                "name": "Records",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 14,
+                "src": "268:7:0"
+              },
+              "referencedDeclaration": 14,
+              "src": "268:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Records_$14_storage_ptr",
+                "typeString": "struct RecordsManager.Records"
+              }
+            },
+            "id": 21,
+            "nodeType": "ArrayTypeName",
+            "src": "268:9:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_Records_$14_storage_$dyn_storage_ptr",
+              "typeString": "struct RecordsManager.Records[]"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 26,
+          "mutability": "mutable",
+          "name": "newrecord",
+          "nameLocation": "317:9:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "298:28:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_Records_$14_storage_$dyn_storage",
+            "typeString": "struct RecordsManager.Records[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 24,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 23,
+                "name": "Records",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 14,
+                "src": "298:7:0"
+              },
+              "referencedDeclaration": 14,
+              "src": "298:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Records_$14_storage_ptr",
+                "typeString": "struct RecordsManager.Records"
+              }
+            },
+            "id": 25,
+            "nodeType": "ArrayTypeName",
+            "src": "298:9:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_Records_$14_storage_$dyn_storage_ptr",
+              "typeString": "struct RecordsManager.Records[]"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 29,
+          "mutability": "mutable",
+          "name": "recordids",
+          "nameLocation": "360:9:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "341:28:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_address_$dyn_storage",
+            "typeString": "address[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 27,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "341:7:0",
+              "stateMutability": "nonpayable",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "id": 28,
+            "nodeType": "ArrayTypeName",
+            "src": "341:9:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+              "typeString": "address[]"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 31,
+          "mutability": "mutable",
+          "name": "recordID",
+          "nameLocation": "387:8:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "374:21:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_int256",
+            "typeString": "int256"
+          },
+          "typeName":
+          {
+            "id": 30,
+            "name": "int",
+            "nodeType": "ElementaryTypeName",
+            "src": "374:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 34,
+          "mutability": "mutable",
+          "name": "_pause",
+          "nameLocation": "414:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "400:27:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_bool",
+            "typeString": "bool"
+          },
+          "typeName":
+          {
+            "id": 32,
+            "name": "bool",
+            "nodeType": "ElementaryTypeName",
+            "src": "400:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            }
+          },
+          "value":
+          {
+            "hexValue": "74727565",
+            "id": 33,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "bool",
+            "lValueRequested": false,
+            "nodeType": "Literal",
+            "src": "423:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "value": "true"
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "functionSelector": "900407bc",
+          "id": 36,
+          "mutability": "mutable",
+          "name": "recordCount",
+          "nameLocation": "444:11:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "432:23:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 35,
+            "name": "uint",
+            "nodeType": "ElementaryTypeName",
+            "src": "432:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 42,
+          "mutability": "mutable",
+          "name": "recordById",
+          "nameLocation": "511:10:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 43,
+          "src": "472:49:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Records_$14_storage_$dyn_storage_$",
+            "typeString": "mapping(address => struct RecordsManager.Records[])"
+          },
+          "typeName":
+          {
+            "id": 41,
+            "keyType":
+            {
+              "id": 37,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "480:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "472:29:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_Records_$14_storage_$dyn_storage_$",
+              "typeString": "mapping(address => struct RecordsManager.Records[])"
+            },
+            "valueType":
+            {
+              "baseType":
+              {
+                "id": 39,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode":
+                {
+                  "id": 38,
+                  "name": "Records",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 14,
+                  "src": "491:7:0"
+                },
+                "referencedDeclaration": 14,
+                "src": "491:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_struct$_Records_$14_storage_ptr",
+                  "typeString": "struct RecordsManager.Records"
+                }
+              },
+              "id": 40,
+              "nodeType": "ArrayTypeName",
+              "src": "491:9:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_array$_t_struct$_Records_$14_storage_$dyn_storage_ptr",
+                "typeString": "struct RecordsManager.Records[]"
+              }
+            }
+          },
+          "visibility": "internal"
+        }
+      ],
+      "scope": 44,
+      "src": "25:500:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:529:0"
+}

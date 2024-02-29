@@ -1,0 +1,349 @@
+{
+  "absolutePath": "./output/output_145.sol",
+  "exportedSymbols":
+  {
+    "MyContract":
+    [
+      23
+    ],
+    "UniswapV2Pair":
+    [
+      2
+    ]
+  },
+  "id": 24,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:21:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 2,
+      "linearizedBaseContracts":
+      [
+        2
+      ],
+      "name": "UniswapV2Pair",
+      "nodeType": "ContractDefinition",
+      "nodes": [],
+      "scope": 24,
+      "src": "25:27:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "contractDependencies":
+      [
+        2
+      ],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 23,
+      "linearizedBaseContracts":
+      [
+        23
+      ],
+      "name": "MyContract",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 21,
+            "nodeType": "Block",
+            "src": "114:190:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  6
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 6,
+                    "mutability": "mutable",
+                    "name": "salt",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 21,
+                    "src": "125:12:0",
+                    "stateVariable": false,
+                    "storageLocation": "default",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    },
+                    "typeName":
+                    {
+                      "id": 5,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "125:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 8,
+                "initialValue":
+                {
+                  "hexValue": "307831323334353637383930313233343536373839303132333435363738393031323334353637383930313233343536373839303132333435363738393031323334",
+                  "id": 7,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "140:66:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_rational_8234104122419153896766082834368325185836758793849283143825308940974890684980_by_1",
+                    "typeString": "int_const 8234...(68 digits omitted)...4980"
+                  },
+                  "value": "0x1234567890123456789012345678901234567890123456789012345678901234"
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "125:81:0"
+              },
+              {
+                "assignments":
+                [
+                  10
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 10,
+                    "mutability": "mutable",
+                    "name": "pair",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 21,
+                    "src": "217:12:0",
+                    "stateVariable": false,
+                    "storageLocation": "default",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "typeName":
+                    {
+                      "id": 9,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "217:7:0",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 20,
+                "initialValue":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments": [],
+                      "expression":
+                      {
+                        "argumentTypes": [],
+                        "expression":
+                        {
+                          "argumentTypes": [],
+                          "id": 15,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "NewExpression",
+                          "src": "254:17:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_UniswapV2Pair_$2_$",
+                            "typeString": "function () returns (contract UniswapV2Pair)"
+                          },
+                          "typeName":
+                          {
+                            "id": 14,
+                            "nodeType": "UserDefinedTypeName",
+                            "pathNode":
+                            {
+                              "id": 13,
+                              "name": "UniswapV2Pair",
+                              "nodeType": "IdentifierPath",
+                              "referencedDeclaration": 2,
+                              "src": "258:13:0"
+                            },
+                            "referencedDeclaration": 2,
+                            "src": "258:13:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_contract$_UniswapV2Pair_$2",
+                              "typeString": "contract UniswapV2Pair"
+                            }
+                          }
+                        },
+                        "id": 17,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          "salt"
+                        ],
+                        "nodeType": "FunctionCallOptions",
+                        "options":
+                        [
+                          {
+                            "id": 16,
+                            "name": "salt",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 6,
+                            "src": "278:4:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          }
+                        ],
+                        "src": "254:29:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_UniswapV2Pair_$2_$salt",
+                          "typeString": "function () returns (contract UniswapV2Pair)"
+                        }
+                      },
+                      "id": 18,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "254:31:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_contract$_UniswapV2Pair_$2",
+                        "typeString": "contract UniswapV2Pair"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_contract$_UniswapV2Pair_$2",
+                        "typeString": "contract UniswapV2Pair"
+                      }
+                    ],
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "nodeType": "ElementaryTypeNameExpression",
+                    "src": "232:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_type$_t_address_$",
+                      "typeString": "type(address)"
+                    },
+                    "typeName":
+                    {
+                      "id": 11,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "232:7:0",
+                      "typeDescriptions": {}
+                    }
+                  },
+                  "id": 19,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "typeConversion",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "232:64:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "217:79:0"
+              }
+            ]
+          },
+          "functionSelector": "9e78fb4f",
+          "id": 22,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "createPair",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 3,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "102:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 4,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "114:0:0"
+          },
+          "scope": 23,
+          "src": "83:221:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 24,
+      "src": "56:251:0"
+    }
+  ],
+  "src": "0:311:0"
+}

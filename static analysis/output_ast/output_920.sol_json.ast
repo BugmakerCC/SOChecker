@@ -1,0 +1,111 @@
+{
+  "absolutePath": "output/output_920.sol",
+  "exportedSymbols":
+  {
+    "UUPSUpgradeable":
+    [
+      7
+    ]
+  },
+  "id": 8,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": true,
+      "baseContracts": [],
+      "canonicalName": "UUPSUpgradeable",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": false,
+      "id": 7,
+      "linearizedBaseContracts":
+      [
+        7
+      ],
+      "name": "UUPSUpgradeable",
+      "nameLocation": "45:15:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "id": 6,
+          "implemented": false,
+          "kind": "function",
+          "modifiers": [],
+          "name": "_upgradeTo",
+          "nameLocation": "79:10:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 4,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "target",
+                "nameLocation": "98:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "90:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName":
+                {
+                  "id": 2,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "90:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "89:16:0"
+          },
+          "returnParameters":
+          {
+            "id": 5,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "122:0:0"
+          },
+          "scope": 7,
+          "src": "70:53:0",
+          "stateMutability": "nonpayable",
+          "virtual": true,
+          "visibility": "internal"
+        }
+      ],
+      "scope": 8,
+      "src": "27:101:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:132:0"
+}

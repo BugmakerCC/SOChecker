@@ -1,0 +1,761 @@
+{
+	"absolutePath" : "./output\\output_838.sol",
+	"exportedSymbols" : 
+	{
+		"UserStructs" : 
+		[
+			57
+		]
+	},
+	"id" : 58,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"^",
+				"0.4",
+				".25"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:24:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 57,
+			"linearizedBaseContracts" : 
+			[
+				57
+			],
+			"name" : "UserStructs",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"constant" : false,
+					"id" : 5,
+					"name" : "userAddressToStruct",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 57,
+					"src" : "60:51:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_mapping$_t_address_$_t_struct$_UserStruct_$14_storage_$",
+						"typeString" : "mapping(address => struct UserStructs.UserStruct)"
+					},
+					"typeName" : 
+					{
+						"id" : 4,
+						"keyType" : 
+						{
+							"id" : 2,
+							"name" : "address",
+							"nodeType" : "ElementaryTypeName",
+							"src" : "69:7:0",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_address",
+								"typeString" : "address"
+							}
+						},
+						"nodeType" : "Mapping",
+						"src" : "60:31:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_mapping$_t_address_$_t_struct$_UserStruct_$14_storage_$",
+							"typeString" : "mapping(address => struct UserStructs.UserStruct)"
+						},
+						"valueType" : 
+						{
+							"contractScope" : null,
+							"id" : 3,
+							"name" : "UserStruct",
+							"nodeType" : "UserDefinedTypeName",
+							"referencedDeclaration" : 14,
+							"src" : "80:10:0",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+								"typeString" : "struct UserStructs.UserStruct"
+							}
+						}
+					},
+					"value" : null,
+					"visibility" : "internal"
+				},
+				{
+					"canonicalName" : "UserStructs.UserStruct",
+					"id" : 14,
+					"members" : 
+					[
+						{
+							"constant" : false,
+							"id" : 7,
+							"name" : "contractAddress",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 14,
+							"src" : "153:23:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_address",
+								"typeString" : "address"
+							},
+							"typeName" : 
+							{
+								"id" : 6,
+								"name" : "address",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "153:7:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_address",
+									"typeString" : "address"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 9,
+							"name" : "name",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 14,
+							"src" : "187:11:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_string_storage_ptr",
+								"typeString" : "string"
+							},
+							"typeName" : 
+							{
+								"id" : 8,
+								"name" : "string",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "187:6:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_string_storage_ptr",
+									"typeString" : "string"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 11,
+							"name" : "symbol",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 14,
+							"src" : "209:13:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_string_storage_ptr",
+								"typeString" : "string"
+							},
+							"typeName" : 
+							{
+								"id" : 10,
+								"name" : "string",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "209:6:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_string_storage_ptr",
+									"typeString" : "string"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 13,
+							"name" : "decimals",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 14,
+							"src" : "233:16:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_uint256",
+								"typeString" : "uint256"
+							},
+							"typeName" : 
+							{
+								"id" : 12,
+								"name" : "uint256",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "233:7:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_uint256",
+									"typeString" : "uint256"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						}
+					],
+					"name" : "UserStruct",
+					"nodeType" : "StructDefinition",
+					"scope" : 57,
+					"src" : "124:133:0",
+					"visibility" : "public"
+				},
+				{
+					"body" : 
+					{
+						"id" : 55,
+						"nodeType" : "Block",
+						"src" : "279:317:0",
+						"statements" : 
+						[
+							{
+								"assignments" : 
+								[
+									18
+								],
+								"declarations" : 
+								[
+									{
+										"constant" : false,
+										"id" : 18,
+										"name" : "contractAddress",
+										"nodeType" : "VariableDeclaration",
+										"scope" : 56,
+										"src" : "290:23:0",
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										},
+										"typeName" : 
+										{
+											"id" : 17,
+											"name" : "address",
+											"nodeType" : "ElementaryTypeName",
+											"src" : "290:7:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_address",
+												"typeString" : "address"
+											}
+										},
+										"value" : null,
+										"visibility" : "internal"
+									}
+								],
+								"id" : 21,
+								"initialValue" : 
+								{
+									"argumentTypes" : null,
+									"expression" : 
+									{
+										"argumentTypes" : null,
+										"id" : 19,
+										"name" : "msg",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 72,
+										"src" : "316:3:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_magic_message",
+											"typeString" : "msg"
+										}
+									},
+									"id" : 20,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"memberName" : "sender",
+									"nodeType" : "MemberAccess",
+									"referencedDeclaration" : null,
+									"src" : "316:10:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_address",
+										"typeString" : "address"
+									}
+								},
+								"nodeType" : "VariableDeclarationStatement",
+								"src" : "290:36:0"
+							},
+							{
+								"assignments" : [],
+								"declarations" : 
+								[
+									{
+										"constant" : false,
+										"id" : 23,
+										"name" : "userStruct",
+										"nodeType" : "VariableDeclaration",
+										"scope" : 56,
+										"src" : "337:21:0",
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+											"typeString" : "struct UserStructs.UserStruct"
+										},
+										"typeName" : 
+										{
+											"contractScope" : null,
+											"id" : 22,
+											"name" : "UserStruct",
+											"nodeType" : "UserDefinedTypeName",
+											"referencedDeclaration" : 14,
+											"src" : "337:10:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+												"typeString" : "struct UserStructs.UserStruct"
+											}
+										},
+										"value" : null,
+										"visibility" : "internal"
+									}
+								],
+								"id" : 24,
+								"initialValue" : null,
+								"nodeType" : "VariableDeclarationStatement",
+								"src" : "337:21:0"
+							},
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 29,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 25,
+											"name" : "userStruct",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 23,
+											"src" : "369:10:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+												"typeString" : "struct UserStructs.UserStruct storage pointer"
+											}
+										},
+										"id" : 27,
+										"isConstant" : false,
+										"isLValue" : true,
+										"isPure" : false,
+										"lValueRequested" : true,
+										"memberName" : "contractAddress",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : 7,
+										"src" : "369:26:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"id" : 28,
+										"name" : "contractAddress",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 18,
+										"src" : "398:15:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										}
+									},
+									"src" : "369:44:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_address",
+										"typeString" : "address"
+									}
+								},
+								"id" : 30,
+								"nodeType" : "ExpressionStatement",
+								"src" : "369:44:0"
+							},
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 35,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 31,
+											"name" : "userStruct",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 23,
+											"src" : "424:10:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+												"typeString" : "struct UserStructs.UserStruct storage pointer"
+											}
+										},
+										"id" : 33,
+										"isConstant" : false,
+										"isLValue" : true,
+										"isPure" : false,
+										"lValueRequested" : true,
+										"memberName" : "name",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : 9,
+										"src" : "424:15:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_string_storage",
+											"typeString" : "string storage ref"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"hexValue" : "43727970746f4d6f6f6e436f696e",
+										"id" : 34,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : true,
+										"kind" : "string",
+										"lValueRequested" : false,
+										"nodeType" : "Literal",
+										"src" : "442:16:0",
+										"subdenomination" : null,
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_stringliteral_20944a285ef55ac997804b12f3be46a73eb1bf7ebbb9e9ef7bf8a1afca341277",
+											"typeString" : "literal_string \"CryptoMoonCoin\""
+										},
+										"value" : "CryptoMoonCoin"
+									},
+									"src" : "424:34:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_string_storage",
+										"typeString" : "string storage ref"
+									}
+								},
+								"id" : 36,
+								"nodeType" : "ExpressionStatement",
+								"src" : "424:34:0"
+							},
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 41,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 37,
+											"name" : "userStruct",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 23,
+											"src" : "469:10:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+												"typeString" : "struct UserStructs.UserStruct storage pointer"
+											}
+										},
+										"id" : 39,
+										"isConstant" : false,
+										"isLValue" : true,
+										"isPure" : false,
+										"lValueRequested" : true,
+										"memberName" : "symbol",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : 11,
+										"src" : "469:17:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_string_storage",
+											"typeString" : "string storage ref"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"hexValue" : "434d43",
+										"id" : 40,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : true,
+										"kind" : "string",
+										"lValueRequested" : false,
+										"nodeType" : "Literal",
+										"src" : "489:5:0",
+										"subdenomination" : null,
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_stringliteral_71f1279a174c3fc16d9c699541928f20168189637c82e430e55e7282db9f31fe",
+											"typeString" : "literal_string \"CMC\""
+										},
+										"value" : "CMC"
+									},
+									"src" : "469:25:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_string_storage",
+										"typeString" : "string storage ref"
+									}
+								},
+								"id" : 42,
+								"nodeType" : "ExpressionStatement",
+								"src" : "469:25:0"
+							},
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 47,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 43,
+											"name" : "userStruct",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 23,
+											"src" : "505:10:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+												"typeString" : "struct UserStructs.UserStruct storage pointer"
+											}
+										},
+										"id" : 45,
+										"isConstant" : false,
+										"isLValue" : true,
+										"isPure" : false,
+										"lValueRequested" : true,
+										"memberName" : "decimals",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : 13,
+										"src" : "505:19:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_uint256",
+											"typeString" : "uint256"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"hexValue" : "32",
+										"id" : 46,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : true,
+										"kind" : "number",
+										"lValueRequested" : false,
+										"nodeType" : "Literal",
+										"src" : "527:1:0",
+										"subdenomination" : null,
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_rational_2_by_1",
+											"typeString" : "int_const 2"
+										},
+										"value" : "2"
+									},
+									"src" : "505:23:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_uint256",
+										"typeString" : "uint256"
+									}
+								},
+								"id" : 48,
+								"nodeType" : "ExpressionStatement",
+								"src" : "505:23:0"
+							},
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 53,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"baseExpression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 49,
+											"name" : "userAddressToStruct",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 5,
+											"src" : "539:19:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_mapping$_t_address_$_t_struct$_UserStruct_$14_storage_$",
+												"typeString" : "mapping(address => struct UserStructs.UserStruct storage ref)"
+											}
+										},
+										"id" : 51,
+										"indexExpression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 50,
+											"name" : "contractAddress",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 18,
+											"src" : "559:15:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_address",
+												"typeString" : "address"
+											}
+										},
+										"isConstant" : false,
+										"isLValue" : true,
+										"isPure" : false,
+										"lValueRequested" : true,
+										"nodeType" : "IndexAccess",
+										"src" : "539:36:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_struct$_UserStruct_$14_storage",
+											"typeString" : "struct UserStructs.UserStruct storage ref"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"id" : 52,
+										"name" : "userStruct",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 23,
+										"src" : "578:10:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_struct$_UserStruct_$14_storage_ptr",
+											"typeString" : "struct UserStructs.UserStruct storage pointer"
+										}
+									},
+									"src" : "539:49:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_struct$_UserStruct_$14_storage",
+										"typeString" : "struct UserStructs.UserStruct storage ref"
+									}
+								},
+								"id" : 54,
+								"nodeType" : "ExpressionStatement",
+								"src" : "539:49:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 56,
+					"implemented" : true,
+					"isConstructor" : true,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 15,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "276:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 16,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "279:0:0"
+					},
+					"scope" : 57,
+					"src" : "265:331:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 58,
+			"src" : "26:573:0"
+		}
+	],
+	"src" : "0:603:0"
+}

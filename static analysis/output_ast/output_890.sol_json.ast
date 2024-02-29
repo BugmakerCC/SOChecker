@@ -1,0 +1,639 @@
+{
+  "absolutePath": "output/output_890.sol",
+  "exportedSymbols":
+  {
+    "IncrementalPriceContract":
+    [
+      42
+    ]
+  },
+  "id": 43,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "IncrementalPriceContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 42,
+      "linearizedBaseContracts":
+      [
+        42
+      ],
+      "name": "IncrementalPriceContract",
+      "nameLocation": "34:24:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "IncrementalPriceContract.IncrementalPrice",
+          "id": 6,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "value",
+              "nameLocation": "106:5:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "101:10:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "101:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "price",
+              "nameLocation": "127:5:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "122:10:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "122:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "IncrementalPrice",
+          "nameLocation": "73:16:0",
+          "nodeType": "StructDefinition",
+          "scope": 42,
+          "src": "66:74:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "bc31c1c1",
+          "id": 10,
+          "mutability": "mutable",
+          "name": "prices",
+          "nameLocation": "178:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 42,
+          "src": "152:32:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage",
+            "typeString": "struct IncrementalPriceContract.IncrementalPrice[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 8,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 7,
+                "name": "IncrementalPrice",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 6,
+                "src": "152:16:0"
+              },
+              "referencedDeclaration": 6,
+              "src": "152:16:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_IncrementalPrice_$6_storage_ptr",
+                "typeString": "struct IncrementalPriceContract.IncrementalPrice"
+              }
+            },
+            "id": 9,
+            "nodeType": "ArrayTypeName",
+            "src": "152:18:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage_ptr",
+              "typeString": "struct IncrementalPriceContract.IncrementalPrice[]"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 40,
+            "nodeType": "Block",
+            "src": "223:173:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments":
+                      [
+                        {
+                          "hexValue": "30",
+                          "id": 17,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "263:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        {
+                          "hexValue": "31303030",
+                          "id": 18,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "266:4:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_1000_by_1",
+                            "typeString": "int_const 1000"
+                          },
+                          "value": "1000"
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          {
+                            "typeIdentifier": "t_rational_1000_by_1",
+                            "typeString": "int_const 1000"
+                          }
+                        ],
+                        "id": 16,
+                        "name": "IncrementalPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6,
+                        "src": "246:16:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_struct$_IncrementalPrice_$6_storage_ptr_$",
+                          "typeString": "type(struct IncrementalPriceContract.IncrementalPrice storage pointer)"
+                        }
+                      },
+                      "id": 19,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "246:25:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_IncrementalPrice_$6_memory_ptr",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_IncrementalPrice_$6_memory_ptr",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice memory"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 13,
+                      "name": "prices",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10,
+                      "src": "234:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice storage ref[] storage ref"
+                      }
+                    },
+                    "id": 15,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "234:11:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage_ptr_$_t_struct$_IncrementalPrice_$6_storage_$returns$__$bound_to$_t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct IncrementalPriceContract.IncrementalPrice storage ref[] storage pointer,struct IncrementalPriceContract.IncrementalPrice storage ref)"
+                    }
+                  },
+                  "id": 20,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "234:38:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 21,
+                "nodeType": "ExpressionStatement",
+                "src": "234:38:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments":
+                      [
+                        {
+                          "hexValue": "302e3031",
+                          "id": 26,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "312:10:0",
+                          "subdenomination": "ether",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_10000000000000000_by_1",
+                            "typeString": "int_const 10000000000000000"
+                          },
+                          "value": "0.01"
+                        },
+                        {
+                          "hexValue": "32303030",
+                          "id": 27,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "324:4:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_2000_by_1",
+                            "typeString": "int_const 2000"
+                          },
+                          "value": "2000"
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_rational_10000000000000000_by_1",
+                            "typeString": "int_const 10000000000000000"
+                          },
+                          {
+                            "typeIdentifier": "t_rational_2000_by_1",
+                            "typeString": "int_const 2000"
+                          }
+                        ],
+                        "id": 25,
+                        "name": "IncrementalPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6,
+                        "src": "295:16:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_struct$_IncrementalPrice_$6_storage_ptr_$",
+                          "typeString": "type(struct IncrementalPriceContract.IncrementalPrice storage pointer)"
+                        }
+                      },
+                      "id": 28,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "295:34:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_IncrementalPrice_$6_memory_ptr",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_IncrementalPrice_$6_memory_ptr",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice memory"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 22,
+                      "name": "prices",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10,
+                      "src": "283:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice storage ref[] storage ref"
+                      }
+                    },
+                    "id": 24,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "283:11:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage_ptr_$_t_struct$_IncrementalPrice_$6_storage_$returns$__$bound_to$_t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct IncrementalPriceContract.IncrementalPrice storage ref[] storage pointer,struct IncrementalPriceContract.IncrementalPrice storage ref)"
+                    }
+                  },
+                  "id": 29,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "283:47:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 30,
+                "nodeType": "ExpressionStatement",
+                "src": "283:47:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments":
+                      [
+                        {
+                          "hexValue": "302e3031",
+                          "id": 35,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "370:10:0",
+                          "subdenomination": "ether",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_10000000000000000_by_1",
+                            "typeString": "int_const 10000000000000000"
+                          },
+                          "value": "0.01"
+                        },
+                        {
+                          "hexValue": "32303030",
+                          "id": 36,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "382:4:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_2000_by_1",
+                            "typeString": "int_const 2000"
+                          },
+                          "value": "2000"
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_rational_10000000000000000_by_1",
+                            "typeString": "int_const 10000000000000000"
+                          },
+                          {
+                            "typeIdentifier": "t_rational_2000_by_1",
+                            "typeString": "int_const 2000"
+                          }
+                        ],
+                        "id": 34,
+                        "name": "IncrementalPrice",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6,
+                        "src": "353:16:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_struct$_IncrementalPrice_$6_storage_ptr_$",
+                          "typeString": "type(struct IncrementalPriceContract.IncrementalPrice storage pointer)"
+                        }
+                      },
+                      "id": 37,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "353:34:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_IncrementalPrice_$6_memory_ptr",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_IncrementalPrice_$6_memory_ptr",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice memory"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 31,
+                      "name": "prices",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10,
+                      "src": "341:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage",
+                        "typeString": "struct IncrementalPriceContract.IncrementalPrice storage ref[] storage ref"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "341:11:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage_ptr_$_t_struct$_IncrementalPrice_$6_storage_$returns$__$bound_to$_t_array$_t_struct$_IncrementalPrice_$6_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct IncrementalPriceContract.IncrementalPrice storage ref[] storage pointer,struct IncrementalPriceContract.IncrementalPrice storage ref)"
+                    }
+                  },
+                  "id": 38,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "341:47:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 39,
+                "nodeType": "ExpressionStatement",
+                "src": "341:47:0"
+              }
+            ]
+          },
+          "functionSelector": "f31604c7",
+          "id": 41,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "setData",
+          "nameLocation": "206:7:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 11,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "213:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 12,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "223:0:0"
+          },
+          "scope": 42,
+          "src": "197:199:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 43,
+      "src": "25:374:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:403:0"
+}

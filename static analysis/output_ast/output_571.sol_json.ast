@@ -1,0 +1,856 @@
+{
+  "absolutePath": "output/output_571.sol",
+  "exportedSymbols":
+  {
+    "OracleResponse":
+    [
+      63
+    ]
+  },
+  "id": 64,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "OracleResponse",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 63,
+      "linearizedBaseContracts":
+      [
+        63
+      ],
+      "name": "OracleResponse",
+      "nameLocation": "34:14:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "functionSelector": "9e8c9bb9",
+          "id": 6,
+          "mutability": "mutable",
+          "name": "oracleResponses",
+          "nameLocation": "96:15:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 63,
+          "src": "56:55:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_ResponseInfo_$11_storage_$",
+            "typeString": "mapping(bytes32 => struct OracleResponse.ResponseInfo)"
+          },
+          "typeName":
+          {
+            "id": 5,
+            "keyType":
+            {
+              "id": 2,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "64:7:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "56:32:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_ResponseInfo_$11_storage_$",
+              "typeString": "mapping(bytes32 => struct OracleResponse.ResponseInfo)"
+            },
+            "valueType":
+            {
+              "id": 4,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 3,
+                "name": "ResponseInfo",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 11,
+                "src": "75:12:0"
+              },
+              "referencedDeclaration": 11,
+              "src": "75:12:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_ResponseInfo_$11_storage_ptr",
+                "typeString": "struct OracleResponse.ResponseInfo"
+              }
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "canonicalName": "OracleResponse.ResponseInfo",
+          "id": 11,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 8,
+              "mutability": "mutable",
+              "name": "requester",
+              "nameLocation": "159:9:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 11,
+              "src": "151:17:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName":
+              {
+                "id": 7,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "151:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 10,
+              "mutability": "mutable",
+              "name": "isOpen",
+              "nameLocation": "184:6:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 11,
+              "src": "179:11:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "typeName":
+              {
+                "id": 9,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "179:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "ResponseInfo",
+          "nameLocation": "127:12:0",
+          "nodeType": "StructDefinition",
+          "scope": 63,
+          "src": "120:78:0",
+          "visibility": "public"
+        },
+        {
+          "anonymous": false,
+          "id": 17,
+          "name": "RequestForResponse",
+          "nameLocation": "212:18:0",
+          "nodeType": "EventDefinition",
+          "parameters":
+          {
+            "id": 16,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 13,
+                "indexed": true,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "247:2:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "231:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName":
+                {
+                  "id": 12,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "231:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 15,
+                "indexed": true,
+                "mutability": "mutable",
+                "name": "responseOpen",
+                "nameLocation": "264:12:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 17,
+                "src": "251:25:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName":
+                {
+                  "id": 14,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "251:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "230:47:0"
+          },
+          "src": "206:72:0"
+        },
+        {
+          "body":
+          {
+            "id": 46,
+            "nodeType": "Block",
+            "src": "357:191:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  26
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 26,
+                    "mutability": "mutable",
+                    "name": "response",
+                    "nameLocation": "389:8:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 46,
+                    "src": "368:29:0",
+                    "stateVariable": false,
+                    "storageLocation": "storage",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_ResponseInfo_$11_storage_ptr",
+                      "typeString": "struct OracleResponse.ResponseInfo"
+                    },
+                    "typeName":
+                    {
+                      "id": 25,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 24,
+                        "name": "ResponseInfo",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 11,
+                        "src": "368:12:0"
+                      },
+                      "referencedDeclaration": 11,
+                      "src": "368:12:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_ResponseInfo_$11_storage_ptr",
+                        "typeString": "struct OracleResponse.ResponseInfo"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 30,
+                "initialValue":
+                {
+                  "baseExpression":
+                  {
+                    "id": 27,
+                    "name": "oracleResponses",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 6,
+                    "src": "400:15:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_ResponseInfo_$11_storage_$",
+                      "typeString": "mapping(bytes32 => struct OracleResponse.ResponseInfo storage ref)"
+                    }
+                  },
+                  "id": 29,
+                  "indexExpression":
+                  {
+                    "id": 28,
+                    "name": "id",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 19,
+                    "src": "416:2:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "400:19:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_ResponseInfo_$11_storage",
+                    "typeString": "struct OracleResponse.ResponseInfo storage ref"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "368:51:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 35,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "expression":
+                    {
+                      "id": 31,
+                      "name": "response",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26,
+                      "src": "430:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_ResponseInfo_$11_storage_ptr",
+                        "typeString": "struct OracleResponse.ResponseInfo storage pointer"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "memberName": "isOpen",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 10,
+                    "src": "430:15:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "hexValue": "74727565",
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "448:4:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "src": "430:22:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "id": 36,
+                "nodeType": "ExpressionStatement",
+                "src": "430:22:0"
+              },
+              {
+                "eventCall":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 38,
+                      "name": "id",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 19,
+                      "src": "487:2:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    {
+                      "expression":
+                      {
+                        "id": 39,
+                        "name": "response",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 26,
+                        "src": "491:8:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_ResponseInfo_$11_storage_ptr",
+                          "typeString": "struct OracleResponse.ResponseInfo storage pointer"
+                        }
+                      },
+                      "id": 40,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isOpen",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "491:15:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    ],
+                    "id": 37,
+                    "name": "RequestForResponse",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 17,
+                    "src": "468:18:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$_t_bool_$returns$__$",
+                      "typeString": "function (bytes32,bool)"
+                    }
+                  },
+                  "id": 41,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "468:39:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 42,
+                "nodeType": "EmitStatement",
+                "src": "463:44:0"
+              },
+              {
+                "expression":
+                {
+                  "expression":
+                  {
+                    "id": 43,
+                    "name": "response",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 26,
+                    "src": "525:8:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_ResponseInfo_$11_storage_ptr",
+                      "typeString": "struct OracleResponse.ResponseInfo storage pointer"
+                    }
+                  },
+                  "id": 44,
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "memberName": "isOpen",
+                  "nodeType": "MemberAccess",
+                  "referencedDeclaration": 10,
+                  "src": "525:15:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "functionReturnParameters": 23,
+                "id": 45,
+                "nodeType": "Return",
+                "src": "518:22:0"
+              }
+            ]
+          },
+          "functionSelector": "88bbb23c",
+          "id": 47,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "sendResponse",
+          "nameLocation": "295:12:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 20,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 19,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "316:2:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "308:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName":
+                {
+                  "id": 18,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "308:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "307:12:0"
+          },
+          "returnParameters":
+          {
+            "id": 23,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 22,
+                "mutability": "mutable",
+                "name": "isResponseOpen",
+                "nameLocation": "341:14:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 47,
+                "src": "336:19:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName":
+                {
+                  "id": 21,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "336:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "335:21:0"
+          },
+          "scope": 63,
+          "src": "286:262:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 61,
+            "nodeType": "Block",
+            "src": "613:54:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 59,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "expression":
+                    {
+                      "baseExpression":
+                      {
+                        "id": 54,
+                        "name": "oracleResponses",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6,
+                        "src": "624:15:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_ResponseInfo_$11_storage_$",
+                          "typeString": "mapping(bytes32 => struct OracleResponse.ResponseInfo storage ref)"
+                        }
+                      },
+                      "id": 56,
+                      "indexExpression":
+                      {
+                        "id": 55,
+                        "name": "id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "640:2:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "624:19:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_ResponseInfo_$11_storage",
+                        "typeString": "struct OracleResponse.ResponseInfo storage ref"
+                      }
+                    },
+                    "id": 57,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "memberName": "isOpen",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 10,
+                    "src": "624:26:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 58,
+                    "name": "isOpen",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 51,
+                    "src": "653:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "src": "624:35:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "id": 60,
+                "nodeType": "ExpressionStatement",
+                "src": "624:35:0"
+              }
+            ]
+          },
+          "functionSelector": "2db04547",
+          "id": 62,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "setResponseOpen",
+          "nameLocation": "565:15:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 52,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 49,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "589:2:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 62,
+                "src": "581:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName":
+                {
+                  "id": 48,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "581:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 51,
+                "mutability": "mutable",
+                "name": "isOpen",
+                "nameLocation": "598:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 62,
+                "src": "593:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName":
+                {
+                  "id": 50,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "593:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "580:25:0"
+          },
+          "returnParameters":
+          {
+            "id": 53,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "613:0:0"
+          },
+          "scope": 63,
+          "src": "556:111:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 64,
+      "src": "25:645:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:674:0"
+}

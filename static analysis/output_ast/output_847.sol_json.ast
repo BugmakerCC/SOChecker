@@ -1,0 +1,671 @@
+{
+	"absolutePath" : "./output\\output_847.sol",
+	"exportedSymbols" : 
+	{
+		"Elector" : 
+		[
+			48
+		]
+	},
+	"id" : 49,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"^",
+				"0.4",
+				".19"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:24:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : false,
+			"id" : 48,
+			"linearizedBaseContracts" : 
+			[
+				48
+			],
+			"name" : "Elector",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"canonicalName" : "Elector.Vote",
+					"id" : 10,
+					"members" : 
+					[
+						{
+							"constant" : false,
+							"id" : 3,
+							"name" : "hashedQuestion",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 10,
+							"src" : "75:22:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_bytes32",
+								"typeString" : "bytes32"
+							},
+							"typeName" : 
+							{
+								"id" : 2,
+								"name" : "bytes32",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "75:7:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes32",
+									"typeString" : "bytes32"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 5,
+							"name" : "hashedProposal",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 10,
+							"src" : "108:22:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_bytes32",
+								"typeString" : "bytes32"
+							},
+							"typeName" : 
+							{
+								"id" : 4,
+								"name" : "bytes32",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "108:7:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes32",
+									"typeString" : "bytes32"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 7,
+							"name" : "vote",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 10,
+							"src" : "141:9:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_bool",
+								"typeString" : "bool"
+							},
+							"typeName" : 
+							{
+								"id" : 6,
+								"name" : "bool",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "141:4:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bool",
+									"typeString" : "bool"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 9,
+							"name" : "voteType",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 10,
+							"src" : "161:17:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_struct$_VoteType_$15_storage_ptr",
+								"typeString" : "struct Elector.VoteType storage pointer"
+							},
+							"typeName" : 
+							{
+								"contractScope" : null,
+								"id" : 8,
+								"name" : "VoteType",
+								"nodeType" : "UserDefinedTypeName",
+								"referencedDeclaration" : 15,
+								"src" : "161:8:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_struct$_VoteType_$15_storage_ptr",
+									"typeString" : "struct Elector.VoteType storage pointer"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						}
+					],
+					"name" : "Vote",
+					"nodeType" : "StructDefinition",
+					"scope" : 48,
+					"src" : "52:134:0",
+					"visibility" : "public"
+				},
+				{
+					"canonicalName" : "Elector.VoteType",
+					"id" : 15,
+					"members" : 
+					[
+						{
+							"constant" : false,
+							"id" : 12,
+							"name" : "yes",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 15,
+							"src" : "221:8:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_bool",
+								"typeString" : "bool"
+							},
+							"typeName" : 
+							{
+								"id" : 11,
+								"name" : "bool",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "221:4:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bool",
+									"typeString" : "bool"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						},
+						{
+							"constant" : false,
+							"id" : 14,
+							"name" : "no",
+							"nodeType" : "VariableDeclaration",
+							"scope" : 15,
+							"src" : "240:7:0",
+							"stateVariable" : false,
+							"storageLocation" : "default",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_bool",
+								"typeString" : "bool"
+							},
+							"typeName" : 
+							{
+								"id" : 13,
+								"name" : "bool",
+								"nodeType" : "ElementaryTypeName",
+								"src" : "240:4:0",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bool",
+									"typeString" : "bool"
+								}
+							},
+							"value" : null,
+							"visibility" : "internal"
+						}
+					],
+					"name" : "VoteType",
+					"nodeType" : "StructDefinition",
+					"scope" : 48,
+					"src" : "194:61:0",
+					"visibility" : "public"
+				},
+				{
+					"body" : null,
+					"id" : 28,
+					"implemented" : false,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "vote",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 24,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 17,
+								"name" : "hashedQuestion",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 28,
+								"src" : "287:22:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes32",
+									"typeString" : "bytes32"
+								},
+								"typeName" : 
+								{
+									"id" : 16,
+									"name" : "bytes32",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "287:7:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bytes32",
+										"typeString" : "bytes32"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							},
+							{
+								"constant" : false,
+								"id" : 19,
+								"name" : "hashedProposal",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 28,
+								"src" : "320:22:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes32",
+									"typeString" : "bytes32"
+								},
+								"typeName" : 
+								{
+									"id" : 18,
+									"name" : "bytes32",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "320:7:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bytes32",
+										"typeString" : "bytes32"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							},
+							{
+								"constant" : false,
+								"id" : 21,
+								"name" : "voteTypeHash",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 28,
+								"src" : "353:20:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes32",
+									"typeString" : "bytes32"
+								},
+								"typeName" : 
+								{
+									"id" : 20,
+									"name" : "bytes32",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "353:7:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bytes32",
+										"typeString" : "bytes32"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							},
+							{
+								"constant" : false,
+								"id" : 23,
+								"name" : "voterAddress",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 28,
+								"src" : "384:20:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_address",
+									"typeString" : "address"
+								},
+								"typeName" : 
+								{
+									"id" : 22,
+									"name" : "address",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "384:7:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_address",
+										"typeString" : "address"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "276:135:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 27,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 26,
+								"name" : "",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 28,
+								"src" : "430:4:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bool",
+									"typeString" : "bool"
+								},
+								"typeName" : 
+								{
+									"id" : 25,
+									"name" : "bool",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "430:4:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bool",
+										"typeString" : "bool"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "429:6:0"
+					},
+					"scope" : 48,
+					"src" : "263:173:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "external"
+				},
+				{
+					"body" : null,
+					"id" : 33,
+					"implemented" : false,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "getQuestion",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 29,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "464:8:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 32,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 31,
+								"name" : "question",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 33,
+								"src" : "491:21:0",
+								"stateVariable" : false,
+								"storageLocation" : "memory",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes_memory_ptr",
+									"typeString" : "bytes memory"
+								},
+								"typeName" : 
+								{
+									"id" : 30,
+									"name" : "bytes",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "491:5:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bytes_storage_ptr",
+										"typeString" : "bytes storage pointer"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "490:23:0"
+					},
+					"scope" : 48,
+					"src" : "444:70:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "external"
+				},
+				{
+					"body" : null,
+					"id" : 40,
+					"implemented" : false,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "getProposals",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 36,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 35,
+								"name" : "questionHash",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 40,
+								"src" : "554:20:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes32",
+									"typeString" : "bytes32"
+								},
+								"typeName" : 
+								{
+									"id" : 34,
+									"name" : "bytes32",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "554:7:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bytes32",
+										"typeString" : "bytes32"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "543:38:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 39,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 38,
+								"name" : "proposals",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 40,
+								"src" : "600:22:0",
+								"stateVariable" : false,
+								"storageLocation" : "memory",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_bytes_memory_ptr",
+									"typeString" : "bytes memory"
+								},
+								"typeName" : 
+								{
+									"id" : 37,
+									"name" : "bytes",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "600:5:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bytes_storage_ptr",
+										"typeString" : "bytes storage pointer"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "599:24:0"
+					},
+					"scope" : 48,
+					"src" : "522:102:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "external"
+				},
+				{
+					"body" : null,
+					"id" : 47,
+					"implemented" : false,
+					"isConstructor" : false,
+					"isDeclaredConst" : true,
+					"modifiers" : [],
+					"name" : "getInformation",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 41,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "655:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 46,
+						"nodeType" : "ParameterList",
+						"parameters" : 
+						[
+							{
+								"constant" : false,
+								"id" : 43,
+								"name" : "",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 47,
+								"src" : "681:7:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_address",
+									"typeString" : "address"
+								},
+								"typeName" : 
+								{
+									"id" : 42,
+									"name" : "address",
+									"nodeType" : "ElementaryTypeName",
+									"src" : "681:7:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_address",
+										"typeString" : "address"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							},
+							{
+								"constant" : false,
+								"id" : 45,
+								"name" : "",
+								"nodeType" : "VariableDeclaration",
+								"scope" : 47,
+								"src" : "690:8:0",
+								"stateVariable" : false,
+								"storageLocation" : "default",
+								"typeDescriptions" : 
+								{
+									"typeIdentifier" : "t_struct$_VoteType_$15_memory_ptr",
+									"typeString" : "struct Elector.VoteType memory"
+								},
+								"typeName" : 
+								{
+									"contractScope" : null,
+									"id" : 44,
+									"name" : "VoteType",
+									"nodeType" : "UserDefinedTypeName",
+									"referencedDeclaration" : 15,
+									"src" : "690:8:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_struct$_VoteType_$15_storage_ptr",
+										"typeString" : "struct Elector.VoteType storage pointer"
+									}
+								},
+								"value" : null,
+								"visibility" : "internal"
+							}
+						],
+						"src" : "680:19:0"
+					},
+					"scope" : 48,
+					"src" : "632:68:0",
+					"stateMutability" : "view",
+					"superFunction" : null,
+					"visibility" : "external"
+				}
+			],
+			"scope" : 49,
+			"src" : "26:677:0"
+		}
+	],
+	"src" : "0:707:0"
+}

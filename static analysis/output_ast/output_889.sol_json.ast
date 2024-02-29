@@ -1,0 +1,462 @@
+{
+  "absolutePath": "output/output_889.sol",
+  "exportedSymbols":
+  {
+    "Response":
+    [
+      32
+    ]
+  },
+  "id": 33,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Response",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 32,
+      "linearizedBaseContracts":
+      [
+        32
+      ],
+      "name": "Response",
+      "nameLocation": "34:8:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "Response.Infos",
+          "id": 6,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "_id",
+              "nameLocation": "79:3:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "74:8:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "74:4:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "_add",
+              "nameLocation": "101:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "93:12:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "93:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Infos",
+          "nameLocation": "57:5:0",
+          "nodeType": "StructDefinition",
+          "scope": 32,
+          "src": "50:63:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "28de3c9b",
+          "id": 11,
+          "mutability": "mutable",
+          "name": "infos",
+          "nameLocation": "153:5:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 32,
+          "src": "125:33:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Infos_$6_storage_$",
+            "typeString": "mapping(uint256 => struct Response.Infos)"
+          },
+          "typeName":
+          {
+            "id": 10,
+            "keyType":
+            {
+              "id": 7,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "133:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "125:20:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Infos_$6_storage_$",
+              "typeString": "mapping(uint256 => struct Response.Infos)"
+            },
+            "valueType":
+            {
+              "id": 9,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 8,
+                "name": "Infos",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 6,
+                "src": "139:5:0"
+              },
+              "referencedDeclaration": 6,
+              "src": "139:5:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Infos_$6_storage_ptr",
+                "typeString": "struct Response.Infos"
+              }
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 30,
+            "nodeType": "Block",
+            "src": "240:68:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "components":
+                  [
+                    {
+                      "expression":
+                      {
+                        "baseExpression":
+                        {
+                          "id": 20,
+                          "name": "infos",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11,
+                          "src": "260:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Infos_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Response.Infos storage ref)"
+                          }
+                        },
+                        "id": 22,
+                        "indexExpression":
+                        {
+                          "id": 21,
+                          "name": "_infoid",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "266:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "260:14:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_Infos_$6_storage",
+                          "typeString": "struct Response.Infos storage ref"
+                        }
+                      },
+                      "id": 23,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_id",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3,
+                      "src": "260:18:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    {
+                      "expression":
+                      {
+                        "baseExpression":
+                        {
+                          "id": 24,
+                          "name": "infos",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11,
+                          "src": "280:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Infos_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Response.Infos storage ref)"
+                          }
+                        },
+                        "id": 26,
+                        "indexExpression":
+                        {
+                          "id": 25,
+                          "name": "_infoid",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "286:7:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "280:14:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_Infos_$6_storage",
+                          "typeString": "struct Response.Infos storage ref"
+                        }
+                      },
+                      "id": 27,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "_add",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5,
+                      "src": "280:19:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    }
+                  ],
+                  "id": 28,
+                  "isConstant": false,
+                  "isInlineArray": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "TupleExpression",
+                  "src": "259:41:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$_t_uint256_$_t_address_$",
+                    "typeString": "tuple(uint256,address)"
+                  }
+                },
+                "functionReturnParameters": 19,
+                "id": 29,
+                "nodeType": "Return",
+                "src": "252:48:0"
+              }
+            ]
+          },
+          "functionSelector": "1a3cd59a",
+          "id": 31,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getInfo",
+          "nameLocation": "180:7:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 14,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 13,
+                "mutability": "mutable",
+                "name": "_infoid",
+                "nameLocation": "193:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 31,
+                "src": "188:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 12,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "188:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "187:14:0"
+          },
+          "returnParameters":
+          {
+            "id": 19,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 16,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 31,
+                "src": "225:4:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 15,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "225:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 31,
+                "src": "231:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName":
+                {
+                  "id": 17,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "231:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "224:15:0"
+          },
+          "scope": 32,
+          "src": "171:137:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 33,
+      "src": "25:286:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:315:0"
+}

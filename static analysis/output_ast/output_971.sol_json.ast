@@ -1,0 +1,228 @@
+{
+  "absolutePath": "output/output_971.sol",
+  "exportedSymbols":
+  {
+    "Response":
+    [
+      16
+    ]
+  },
+  "id": 17,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Response",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 16,
+      "linearizedBaseContracts":
+      [
+        16
+      ],
+      "name": "Response",
+      "nameLocation": "34:8:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 10,
+            "nodeType": "Block",
+            "src": "98:49:0",
+            "statements":
+            [
+              {
+                "eventCall":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 7,
+                      "name": "_message",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "130:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    ],
+                    "id": 6,
+                    "name": "ResponseMessage",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 15,
+                    "src": "114:15:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (string memory)"
+                    }
+                  },
+                  "id": 8,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "114:25:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 9,
+                "nodeType": "EmitStatement",
+                "src": "109:30:0"
+              }
+            ]
+          },
+          "functionSelector": "4a2cbbb9",
+          "id": 11,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "respond",
+          "nameLocation": "59:7:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 4,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "_message",
+                "nameLocation": "81:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 11,
+                "src": "67:22:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 2,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "67:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "66:24:0"
+          },
+          "returnParameters":
+          {
+            "id": 5,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "98:0:0"
+          },
+          "scope": 16,
+          "src": "50:97:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "anonymous": false,
+          "id": 15,
+          "name": "ResponseMessage",
+          "nameLocation": "161:15:0",
+          "nodeType": "EventDefinition",
+          "parameters":
+          {
+            "id": 14,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 13,
+                "indexed": false,
+                "mutability": "mutable",
+                "name": "_message",
+                "nameLocation": "184:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 15,
+                "src": "177:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 12,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "177:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "176:17:0"
+          },
+          "src": "155:39:0"
+        }
+      ],
+      "scope": 17,
+      "src": "25:172:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:201:0"
+}

@@ -1,0 +1,181 @@
+{
+  "absolutePath": "output/output_378.sol",
+  "exportedSymbols":
+  {
+    "Child":
+    [
+      11
+    ],
+    "Parent":
+    [
+      8
+    ]
+  },
+  "id": 12,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "Parent",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 8,
+      "linearizedBaseContracts":
+      [
+        8
+      ],
+      "name": "Parent",
+      "nameLocation": "34:6:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "functionSelector": "8381f58a",
+          "id": 3,
+          "mutability": "mutable",
+          "name": "number",
+          "nameLocation": "63:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 8,
+          "src": "48:21:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 2,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "48:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 5,
+          "mutability": "mutable",
+          "name": "otherNumber",
+          "nameLocation": "134:11:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 8,
+          "src": "117:28:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 4,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "117:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 7,
+          "mutability": "mutable",
+          "name": "anotherNumber",
+          "nameLocation": "207:13:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 8,
+          "src": "191:29:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 6,
+            "name": "uint256",
+            "nodeType": "ElementaryTypeName",
+            "src": "191:7:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "private"
+        }
+      ],
+      "scope": 12,
+      "src": "25:229:0",
+      "usedErrors": []
+    },
+    {
+      "abstract": false,
+      "baseContracts":
+      [
+        {
+          "baseName":
+          {
+            "id": 9,
+            "name": "Parent",
+            "nodeType": "IdentifierPath",
+            "referencedDeclaration": 8,
+            "src": "282:6:0"
+          },
+          "id": 10,
+          "nodeType": "InheritanceSpecifier",
+          "src": "282:6:0"
+        }
+      ],
+      "canonicalName": "Child",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 11,
+      "linearizedBaseContracts":
+      [
+        11,
+        8
+      ],
+      "name": "Child",
+      "nameLocation": "273:5:0",
+      "nodeType": "ContractDefinition",
+      "nodes": [],
+      "scope": 12,
+      "src": "264:29:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:297:0"
+}

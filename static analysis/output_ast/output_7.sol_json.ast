@@ -1,0 +1,1179 @@
+{
+  "absolutePath": "output/output_7.sol",
+  "exportedSymbols":
+  {
+    "TeamContract":
+    [
+      90
+    ]
+  },
+  "id": 91,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "TeamContract",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 90,
+      "linearizedBaseContracts":
+      [
+        90
+      ],
+      "name": "TeamContract",
+      "nameLocation": "34:12:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "TeamContract.Team",
+          "id": 8,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "engineer",
+              "nameLocation": "84:8:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 8,
+              "src": "77:15:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "77:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 7,
+              "mutability": "mutable",
+              "name": "numbers",
+              "nameLocation": "128:7:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 8,
+              "src": "103:32:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                "typeString": "mapping(string => uint256)"
+              },
+              "typeName":
+              {
+                "id": 6,
+                "keyType":
+                {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "112:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "103:24:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                  "typeString": "mapping(string => uint256)"
+                },
+                "valueType":
+                {
+                  "id": 5,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "122:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Team",
+          "nameLocation": "61:4:0",
+          "nodeType": "StructDefinition",
+          "scope": 90,
+          "src": "54:89:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 13,
+          "mutability": "mutable",
+          "name": "teams",
+          "nameLocation": "175:5:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 90,
+          "src": "151:29:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Team_$8_storage_$",
+            "typeString": "mapping(string => struct TeamContract.Team)"
+          },
+          "typeName":
+          {
+            "id": 12,
+            "keyType":
+            {
+              "id": 9,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "159:6:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "151:23:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Team_$8_storage_$",
+              "typeString": "mapping(string => struct TeamContract.Team)"
+            },
+            "valueType":
+            {
+              "id": 11,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 10,
+                "name": "Team",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 8,
+                "src": "169:4:0"
+              },
+              "referencedDeclaration": 8,
+              "src": "169:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Team_$8_storage_ptr",
+                "typeString": "struct TeamContract.Team"
+              }
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "body":
+          {
+            "id": 33,
+            "nodeType": "Block",
+            "src": "265:89:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  22
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 22,
+                    "mutability": "mutable",
+                    "name": "team",
+                    "nameLocation": "289:4:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 33,
+                    "src": "276:17:0",
+                    "stateVariable": false,
+                    "storageLocation": "storage",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Team_$8_storage_ptr",
+                      "typeString": "struct TeamContract.Team"
+                    },
+                    "typeName":
+                    {
+                      "id": 21,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 20,
+                        "name": "Team",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 8,
+                        "src": "276:4:0"
+                      },
+                      "referencedDeclaration": 8,
+                      "src": "276:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Team_$8_storage_ptr",
+                        "typeString": "struct TeamContract.Team"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 26,
+                "initialValue":
+                {
+                  "baseExpression":
+                  {
+                    "id": 23,
+                    "name": "teams",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 13,
+                    "src": "296:5:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Team_$8_storage_$",
+                      "typeString": "mapping(string memory => struct TeamContract.Team storage ref)"
+                    }
+                  },
+                  "id": 25,
+                  "indexExpression":
+                  {
+                    "id": 24,
+                    "name": "_teamId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 15,
+                    "src": "302:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "296:14:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Team_$8_storage",
+                    "typeString": "struct TeamContract.Team storage ref"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "276:34:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 31,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "expression":
+                    {
+                      "id": 27,
+                      "name": "team",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 22,
+                      "src": "321:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Team_$8_storage_ptr",
+                        "typeString": "struct TeamContract.Team storage pointer"
+                      }
+                    },
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "memberName": "engineer",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 3,
+                    "src": "321:13:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 30,
+                    "name": "_engineer",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 17,
+                    "src": "337:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "src": "321:25:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage",
+                    "typeString": "string storage ref"
+                  }
+                },
+                "id": 32,
+                "nodeType": "ExpressionStatement",
+                "src": "321:25:0"
+              }
+            ]
+          },
+          "functionSelector": "3607f01c",
+          "id": 34,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addEngineer",
+          "nameLocation": "198:11:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 18,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 15,
+                "mutability": "mutable",
+                "name": "_teamId",
+                "nameLocation": "224:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 34,
+                "src": "210:21:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 14,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "210:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 17,
+                "mutability": "mutable",
+                "name": "_engineer",
+                "nameLocation": "247:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 34,
+                "src": "233:23:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 16,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "233:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "209:48:0"
+          },
+          "returnParameters":
+          {
+            "id": 19,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "265:0:0"
+          },
+          "scope": 90,
+          "src": "189:165:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 58,
+            "nodeType": "Block",
+            "src": "450:97:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  45
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 45,
+                    "mutability": "mutable",
+                    "name": "team",
+                    "nameLocation": "474:4:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 58,
+                    "src": "461:17:0",
+                    "stateVariable": false,
+                    "storageLocation": "storage",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Team_$8_storage_ptr",
+                      "typeString": "struct TeamContract.Team"
+                    },
+                    "typeName":
+                    {
+                      "id": 44,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 43,
+                        "name": "Team",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 8,
+                        "src": "461:4:0"
+                      },
+                      "referencedDeclaration": 8,
+                      "src": "461:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Team_$8_storage_ptr",
+                        "typeString": "struct TeamContract.Team"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 49,
+                "initialValue":
+                {
+                  "baseExpression":
+                  {
+                    "id": 46,
+                    "name": "teams",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 13,
+                    "src": "481:5:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Team_$8_storage_$",
+                      "typeString": "mapping(string memory => struct TeamContract.Team storage ref)"
+                    }
+                  },
+                  "id": 48,
+                  "indexExpression":
+                  {
+                    "id": 47,
+                    "name": "_teamId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 36,
+                    "src": "487:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "481:14:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Team_$8_storage",
+                    "typeString": "struct TeamContract.Team storage ref"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "461:34:0"
+              },
+              {
+                "expression":
+                {
+                  "id": 56,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "baseExpression":
+                    {
+                      "expression":
+                      {
+                        "id": 50,
+                        "name": "team",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45,
+                        "src": "506:4:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_Team_$8_storage_ptr",
+                          "typeString": "struct TeamContract.Team storage pointer"
+                        }
+                      },
+                      "id": 53,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "numbers",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 7,
+                      "src": "506:12:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                        "typeString": "mapping(string memory => uint256)"
+                      }
+                    },
+                    "id": 54,
+                    "indexExpression":
+                    {
+                      "id": 52,
+                      "name": "_numberId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 38,
+                      "src": "519:9:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "nodeType": "IndexAccess",
+                    "src": "506:23:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 55,
+                    "name": "_number",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 40,
+                    "src": "532:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "src": "506:33:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "id": 57,
+                "nodeType": "ExpressionStatement",
+                "src": "506:33:0"
+              }
+            ]
+          },
+          "functionSelector": "45829915",
+          "id": 59,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addNumber",
+          "nameLocation": "371:9:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 41,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 36,
+                "mutability": "mutable",
+                "name": "_teamId",
+                "nameLocation": "395:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 59,
+                "src": "381:21:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 35,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "381:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 38,
+                "mutability": "mutable",
+                "name": "_numberId",
+                "nameLocation": "418:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 59,
+                "src": "404:23:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 37,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "404:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 40,
+                "mutability": "mutable",
+                "name": "_number",
+                "nameLocation": "434:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 59,
+                "src": "429:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 39,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "429:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "380:62:0"
+          },
+          "returnParameters":
+          {
+            "id": 42,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "450:0:0"
+          },
+          "scope": 90,
+          "src": "362:185:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 71,
+            "nodeType": "Block",
+            "src": "635:49:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "expression":
+                  {
+                    "baseExpression":
+                    {
+                      "id": 66,
+                      "name": "teams",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "653:5:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Team_$8_storage_$",
+                        "typeString": "mapping(string memory => struct TeamContract.Team storage ref)"
+                      }
+                    },
+                    "id": 68,
+                    "indexExpression":
+                    {
+                      "id": 67,
+                      "name": "_teamId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 61,
+                      "src": "659:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "653:14:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Team_$8_storage",
+                      "typeString": "struct TeamContract.Team storage ref"
+                    }
+                  },
+                  "id": 69,
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "memberName": "engineer",
+                  "nodeType": "MemberAccess",
+                  "referencedDeclaration": 3,
+                  "src": "653:23:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage",
+                    "typeString": "string storage ref"
+                  }
+                },
+                "functionReturnParameters": 65,
+                "id": 70,
+                "nodeType": "Return",
+                "src": "646:30:0"
+              }
+            ]
+          },
+          "functionSelector": "634b3291",
+          "id": 72,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getEngineer",
+          "nameLocation": "564:11:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 62,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 61,
+                "mutability": "mutable",
+                "name": "_teamId",
+                "nameLocation": "590:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 72,
+                "src": "576:21:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 60,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "576:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "575:23:0"
+          },
+          "returnParameters":
+          {
+            "id": 65,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 64,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 72,
+                "src": "620:13:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 63,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "620:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "619:15:0"
+          },
+          "scope": 90,
+          "src": "555:129:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 88,
+            "nodeType": "Block",
+            "src": "786:59:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "baseExpression":
+                  {
+                    "expression":
+                    {
+                      "baseExpression":
+                      {
+                        "id": 81,
+                        "name": "teams",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "804:5:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Team_$8_storage_$",
+                          "typeString": "mapping(string memory => struct TeamContract.Team storage ref)"
+                        }
+                      },
+                      "id": 83,
+                      "indexExpression":
+                      {
+                        "id": 82,
+                        "name": "_teamId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 74,
+                        "src": "810:7:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "804:14:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Team_$8_storage",
+                        "typeString": "struct TeamContract.Team storage ref"
+                      }
+                    },
+                    "id": 84,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "numbers",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 7,
+                    "src": "804:22:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_uint256_$",
+                      "typeString": "mapping(string memory => uint256)"
+                    }
+                  },
+                  "id": 86,
+                  "indexExpression":
+                  {
+                    "id": 85,
+                    "name": "_numberId",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 76,
+                    "src": "827:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "804:33:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "functionReturnParameters": 80,
+                "id": 87,
+                "nodeType": "Return",
+                "src": "797:40:0"
+              }
+            ]
+          },
+          "functionSelector": "a93ac999",
+          "id": 89,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getNumber",
+          "nameLocation": "701:9:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 77,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 74,
+                "mutability": "mutable",
+                "name": "_teamId",
+                "nameLocation": "725:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 89,
+                "src": "711:21:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 73,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "711:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 76,
+                "mutability": "mutable",
+                "name": "_numberId",
+                "nameLocation": "748:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 89,
+                "src": "734:23:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_memory_ptr",
+                  "typeString": "string"
+                },
+                "typeName":
+                {
+                  "id": 75,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "734:6:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "710:48:0"
+          },
+          "returnParameters":
+          {
+            "id": 80,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 79,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 89,
+                "src": "780:4:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 78,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "780:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "779:6:0"
+          },
+          "scope": 90,
+          "src": "692:153:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 91,
+      "src": "25:823:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:852:0"
+}

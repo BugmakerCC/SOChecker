@@ -1,0 +1,630 @@
+{
+  "absolutePath": "./output/output_832.sol",
+  "exportedSymbols":
+  {
+    "Test":
+    [
+      50
+    ]
+  },
+  "id": 51,
+  "license": "MIT",
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "33:21:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 50,
+      "linearizedBaseContracts":
+      [
+        50
+      ],
+      "name": "Test",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "id": 6,
+          "mutability": "mutable",
+          "name": "mString",
+          "nodeType": "VariableDeclaration",
+          "scope": 50,
+          "src": "79:33:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_string_storage_$dyn_storage_$",
+            "typeString": "mapping(uint256 => string[])"
+          },
+          "typeName":
+          {
+            "id": 5,
+            "keyType":
+            {
+              "id": 2,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "87:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "nodeType": "Mapping",
+            "src": "79:25:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_string_storage_$dyn_storage_$",
+              "typeString": "mapping(uint256 => string[])"
+            },
+            "valueType":
+            {
+              "baseType":
+              {
+                "id": 3,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "95:6:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "id": 4,
+              "nodeType": "ArrayTypeName",
+              "src": "95:8:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                "typeString": "string[]"
+              }
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "body":
+          {
+            "id": 20,
+            "nodeType": "Block",
+            "src": "226:40:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 18,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "baseExpression":
+                    {
+                      "id": 14,
+                      "name": "mString",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "237:7:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_string_storage_$dyn_storage_$",
+                        "typeString": "mapping(uint256 => string storage ref[] storage ref)"
+                      }
+                    },
+                    "id": 16,
+                    "indexExpression":
+                    {
+                      "id": 15,
+                      "name": "key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8,
+                      "src": "245:3:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": true,
+                    "nodeType": "IndexAccess",
+                    "src": "237:12:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                      "typeString": "string storage ref[] storage ref"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "=",
+                  "rightHandSide":
+                  {
+                    "id": 17,
+                    "name": "values",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 11,
+                    "src": "252:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
+                      "typeString": "string memory[] memory"
+                    }
+                  },
+                  "src": "237:21:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                    "typeString": "string storage ref[] storage ref"
+                  }
+                },
+                "id": 19,
+                "nodeType": "ExpressionStatement",
+                "src": "237:21:0"
+              }
+            ]
+          },
+          "functionSelector": "2d46830e",
+          "id": 21,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "fillMapping",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 12,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 8,
+                "mutability": "mutable",
+                "name": "key",
+                "nodeType": "VariableDeclaration",
+                "scope": 21,
+                "src": "185:8:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 7,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "185:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 11,
+                "mutability": "mutable",
+                "name": "values",
+                "nodeType": "VariableDeclaration",
+                "scope": 21,
+                "src": "195:22:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
+                  "typeString": "string[]"
+                },
+                "typeName":
+                {
+                  "baseType":
+                  {
+                    "id": 9,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "195:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "id": 10,
+                  "nodeType": "ArrayTypeName",
+                  "src": "195:8:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                    "typeString": "string[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "184:34:0"
+          },
+          "returnParameters":
+          {
+            "id": 13,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "226:0:0"
+          },
+          "scope": 50,
+          "src": "164:102:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 33,
+            "nodeType": "Block",
+            "src": "435:38:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "baseExpression":
+                  {
+                    "id": 29,
+                    "name": "mString",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 6,
+                    "src": "453:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_string_storage_$dyn_storage_$",
+                      "typeString": "mapping(uint256 => string storage ref[] storage ref)"
+                    }
+                  },
+                  "id": 31,
+                  "indexExpression":
+                  {
+                    "id": 30,
+                    "name": "key",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 23,
+                    "src": "461:3:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "isConstant": false,
+                  "isLValue": true,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "nodeType": "IndexAccess",
+                  "src": "453:12:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                    "typeString": "string storage ref[] storage ref"
+                  }
+                },
+                "functionReturnParameters": 28,
+                "id": 32,
+                "nodeType": "Return",
+                "src": "446:19:0"
+              }
+            ]
+          },
+          "functionSelector": "eec8e5d8",
+          "id": 34,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "getValueFromMapping",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 24,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 23,
+                "mutability": "mutable",
+                "name": "key",
+                "nodeType": "VariableDeclaration",
+                "scope": 34,
+                "src": "388:8:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 22,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "388:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "387:10:0"
+          },
+          "returnParameters":
+          {
+            "id": 28,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 27,
+                "mutability": "mutable",
+                "name": "",
+                "nodeType": "VariableDeclaration",
+                "scope": 34,
+                "src": "418:15:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
+                  "typeString": "string[]"
+                },
+                "typeName":
+                {
+                  "baseType":
+                  {
+                    "id": 25,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "418:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ArrayTypeName",
+                  "src": "418:8:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                    "typeString": "string[]"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "417:17:0"
+          },
+          "scope": 50,
+          "src": "359:114:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 48,
+            "nodeType": "Block",
+            "src": "584:125:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  43
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 43,
+                    "mutability": "mutable",
+                    "name": "stringValues",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 48,
+                    "src": "595:28:0",
+                    "stateVariable": false,
+                    "storageLocation": "memory",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
+                      "typeString": "string[]"
+                    },
+                    "typeName":
+                    {
+                      "baseType":
+                      {
+                        "id": 41,
+                        "name": "string",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "595:6:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_string_storage_ptr",
+                          "typeString": "string"
+                        }
+                      },
+                      "id": 42,
+                      "nodeType": "ArrayTypeName",
+                      "src": "595:8:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                        "typeString": "string[]"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 47,
+                "initialValue":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 45,
+                      "name": "key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 36,
+                      "src": "646:3:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    ],
+                    "id": 44,
+                    "name": "getValueFromMapping",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 34,
+                    "src": "626:19:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_array$_t_string_memory_ptr_$dyn_memory_ptr_$",
+                      "typeString": "function (uint256) view returns (string memory[] memory)"
+                    }
+                  },
+                  "id": 46,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "626:24:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "string memory[] memory"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "595:55:0"
+              }
+            ]
+          },
+          "functionSelector": "3d17508b",
+          "id": 49,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "useMappingInOtherFunction",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 37,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 36,
+                "mutability": "mutable",
+                "name": "key",
+                "nodeType": "VariableDeclaration",
+                "scope": 49,
+                "src": "567:8:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 35,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "567:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "566:10:0"
+          },
+          "returnParameters":
+          {
+            "id": 38,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "584:0:0"
+          },
+          "scope": 50,
+          "src": "532:177:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 51,
+      "src": "58:660:0"
+    }
+  ],
+  "src": "33:689:0"
+}

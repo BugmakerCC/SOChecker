@@ -1,0 +1,736 @@
+{
+  "absolutePath": "./output/output_422.sol",
+  "exportedSymbols":
+  {
+    "Contract2":
+    [
+      49
+    ],
+    "IContract1":
+    [
+      15
+    ],
+    "UserInfo":
+    [
+      6
+    ]
+  },
+  "id": 50,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".7"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "canonicalName": "UserInfo",
+      "id": 6,
+      "members":
+      [
+        {
+          "constant": false,
+          "id": 3,
+          "mutability": "mutable",
+          "name": "id",
+          "nameLocation": "53:2:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 6,
+          "src": "48:7:0",
+          "stateVariable": false,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_uint256",
+            "typeString": "uint256"
+          },
+          "typeName":
+          {
+            "id": 2,
+            "name": "uint",
+            "nodeType": "ElementaryTypeName",
+            "src": "48:4:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            }
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 5,
+          "mutability": "mutable",
+          "name": "ime",
+          "nameLocation": "69:3:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 6,
+          "src": "62:10:0",
+          "stateVariable": false,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_string_storage_ptr",
+            "typeString": "string"
+          },
+          "typeName":
+          {
+            "id": 4,
+            "name": "string",
+            "nodeType": "ElementaryTypeName",
+            "src": "62:6:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            }
+          },
+          "visibility": "internal"
+        }
+      ],
+      "name": "UserInfo",
+      "nameLocation": "34:8:0",
+      "nodeType": "StructDefinition",
+      "scope": 50,
+      "src": "27:49:0",
+      "visibility": "public"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "contractDependencies": [],
+      "contractKind": "interface",
+      "fullyImplemented": false,
+      "id": 15,
+      "linearizedBaseContracts":
+      [
+        15
+      ],
+      "name": "IContract1",
+      "nameLocation": "90:10:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "functionSelector": "71e5ee5f",
+          "id": 14,
+          "implemented": false,
+          "kind": "function",
+          "modifiers": [],
+          "name": "arr",
+          "nameLocation": "120:3:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 9,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 8,
+                "mutability": "mutable",
+                "name": "index",
+                "nameLocation": "129:5:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 14,
+                "src": "124:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 7,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "124:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "123:12:0"
+          },
+          "returnParameters":
+          {
+            "id": 13,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 12,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 14,
+                "src": "153:15:0",
+                "stateVariable": false,
+                "storageLocation": "memory",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_struct$_UserInfo_$6_memory_ptr",
+                  "typeString": "struct UserInfo"
+                },
+                "typeName":
+                {
+                  "id": 11,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 10,
+                    "name": "UserInfo",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 6,
+                    "src": "153:8:0"
+                  },
+                  "referencedDeclaration": 6,
+                  "src": "153:8:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_UserInfo_$6_storage_ptr",
+                    "typeString": "struct UserInfo"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "152:18:0"
+          },
+          "scope": 15,
+          "src": "111:60:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 50,
+      "src": "80:94:0",
+      "usedErrors": []
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 49,
+      "linearizedBaseContracts":
+      [
+        49
+      ],
+      "name": "Contract2",
+      "nameLocation": "187:9:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "anonymous": false,
+          "id": 20,
+          "name": "UserEVENT",
+          "nameLocation": "209:9:0",
+          "nodeType": "EventDefinition",
+          "parameters":
+          {
+            "id": 19,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 18,
+                "indexed": false,
+                "mutability": "mutable",
+                "name": "UserInfo",
+                "nameLocation": "229:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 20,
+                "src": "220:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_struct$_UserInfo_$6_memory_ptr",
+                  "typeString": "struct UserInfo"
+                },
+                "typeName":
+                {
+                  "id": 17,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode":
+                  {
+                    "id": 16,
+                    "name": "UserInfo",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 6,
+                    "src": "220:8:0"
+                  },
+                  "referencedDeclaration": 6,
+                  "src": "220:8:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_UserInfo_$6_storage_ptr",
+                    "typeString": "struct UserInfo"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "219:19:0"
+          },
+          "src": "203:36:0"
+        },
+        {
+          "constant": false,
+          "functionSelector": "30ebe67d",
+          "id": 24,
+          "mutability": "mutable",
+          "name": "newarr",
+          "nameLocation": "264:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 49,
+          "src": "245:25:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_UserInfo_$6_storage_$dyn_storage",
+            "typeString": "struct UserInfo[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 22,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 21,
+                "name": "UserInfo",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 6,
+                "src": "245:8:0"
+              },
+              "referencedDeclaration": 6,
+              "src": "245:8:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_UserInfo_$6_storage_ptr",
+                "typeString": "struct UserInfo"
+              }
+            },
+            "id": 23,
+            "nodeType": "ArrayTypeName",
+            "src": "245:11:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_UserInfo_$6_storage_$dyn_storage_ptr",
+              "typeString": "struct UserInfo[]"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 47,
+            "nodeType": "Block",
+            "src": "322:93:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 35,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 28,
+                      "src": "354:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "arguments":
+                      [
+                        {
+                          "id": 32,
+                          "name": "addr",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 26,
+                          "src": "344:4:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 31,
+                        "name": "IContract1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 15,
+                        "src": "333:10:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_type$_t_contract$_IContract1_$15_$",
+                          "typeString": "type(contract IContract1)"
+                        }
+                      },
+                      "id": 33,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "333:16:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_contract$_IContract1_$15",
+                        "typeString": "contract IContract1"
+                      }
+                    },
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "arr",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 14,
+                    "src": "333:20:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$_t_struct$_UserInfo_$6_memory_ptr_$",
+                      "typeString": "function (uint256) external returns (struct UserInfo memory)"
+                    }
+                  },
+                  "id": 36,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "333:23:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_UserInfo_$6_memory_ptr",
+                    "typeString": "struct UserInfo memory"
+                  }
+                },
+                "id": 37,
+                "nodeType": "ExpressionStatement",
+                "src": "333:23:0"
+              },
+              {
+                "eventCall":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments":
+                      [
+                        {
+                          "id": 43,
+                          "name": "i",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 28,
+                          "src": "404:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "expression":
+                        {
+                          "arguments":
+                          [
+                            {
+                              "id": 40,
+                              "name": "addr",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 26,
+                              "src": "394:4:0",
+                              "typeDescriptions":
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 39,
+                            "name": "IContract1",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 15,
+                            "src": "383:10:0",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_type$_t_contract$_IContract1_$15_$",
+                              "typeString": "type(contract IContract1)"
+                            }
+                          },
+                          "id": 41,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "383:16:0",
+                          "tryCall": false,
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_contract$_IContract1_$15",
+                            "typeString": "contract IContract1"
+                          }
+                        },
+                        "id": 42,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "arr",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 14,
+                        "src": "383:20:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$_t_struct$_UserInfo_$6_memory_ptr_$",
+                          "typeString": "function (uint256) external returns (struct UserInfo memory)"
+                        }
+                      },
+                      "id": 44,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "383:23:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_UserInfo_$6_memory_ptr",
+                        "typeString": "struct UserInfo memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_UserInfo_$6_memory_ptr",
+                        "typeString": "struct UserInfo memory"
+                      }
+                    ],
+                    "id": 38,
+                    "name": "UserEVENT",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 20,
+                    "src": "372:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_event_nonpayable$_t_struct$_UserInfo_$6_memory_ptr_$returns$__$",
+                      "typeString": "function (struct UserInfo memory)"
+                    }
+                  },
+                  "id": 45,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "372:35:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 46,
+                "nodeType": "EmitStatement",
+                "src": "367:40:0"
+              }
+            ]
+          },
+          "functionSelector": "bd0d639f",
+          "id": 48,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "foo",
+          "nameLocation": "288:3:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 29,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 26,
+                "mutability": "mutable",
+                "name": "addr",
+                "nameLocation": "300:4:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 48,
+                "src": "292:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName":
+                {
+                  "id": 25,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "292:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 28,
+                "mutability": "mutable",
+                "name": "i",
+                "nameLocation": "310:1:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 48,
+                "src": "305:6:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 27,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "305:4:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "291:21:0"
+          },
+          "returnParameters":
+          {
+            "id": 30,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "322:0:0"
+          },
+          "scope": 49,
+          "src": "279:136:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "external"
+        }
+      ],
+      "scope": 50,
+      "src": "178:240:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:422:0"
+}

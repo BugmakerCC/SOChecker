@@ -1,0 +1,1249 @@
+{
+  "absolutePath": "output/output_173.sol",
+  "exportedSymbols":
+  {
+    "GameRoom":
+    [
+      84
+    ]
+  },
+  "id": 85,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "GameRoom",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 84,
+      "linearizedBaseContracts":
+      [
+        84
+      ],
+      "name": "GameRoom",
+      "nameLocation": "34:8:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "GameRoom.Room",
+          "id": 9,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 4,
+              "mutability": "mutable",
+              "name": "players",
+              "nameLocation": "83:7:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 9,
+              "src": "73:17:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              },
+              "typeName":
+              {
+                "baseType":
+                {
+                  "id": 2,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "73:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "id": 3,
+                "nodeType": "ArrayTypeName",
+                "src": "73:9:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                  "typeString": "address[]"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 6,
+              "mutability": "mutable",
+              "name": "score",
+              "nameLocation": "109:5:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 9,
+              "src": "101:13:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 5,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "101:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 8,
+              "mutability": "mutable",
+              "name": "time",
+              "nameLocation": "133:4:0",
+              "nodeType": "VariableDeclaration",
+              "scope": 9,
+              "src": "125:12:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 7,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "125:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "Room",
+          "nameLocation": "57:4:0",
+          "nodeType": "StructDefinition",
+          "scope": 84,
+          "src": "50:95:0",
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "functionSelector": "1bae0ac8",
+          "id": 13,
+          "mutability": "mutable",
+          "name": "rooms",
+          "nameLocation": "171:5:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 84,
+          "src": "157:19:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_array$_t_struct$_Room_$9_storage_$dyn_storage",
+            "typeString": "struct GameRoom.Room[]"
+          },
+          "typeName":
+          {
+            "baseType":
+            {
+              "id": 11,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode":
+              {
+                "id": 10,
+                "name": "Room",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 9,
+                "src": "157:4:0"
+              },
+              "referencedDeclaration": 9,
+              "src": "157:4:0",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_Room_$9_storage_ptr",
+                "typeString": "struct GameRoom.Room"
+              }
+            },
+            "id": 12,
+            "nodeType": "ArrayTypeName",
+            "src": "157:6:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_array$_t_struct$_Room_$9_storage_$dyn_storage_ptr",
+              "typeString": "struct GameRoom.Room[]"
+            }
+          },
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 35,
+            "nodeType": "Block",
+            "src": "218:93:0",
+            "statements":
+            [
+              {
+                "assignments":
+                [
+                  18
+                ],
+                "declarations":
+                [
+                  {
+                    "constant": false,
+                    "id": 18,
+                    "mutability": "mutable",
+                    "name": "room",
+                    "nameLocation": "241:4:0",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 35,
+                    "src": "229:16:0",
+                    "stateVariable": false,
+                    "storageLocation": "memory",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_struct$_Room_$9_memory_ptr",
+                      "typeString": "struct GameRoom.Room"
+                    },
+                    "typeName":
+                    {
+                      "id": 17,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode":
+                      {
+                        "id": 16,
+                        "name": "Room",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 9,
+                        "src": "229:4:0"
+                      },
+                      "referencedDeclaration": 9,
+                      "src": "229:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Room_$9_storage_ptr",
+                        "typeString": "struct GameRoom.Room"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "id": 28,
+                "initialValue":
+                {
+                  "arguments":
+                  [
+                    {
+                      "arguments":
+                      [
+                        {
+                          "hexValue": "30",
+                          "id": 23,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "267:1:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        }
+                      ],
+                      "expression":
+                      {
+                        "argumentTypes":
+                        [
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          }
+                        ],
+                        "id": 22,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "253:13:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_address_$dyn_memory_ptr_$",
+                          "typeString": "function (uint256) pure returns (address[] memory)"
+                        },
+                        "typeName":
+                        {
+                          "baseType":
+                          {
+                            "id": 20,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "257:7:0",
+                            "stateMutability": "nonpayable",
+                            "typeDescriptions":
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "id": 21,
+                          "nodeType": "ArrayTypeName",
+                          "src": "257:9:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                            "typeString": "address[]"
+                          }
+                        }
+                      },
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "253:16:0",
+                      "tryCall": false,
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                        "typeString": "address[] memory"
+                      }
+                    },
+                    {
+                      "hexValue": "30",
+                      "id": 25,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "271:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    {
+                      "hexValue": "30",
+                      "id": 26,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "274:1:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                        "typeString": "address[] memory"
+                      },
+                      {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      }
+                    ],
+                    "id": 19,
+                    "name": "Room",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 9,
+                    "src": "248:4:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_type$_t_struct$_Room_$9_storage_ptr_$",
+                      "typeString": "type(struct GameRoom.Room storage pointer)"
+                    }
+                  },
+                  "id": 27,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "structConstructorCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "248:28:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_struct$_Room_$9_memory_ptr",
+                    "typeString": "struct GameRoom.Room memory"
+                  }
+                },
+                "nodeType": "VariableDeclarationStatement",
+                "src": "229:47:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 32,
+                      "name": "room",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18,
+                      "src": "298:4:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_struct$_Room_$9_memory_ptr",
+                        "typeString": "struct GameRoom.Room memory"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_struct$_Room_$9_memory_ptr",
+                        "typeString": "struct GameRoom.Room memory"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "id": 29,
+                      "name": "rooms",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "287:5:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_struct$_Room_$9_storage_$dyn_storage",
+                        "typeString": "struct GameRoom.Room storage ref[] storage ref"
+                      }
+                    },
+                    "id": 31,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "287:10:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Room_$9_storage_$dyn_storage_ptr_$_t_struct$_Room_$9_storage_$returns$__$bound_to$_t_array$_t_struct$_Room_$9_storage_$dyn_storage_ptr_$",
+                      "typeString": "function (struct GameRoom.Room storage ref[] storage pointer,struct GameRoom.Room storage ref)"
+                    }
+                  },
+                  "id": 33,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "287:16:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 34,
+                "nodeType": "ExpressionStatement",
+                "src": "287:16:0"
+              }
+            ]
+          },
+          "functionSelector": "3be272aa",
+          "id": 36,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "createRoom",
+          "nameLocation": "198:10:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 14,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "208:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 15,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "218:0:0"
+          },
+          "scope": 84,
+          "src": "189:122:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 58,
+            "nodeType": "Block",
+            "src": "367:127:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "commonType":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 45,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression":
+                      {
+                        "id": 42,
+                        "name": "roomIndex",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38,
+                        "src": "386:9:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "<",
+                      "rightExpression":
+                      {
+                        "expression":
+                        {
+                          "id": 43,
+                          "name": "rooms",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "398:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_array$_t_struct$_Room_$9_storage_$dyn_storage",
+                            "typeString": "struct GameRoom.Room storage ref[] storage ref"
+                          }
+                        },
+                        "id": 44,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "length",
+                        "nodeType": "MemberAccess",
+                        "src": "398:12:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "386:24:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    {
+                      "hexValue": "526f6f6d20646f6573206e6f74206578697374",
+                      "id": 46,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "412:21:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_stringliteral_25a13a881d221e210e94b0d4b6cb2f999d503e79d9c8dc8831b1951b35235c30",
+                        "typeString": "literal_string \"Room does not exist\""
+                      },
+                      "value": "Room does not exist"
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      {
+                        "typeIdentifier": "t_stringliteral_25a13a881d221e210e94b0d4b6cb2f999d503e79d9c8dc8831b1951b35235c30",
+                        "typeString": "literal_string \"Room does not exist\""
+                      }
+                    ],
+                    "id": 41,
+                    "name": "require",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations":
+                    [
+                      -18,
+                      -18
+                    ],
+                    "referencedDeclaration": -18,
+                    "src": "378:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (bool,string memory) pure"
+                    }
+                  },
+                  "id": 47,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "378:56:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 48,
+                "nodeType": "ExpressionStatement",
+                "src": "378:56:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "expression":
+                      {
+                        "id": 54,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "475:3:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 55,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "475:10:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "expression":
+                      {
+                        "baseExpression":
+                        {
+                          "id": 49,
+                          "name": "rooms",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "445:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_array$_t_struct$_Room_$9_storage_$dyn_storage",
+                            "typeString": "struct GameRoom.Room storage ref[] storage ref"
+                          }
+                        },
+                        "id": 51,
+                        "indexExpression":
+                        {
+                          "id": 50,
+                          "name": "roomIndex",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 38,
+                          "src": "451:9:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "445:16:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_Room_$9_storage",
+                          "typeString": "struct GameRoom.Room storage ref"
+                        }
+                      },
+                      "id": 52,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "players",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4,
+                      "src": "445:24:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "id": 53,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "445:29:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                      "typeString": "function (address[] storage pointer,address)"
+                    }
+                  },
+                  "id": 56,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "445:41:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 57,
+                "nodeType": "ExpressionStatement",
+                "src": "445:41:0"
+              }
+            ]
+          },
+          "functionSelector": "9cfc4b45",
+          "id": 59,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "joinRoom",
+          "nameLocation": "332:8:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 39,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 38,
+                "mutability": "mutable",
+                "name": "roomIndex",
+                "nameLocation": "349:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 59,
+                "src": "341:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 37,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "341:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "340:19:0"
+          },
+          "returnParameters":
+          {
+            "id": 40,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "367:0:0"
+          },
+          "scope": 84,
+          "src": "323:171:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 82,
+            "nodeType": "Block",
+            "src": "567:123:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "commonType":
+                      {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 70,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression":
+                      {
+                        "id": 67,
+                        "name": "roomIndex",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 61,
+                        "src": "586:9:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "<",
+                      "rightExpression":
+                      {
+                        "expression":
+                        {
+                          "id": 68,
+                          "name": "rooms",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "598:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_array$_t_struct$_Room_$9_storage_$dyn_storage",
+                            "typeString": "struct GameRoom.Room storage ref[] storage ref"
+                          }
+                        },
+                        "id": 69,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "length",
+                        "nodeType": "MemberAccess",
+                        "src": "598:12:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "586:24:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    {
+                      "hexValue": "526f6f6d20646f6573206e6f74206578697374",
+                      "id": 71,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "612:21:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_stringliteral_25a13a881d221e210e94b0d4b6cb2f999d503e79d9c8dc8831b1951b35235c30",
+                        "typeString": "literal_string \"Room does not exist\""
+                      },
+                      "value": "Room does not exist"
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      {
+                        "typeIdentifier": "t_stringliteral_25a13a881d221e210e94b0d4b6cb2f999d503e79d9c8dc8831b1951b35235c30",
+                        "typeString": "literal_string \"Room does not exist\""
+                      }
+                    ],
+                    "id": 66,
+                    "name": "require",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations":
+                    [
+                      -18,
+                      -18
+                    ],
+                    "referencedDeclaration": -18,
+                    "src": "578:7:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (bool,string memory) pure"
+                    }
+                  },
+                  "id": 72,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "578:56:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 73,
+                "nodeType": "ExpressionStatement",
+                "src": "578:56:0"
+              },
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "id": 79,
+                      "name": "player",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 63,
+                      "src": "675:6:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    ],
+                    "expression":
+                    {
+                      "expression":
+                      {
+                        "baseExpression":
+                        {
+                          "id": 74,
+                          "name": "rooms",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 13,
+                          "src": "645:5:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_array$_t_struct$_Room_$9_storage_$dyn_storage",
+                            "typeString": "struct GameRoom.Room storage ref[] storage ref"
+                          }
+                        },
+                        "id": 76,
+                        "indexExpression":
+                        {
+                          "id": 75,
+                          "name": "roomIndex",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 61,
+                          "src": "651:9:0",
+                          "typeDescriptions":
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "645:16:0",
+                        "typeDescriptions":
+                        {
+                          "typeIdentifier": "t_struct$_Room_$9_storage",
+                          "typeString": "struct GameRoom.Room storage ref"
+                        }
+                      },
+                      "id": 77,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "players",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4,
+                      "src": "645:24:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_array$_t_address_$dyn_storage",
+                        "typeString": "address[] storage ref"
+                      }
+                    },
+                    "id": 78,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "push",
+                    "nodeType": "MemberAccess",
+                    "src": "645:29:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                      "typeString": "function (address[] storage pointer,address)"
+                    }
+                  },
+                  "id": 80,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "645:37:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 81,
+                "nodeType": "ExpressionStatement",
+                "src": "645:37:0"
+              }
+            ]
+          },
+          "functionSelector": "d6419349",
+          "id": 83,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "addPlayer",
+          "nameLocation": "515:9:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 64,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 61,
+                "mutability": "mutable",
+                "name": "roomIndex",
+                "nameLocation": "533:9:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 83,
+                "src": "525:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 60,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "525:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 63,
+                "mutability": "mutable",
+                "name": "player",
+                "nameLocation": "552:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 83,
+                "src": "544:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName":
+                {
+                  "id": 62,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "544:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "524:35:0"
+          },
+          "returnParameters":
+          {
+            "id": 65,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "567:0:0"
+          },
+          "scope": 84,
+          "src": "506:184:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 85,
+      "src": "25:668:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:697:0"
+}

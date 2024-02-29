@@ -1,0 +1,438 @@
+{
+  "absolutePath": "output/output_916.sol",
+  "exportedSymbols":
+  {
+    "AttackModifier":
+    [
+      31
+    ]
+  },
+  "id": 32,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "AttackModifier",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 31,
+      "linearizedBaseContracts":
+      [
+        31
+      ],
+      "name": "AttackModifier",
+      "nameLocation": "34:14:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "constant": false,
+          "functionSelector": "d8124c5f",
+          "id": 4,
+          "mutability": "mutable",
+          "name": "hp",
+          "nameLocation": "67:2:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 31,
+          "src": "56:19:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_int256",
+            "typeString": "int256"
+          },
+          "typeName":
+          {
+            "id": 2,
+            "name": "int",
+            "nodeType": "ElementaryTypeName",
+            "src": "56:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            }
+          },
+          "value":
+          {
+            "hexValue": "313030",
+            "id": 3,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "number",
+            "lValueRequested": false,
+            "nodeType": "Literal",
+            "src": "72:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_rational_100_by_1",
+              "typeString": "int_const 100"
+            },
+            "value": "100"
+          },
+          "visibility": "public"
+        },
+        {
+          "constant": false,
+          "id": 7,
+          "mutability": "mutable",
+          "name": "attack",
+          "nameLocation": "97:6:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 31,
+          "src": "84:24:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_int256",
+            "typeString": "int256"
+          },
+          "typeName":
+          {
+            "id": 5,
+            "name": "int",
+            "nodeType": "ElementaryTypeName",
+            "src": "84:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            }
+          },
+          "value":
+          {
+            "hexValue": "3230",
+            "id": 6,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "number",
+            "lValueRequested": false,
+            "nodeType": "Literal",
+            "src": "106:2:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_rational_20_by_1",
+              "typeString": "int_const 20"
+            },
+            "value": "20"
+          },
+          "visibility": "internal"
+        },
+        {
+          "constant": false,
+          "id": 10,
+          "mutability": "mutable",
+          "name": "attackMod",
+          "nameLocation": "127:9:0",
+          "nodeType": "VariableDeclaration",
+          "scope": 31,
+          "src": "115:25:0",
+          "stateVariable": true,
+          "storageLocation": "default",
+          "typeDescriptions":
+          {
+            "typeIdentifier": "t_int256",
+            "typeString": "int256"
+          },
+          "typeName":
+          {
+            "id": 8,
+            "name": "int",
+            "nodeType": "ElementaryTypeName",
+            "src": "115:3:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            }
+          },
+          "value":
+          {
+            "hexValue": "32",
+            "id": 9,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "kind": "number",
+            "lValueRequested": false,
+            "nodeType": "Literal",
+            "src": "139:1:0",
+            "typeDescriptions":
+            {
+              "typeIdentifier": "t_rational_2_by_1",
+              "typeString": "int_const 2"
+            },
+            "value": "2"
+          },
+          "visibility": "private"
+        },
+        {
+          "body":
+          {
+            "id": 19,
+            "nodeType": "Block",
+            "src": "190:44:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "commonType":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "id": 17,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftExpression":
+                  {
+                    "id": 15,
+                    "name": "attack",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7,
+                    "src": "208:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "nodeType": "BinaryOperation",
+                  "operator": "*",
+                  "rightExpression":
+                  {
+                    "id": 16,
+                    "name": "attackMod",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10,
+                    "src": "217:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "src": "208:18:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "functionReturnParameters": 14,
+                "id": 18,
+                "nodeType": "Return",
+                "src": "201:25:0"
+              }
+            ]
+          },
+          "functionSelector": "f8a8fd6d",
+          "id": 20,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "test",
+          "nameLocation": "158:4:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 11,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "162:2:0"
+          },
+          "returnParameters":
+          {
+            "id": 14,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 13,
+                "mutability": "mutable",
+                "name": "",
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "VariableDeclaration",
+                "scope": 20,
+                "src": "185:3:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName":
+                {
+                  "id": 12,
+                  "name": "int",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "185:3:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "184:5:0"
+          },
+          "scope": 31,
+          "src": "149:85:0",
+          "stateMutability": "view",
+          "virtual": false,
+          "visibility": "public"
+        },
+        {
+          "body":
+          {
+            "id": 29,
+            "nodeType": "Block",
+            "src": "284:38:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "id": 27,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "lValueRequested": false,
+                  "leftHandSide":
+                  {
+                    "id": 25,
+                    "name": "attackMod",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10,
+                    "src": "295:9:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "nodeType": "Assignment",
+                  "operator": "+=",
+                  "rightHandSide":
+                  {
+                    "id": 26,
+                    "name": "amount",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 22,
+                    "src": "308:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "src": "295:19:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "id": 28,
+                "nodeType": "ExpressionStatement",
+                "src": "295:19:0"
+              }
+            ]
+          },
+          "id": 30,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "modifyAttack",
+          "nameLocation": "251:12:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 23,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 22,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "268:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 30,
+                "src": "264:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName":
+                {
+                  "id": 21,
+                  "name": "int",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "264:3:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "263:12:0"
+          },
+          "returnParameters":
+          {
+            "id": 24,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "284:0:0"
+          },
+          "scope": 31,
+          "src": "242:80:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "private"
+        }
+      ],
+      "scope": 32,
+      "src": "25:300:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:329:0"
+}

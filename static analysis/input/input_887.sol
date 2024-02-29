@@ -1,0 +1,7 @@
+contract FundMe {
+    constructor() payable {
+    }
+
+}
+
+

@@ -1,0 +1,138 @@
+[2023-08-22 04:01:42,330] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:39<01:18, 39.39s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:47<00:20, 20.77s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:48<00:00, 39.36s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:48<00:00, 36.20s/it]
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): LlamaForCausalLM(
+      (model): LlamaModel(
+        (embed_tokens): Embedding(32000, 5120, padding_idx=0)
+        (layers): ModuleList(
+          (0-39): 40 x LlamaDecoderLayer(
+            (self_attn): LlamaAttention(
+              (q_proj): Linear(
+                in_features=5120, out_features=5120, bias=False
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=5120, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=5120, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (k_proj): Linear(in_features=5120, out_features=5120, bias=False)
+              (v_proj): Linear(
+                in_features=5120, out_features=5120, bias=False
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=5120, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=5120, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+              )
+              (o_proj): Linear(in_features=5120, out_features=5120, bias=False)
+              (rotary_emb): LlamaRotaryEmbedding()
+            )
+            (mlp): LlamaMLP(
+              (gate_proj): Linear(in_features=5120, out_features=13824, bias=False)
+              (up_proj): Linear(in_features=5120, out_features=13824, bias=False)
+              (down_proj): Linear(in_features=13824, out_features=5120, bias=False)
+              (act_fn): SiLUActivation()
+            )
+            (input_layernorm): LlamaRMSNorm()
+            (post_attention_layernorm): LlamaRMSNorm()
+          )
+        )
+        (norm): LlamaRMSNorm()
+      )
+      (lm_head): Linear(in_features=5120, out_features=32000, bias=False)
+    )
+  )
+)
+PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): PeftModelForCausalLM(
+      (base_model): LoraModel(
+        (model): LlamaForCausalLM(
+          (model): LlamaModel(
+            (embed_tokens): Embedding(32001, 5120)
+            (layers): ModuleList(
+              (0-39): 40 x LlamaDecoderLayer(
+                (self_attn): LlamaAttention(
+                  (q_proj): Linear(
+                    in_features=5120, out_features=5120, bias=False
+                    (lora_dropout): ModuleDict(
+                      (default): Dropout(p=0.05, inplace=False)
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=5120, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=5120, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                  )
+                  (k_proj): Linear(in_features=5120, out_features=5120, bias=False)
+                  (v_proj): Linear(
+                    in_features=5120, out_features=5120, bias=False
+                    (lora_dropout): ModuleDict(
+                      (default): Dropout(p=0.05, inplace=False)
+                    )
+                    (lora_A): ModuleDict(
+                      (default): Linear(in_features=5120, out_features=8, bias=False)
+                    )
+                    (lora_B): ModuleDict(
+                      (default): Linear(in_features=8, out_features=5120, bias=False)
+                    )
+                    (lora_embedding_A): ParameterDict()
+                    (lora_embedding_B): ParameterDict()
+                  )
+                  (o_proj): Linear(in_features=5120, out_features=5120, bias=False)
+                  (rotary_emb): LlamaRotaryEmbedding()
+                )
+                (mlp): LlamaMLP(
+                  (gate_proj): Linear(in_features=5120, out_features=13824, bias=False)
+                  (up_proj): Linear(in_features=5120, out_features=13824, bias=False)
+                  (down_proj): Linear(in_features=13824, out_features=5120, bias=False)
+                  (act_fn): SiLUActivation()
+                )
+                (input_layernorm): LlamaRMSNorm()
+                (post_attention_layernorm): LlamaRMSNorm()
+              )
+            )
+            (norm): LlamaRMSNorm()
+          )
+          (lm_head): Linear(in_features=5120, out_features=32001, bias=False)
+        )
+      )
+    )
+  )
+)
+  0%|          | 0/5 [00:00<?, ?it/s]This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+the inference time is 12775.742691010237 ms
+
+The weighted average exercise price per share in 2007 was $60.94.
+ 20%|██        | 1/5 [00:12<00:51, 12.84s/it]the inference time is 8502.136526629329 ms
+
+The weighted average exercise price per share in 2005 was $25.14.
+ 40%|████      | 2/5 [00:21<00:30, 10.33s/it]the inference time is 10740.253735333681 ms
+
+The weighted average exercise price per share in 2007 was $60.94, which is an increase of $35.80 from $25.14 in 2005, representing a 143% change over the years.
+ 60%|██████    | 3/5 [00:32<00:21, 10.54s/it]the inference time is 8537.100948393345 ms
+
+The weighted average exercise price per share in 2005 was $25.14.
+ 80%|████████  | 4/5 [00:40<00:09,  9.78s/it]the inference time is 16116.000751033425 ms
+
+The weighted average exercise price per share in 2007 was $60.94, which is an increase of $35.80 from $25.14 in 2005, representing a 143% change over the years. To calculate the change in weighted average exercise price per share from 2005 to 2007, we can use the following formula:
+
+Change in weighted average exercise price per share = (Weighted average exercise price per share in 2007 - Weighted average exercise price per share in 2005) / Weighted average exercise price per share in 2005
+
+100%|██████████| 5/5 [00:56<00:00, 12.09s/it]100%|██████████| 5/5 [00:56<00:00, 11.40s/it]

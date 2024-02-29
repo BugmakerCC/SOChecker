@@ -1,0 +1,419 @@
+{
+	"absolutePath" : "./output\\output_1005.sol",
+	"exportedSymbols" : 
+	{
+		"dynamic_array" : 
+		[
+			29
+		]
+	},
+	"id" : 30,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"^",
+				"0.4",
+				".17"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:24:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 29,
+			"linearizedBaseContracts" : 
+			[
+				29
+			],
+			"name" : "dynamic_array",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"constant" : false,
+					"id" : 4,
+					"name" : "myArray",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 29,
+					"src" : "59:20:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_array$_t_int256_$dyn_storage",
+						"typeString" : "int256[] storage ref"
+					},
+					"typeName" : 
+					{
+						"baseType" : 
+						{
+							"id" : 2,
+							"name" : "int",
+							"nodeType" : "ElementaryTypeName",
+							"src" : "59:3:0",
+							"typeDescriptions" : 
+							{
+								"typeIdentifier" : "t_int256",
+								"typeString" : "int256"
+							}
+						},
+						"id" : 3,
+						"length" : null,
+						"nodeType" : "ArrayTypeName",
+						"src" : "59:5:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_array$_t_int256_$dyn_storage_ptr",
+							"typeString" : "int256[] storage pointer"
+						}
+					},
+					"value" : null,
+					"visibility" : "public"
+				},
+				{
+					"constant" : false,
+					"id" : 6,
+					"name" : "x",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 29,
+					"src" : "86:5:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_int256",
+						"typeString" : "int256"
+					},
+					"typeName" : 
+					{
+						"id" : 5,
+						"name" : "int",
+						"nodeType" : "ElementaryTypeName",
+						"src" : "86:3:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_int256",
+							"typeString" : "int256"
+						}
+					},
+					"value" : null,
+					"visibility" : "internal"
+				},
+				{
+					"constant" : false,
+					"id" : 8,
+					"name" : "y",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 29,
+					"src" : "98:5:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_int256",
+						"typeString" : "int256"
+					},
+					"typeName" : 
+					{
+						"id" : 7,
+						"name" : "int",
+						"nodeType" : "ElementaryTypeName",
+						"src" : "98:3:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_int256",
+							"typeString" : "int256"
+						}
+					},
+					"value" : null,
+					"visibility" : "internal"
+				},
+				{
+					"body" : 
+					{
+						"id" : 27,
+						"nodeType" : "Block",
+						"src" : "245:70:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 15,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"id" : 11,
+										"name" : "x",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 6,
+										"src" : "256:1:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_int256",
+											"typeString" : "int256"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"commonType" : 
+										{
+											"typeIdentifier" : "t_int256",
+											"typeString" : "int256"
+										},
+										"id" : 14,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"lValueRequested" : false,
+										"leftExpression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 12,
+											"name" : "x",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 6,
+											"src" : "260:1:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_int256",
+												"typeString" : "int256"
+											}
+										},
+										"nodeType" : "BinaryOperation",
+										"operator" : "+",
+										"rightExpression" : 
+										{
+											"argumentTypes" : null,
+											"hexValue" : "32",
+											"id" : 13,
+											"isConstant" : false,
+											"isLValue" : false,
+											"isPure" : true,
+											"kind" : "number",
+											"lValueRequested" : false,
+											"nodeType" : "Literal",
+											"src" : "264:1:0",
+											"subdenomination" : null,
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_rational_2_by_1",
+												"typeString" : "int_const 2"
+											},
+											"value" : "2"
+										},
+										"src" : "260:5:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_int256",
+											"typeString" : "int256"
+										}
+									},
+									"src" : "256:9:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_int256",
+										"typeString" : "int256"
+									}
+								},
+								"id" : 16,
+								"nodeType" : "ExpressionStatement",
+								"src" : "256:9:0"
+							},
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 19,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"id" : 17,
+										"name" : "y",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 8,
+										"src" : "276:1:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_int256",
+											"typeString" : "int256"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"hexValue" : "35",
+										"id" : 18,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : true,
+										"kind" : "number",
+										"lValueRequested" : false,
+										"nodeType" : "Literal",
+										"src" : "280:1:0",
+										"subdenomination" : null,
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_rational_5_by_1",
+											"typeString" : "int_const 5"
+										},
+										"value" : "5"
+									},
+									"src" : "276:5:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_int256",
+										"typeString" : "int256"
+									}
+								},
+								"id" : 20,
+								"nodeType" : "ExpressionStatement",
+								"src" : "276:5:0"
+							},
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"arguments" : 
+									[
+										{
+											"argumentTypes" : null,
+											"hexValue" : "31",
+											"id" : 24,
+											"isConstant" : false,
+											"isLValue" : false,
+											"isPure" : true,
+											"kind" : "number",
+											"lValueRequested" : false,
+											"nodeType" : "Literal",
+											"src" : "305:1:0",
+											"subdenomination" : null,
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_rational_1_by_1",
+												"typeString" : "int_const 1"
+											},
+											"value" : "1"
+										}
+									],
+									"expression" : 
+									{
+										"argumentTypes" : 
+										[
+											{
+												"typeIdentifier" : "t_rational_1_by_1",
+												"typeString" : "int_const 1"
+											}
+										],
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 21,
+											"name" : "myArray",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 4,
+											"src" : "292:7:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_array$_t_int256_$dyn_storage",
+												"typeString" : "int256[] storage ref"
+											}
+										},
+										"id" : 23,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"lValueRequested" : false,
+										"memberName" : "push",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : null,
+										"src" : "292:12:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_function_arraypush_nonpayable$_t_int256_$returns$_t_uint256_$",
+											"typeString" : "function (int256) returns (uint256)"
+										}
+									},
+									"id" : 25,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"kind" : "functionCall",
+									"lValueRequested" : false,
+									"names" : [],
+									"nodeType" : "FunctionCall",
+									"src" : "292:15:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_uint256",
+										"typeString" : "uint256"
+									}
+								},
+								"id" : 26,
+								"nodeType" : "ExpressionStatement",
+								"src" : "292:15:0"
+							}
+						]
+					},
+					"id" : 28,
+					"implemented" : true,
+					"isConstructor" : true,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "dynamic_array",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 9,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "235:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 10,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "245:0:0"
+					},
+					"scope" : 29,
+					"src" : "213:102:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 30,
+			"src" : "28:290:0"
+		}
+	],
+	"src" : "0:322:0"
+}

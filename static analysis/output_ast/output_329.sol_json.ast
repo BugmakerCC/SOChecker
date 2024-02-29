@@ -1,0 +1,219 @@
+{
+  "absolutePath": "output/output_329.sol",
+  "exportedSymbols":
+  {
+    "DAppToken":
+    [
+      14
+    ]
+  },
+  "id": 15,
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".9"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "0:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "canonicalName": "DAppToken",
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 14,
+      "linearizedBaseContracts":
+      [
+        14
+      ],
+      "name": "DAppToken",
+      "nameLocation": "34:9:0",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "body":
+          {
+            "id": 12,
+            "nodeType": "Block",
+            "src": "101:45:0",
+            "statements":
+            [
+              {
+                "expression":
+                {
+                  "arguments":
+                  [
+                    {
+                      "hexValue": "7472616e73666572206e6f7420737570706f72746564",
+                      "id": 9,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "115:24:0",
+                      "typeDescriptions":
+                      {
+                        "typeIdentifier": "t_stringliteral_3c441763f09ee304254aba76572ad3e9485d9d0e41f120ad0d5561917239c8db",
+                        "typeString": "literal_string \"transfer not supported\""
+                      },
+                      "value": "transfer not supported"
+                    }
+                  ],
+                  "expression":
+                  {
+                    "argumentTypes":
+                    [
+                      {
+                        "typeIdentifier": "t_stringliteral_3c441763f09ee304254aba76572ad3e9485d9d0e41f120ad0d5561917239c8db",
+                        "typeString": "literal_string \"transfer not supported\""
+                      }
+                    ],
+                    "id": 8,
+                    "name": "revert",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations":
+                    [
+                      -19,
+                      -19
+                    ],
+                    "referencedDeclaration": -19,
+                    "src": "108:6:0",
+                    "typeDescriptions":
+                    {
+                      "typeIdentifier": "t_function_revert_pure$_t_string_memory_ptr_$returns$__$",
+                      "typeString": "function (string memory) pure"
+                    }
+                  },
+                  "id": 10,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": false,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "108:32:0",
+                  "tryCall": false,
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_tuple$__$",
+                    "typeString": "tuple()"
+                  }
+                },
+                "id": 11,
+                "nodeType": "ExpressionStatement",
+                "src": "108:32:0"
+              }
+            ]
+          },
+          "functionSelector": "a9059cbb",
+          "id": 13,
+          "implemented": true,
+          "kind": "function",
+          "modifiers": [],
+          "name": "transfer",
+          "nameLocation": "58:8:0",
+          "nodeType": "FunctionDefinition",
+          "parameters":
+          {
+            "id": 6,
+            "nodeType": "ParameterList",
+            "parameters":
+            [
+              {
+                "constant": false,
+                "id": 3,
+                "mutability": "mutable",
+                "name": "to",
+                "nameLocation": "75:2:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "67:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName":
+                {
+                  "id": 2,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "67:7:0",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "mutability": "mutable",
+                "name": "value",
+                "nameLocation": "87:5:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "79:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName":
+                {
+                  "id": 4,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "79:7:0",
+                  "typeDescriptions":
+                  {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "src": "66:27:0"
+          },
+          "returnParameters":
+          {
+            "id": 7,
+            "nodeType": "ParameterList",
+            "parameters": [],
+            "src": "101:0:0"
+          },
+          "scope": 14,
+          "src": "49:97:0",
+          "stateMutability": "nonpayable",
+          "virtual": false,
+          "visibility": "public"
+        }
+      ],
+      "scope": 15,
+      "src": "25:124:0",
+      "usedErrors": []
+    }
+  ],
+  "src": "0:153:0"
+}

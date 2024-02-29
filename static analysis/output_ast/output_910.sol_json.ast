@@ -1,0 +1,225 @@
+{
+  "absolutePath": "./output/output_910.sol",
+  "exportedSymbols":
+  {
+    "Structure":
+    [
+      15
+    ]
+  },
+  "id": 16,
+  "license": "MIT",
+  "nodeType": "SourceUnit",
+  "nodes":
+  [
+    {
+      "id": 1,
+      "literals":
+      [
+        "solidity",
+        "^",
+        "0.8",
+        ".0"
+      ],
+      "nodeType": "PragmaDirective",
+      "src": "35:23:0"
+    },
+    {
+      "abstract": false,
+      "baseContracts": [],
+      "contractDependencies": [],
+      "contractKind": "contract",
+      "fullyImplemented": true,
+      "id": 15,
+      "linearizedBaseContracts":
+      [
+        15
+      ],
+      "name": "Structure",
+      "nodeType": "ContractDefinition",
+      "nodes":
+      [
+        {
+          "canonicalName": "Structure.BaseStruct",
+          "id": 6,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 3,
+              "mutability": "mutable",
+              "name": "a",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "117:9:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 2,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "117:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 5,
+              "mutability": "mutable",
+              "name": "b",
+              "nodeType": "VariableDeclaration",
+              "scope": 6,
+              "src": "137:9:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 4,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "137:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "BaseStruct",
+          "nodeType": "StructDefinition",
+          "scope": 15,
+          "src": "88:66:0",
+          "visibility": "public"
+        },
+        {
+          "canonicalName": "Structure.DerivedStruct",
+          "id": 14,
+          "members":
+          [
+            {
+              "constant": false,
+              "id": 9,
+              "mutability": "mutable",
+              "name": "base",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "194:15:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_struct$_BaseStruct_$6_storage_ptr",
+                "typeString": "struct Structure.BaseStruct"
+              },
+              "typeName":
+              {
+                "id": 8,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode":
+                {
+                  "id": 7,
+                  "name": "BaseStruct",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 6,
+                  "src": "194:10:0"
+                },
+                "referencedDeclaration": 6,
+                "src": "194:10:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_struct$_BaseStruct_$6_storage_ptr",
+                  "typeString": "struct Structure.BaseStruct"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 11,
+              "mutability": "mutable",
+              "name": "c",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "220:9:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 10,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "220:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            },
+            {
+              "constant": false,
+              "id": 13,
+              "mutability": "mutable",
+              "name": "d",
+              "nodeType": "VariableDeclaration",
+              "scope": 14,
+              "src": "240:9:0",
+              "stateVariable": false,
+              "storageLocation": "default",
+              "typeDescriptions":
+              {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              },
+              "typeName":
+              {
+                "id": 12,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "240:7:0",
+                "typeDescriptions":
+                {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "visibility": "internal"
+            }
+          ],
+          "name": "DerivedStruct",
+          "nodeType": "StructDefinition",
+          "scope": 15,
+          "src": "162:95:0",
+          "visibility": "public"
+        }
+      ],
+      "scope": 16,
+      "src": "62:198:0"
+    }
+  ],
+  "src": "35:229:0"
+}
