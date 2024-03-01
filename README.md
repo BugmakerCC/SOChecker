@@ -6,7 +6,9 @@ For more information, please refer to our paper **Beyond Q\&A: Bridging Smart Co
 ---
 # *Code Completioner*
 *Finetuning dataset.json* is the file of dataset we use to finetune the model.
+
 *llama-recipes* is the official script used by *LLaMA* for model finetuning and inference. For more information, please refer to [Github repo](https://github.com/facebookresearch/llama-recipes).
+
 *finetuned model* is the file of model that we have finetuned.
 
 ## Running (Inference)
