@@ -28,4 +28,5 @@ Please note that the base model file for *llama2-chat-13b* is not included in ou
 ---
 # *Vulnerability Detector*
 *static analysis* stores all the files used for program analysis.
+
 The patterns of each vulnerability are described in *static analysis/patterns.md*.
