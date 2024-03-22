@@ -8,11 +8,11 @@ For more information, please refer to our paper **Beyond Q\&A: Bridging Smart Co
 *Code Completioner* is employed to complete smart contract fragments, enabling the generation of a comprehensive and **compiled** contract while preserving the integrity of the original fragments. This guarantees the seamless advancement of our subsequent program analysis procedures.
 
 ### File Description
-*Finetuning dataset.json* is the file of dataset we use to finetune the model.
+***Finetuning dataset.json*** is the file of dataset we use to finetune the model.
 
-*llama-recipes* is the official script used by *LLaMA* for model finetuning and inference. For more information, please refer to [Github repo](https://github.com/facebookresearch/llama-recipes).
+***llama-recipes*** is the official script used by *LLaMA* for model finetuning and inference. For more information, please refer to [Github repo](https://github.com/facebookresearch/llama-recipes).
 
-*finetuned model* is the file of model that we have finetuned.
+***finetuned model*** is the file of model that we have finetuned.
 
 ### Running (Inference)
 ```
@@ -24,9 +24,9 @@ python llama-recipes/inference/eval_inference.py \
 	--batch_size 1 \
 	# 2>&1|tee "log_path(.log)"
 ```
-The above instructions are stored in the file *run.sh*.
+The above instructions are stored in the file ***run.sh***.
 
-Please note that the base model file for *llama2-chat-13b* is not included in our repository. Users are required to download it independently and accurately designate the file path using the "base_model_path" parameter.
+Please note that the base model file for ***llama2-chat-13b*** is not included in our repository. Users are required to download it independently and accurately designate the file path using the "base_model_path" parameter.
 
 ---
 # *Vulnerability Detector*
@@ -34,9 +34,13 @@ Please note that the base model file for *llama2-chat-13b* is not included in ou
 
 ### File Description
 
-*static analysis* stores all the files used for program analysis.
+***static analysis*** stores all the files used for program analysis.
 
-The patterns of each vulnerability are described in *static analysis/patterns.md*.
+The patterns of each vulnerability are described in ***static analysis/patterns.md***.
+
+---
+# Evaluation
+We have publicly released a dataset comprising 897 real code snippets from *Stack Overflow*, and uploaded all experimental data to the folder ***evaluation***. The data is systematically organized in alignment with the research questions outlined in the evaluation section of our paper.
 
 ---
 # Survey
@@ -44,9 +48,11 @@ To confirm the widespread use of the code from *Stack Overflow* among smart cont
 
 ### File Description
 
-*repo keywords.txt* stores the keywords we search for GitHub repositories, and contributors related to these repositories will receive our online survey.
+***survey/repo keywords.txt*** stores the keywords we search for GitHub repositories, and contributors related to these repositories will receive our online survey.
 
 Survey Links:
 
 1. [English Version](https://forms.gle/LtrD4HnnT8Yoeo4q6)
 2. [Chinese Version](https://www.wjx.cn/vm/mB5kmTG.aspx#)
+
+If the link fails, you can browse the PDF files in our repository (***survey/EN.pdf*** or ***survey/CN.pdf***).
