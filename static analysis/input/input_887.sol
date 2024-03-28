@@ -1,7 +1,0 @@
-contract FundMe {
-    constructor() payable {
-    }
-
-}
-
-

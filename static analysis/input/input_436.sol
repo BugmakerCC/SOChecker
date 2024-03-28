@@ -1,6 +1,0 @@
-    address constant public BUSD = 0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56;
-
-IERC20 public immutable BUSD =
-    IERC20(0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7);
-
-

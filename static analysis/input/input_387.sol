@@ -1,3 +1,0 @@
-     address payable owner;
-
-

@@ -1,3 +1,0 @@
-owner = payable(msg.sender);
-
-

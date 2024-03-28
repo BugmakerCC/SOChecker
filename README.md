@@ -36,7 +36,19 @@ Please note that the base model file for ***llama2-chat-13b*** is not included i
 
 ***static analysis*** stores all the files used for program analysis.
 
-The patterns of each vulnerability are described in ***static analysis/patterns.md***.
+The patterns of each vulnerability are described in ***patterns.md***.
+
+***handleJson.py*** is used for program pruning and symbolic execution.
+
+***analysis_unit.py*** is used to analyze unit files.
+
+***contract.py*** is the main file for contract vulnerability detection.
+
+***baseBlock.py*** is used to store CFG basic block classes.
+
+***graph.py*** is responsible for handling the graph and ring algorithm.
+
+***utils.py*** and ***generator.py*** are general tool classes.
 
 ---
 # Evaluation

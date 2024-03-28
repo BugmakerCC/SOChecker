@@ -1,5 +1,0 @@
-zombies.push(
-    Zombie(...) 
-)
-
-

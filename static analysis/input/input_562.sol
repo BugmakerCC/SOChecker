@@ -1,8 +1,0 @@
-   ...
-
-    assert(false);
-
-    return tokenIdsIdx; 
-}
-
-
