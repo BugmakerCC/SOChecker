@@ -46,6 +46,8 @@ def main(
         with open(prompt_file,'r')as f:
             user_prompt_list = json.load(f)
 
+        # with open('conv_list.json','r')as f:
+        #     conv_list = json.load(f)      
     else:
         if prompt_file is not None:
             assert os.path.exists(
