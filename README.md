@@ -4,8 +4,8 @@ SOChecker is an automated security analysis tool designed for fragmented smart c
 For more information, please refer to our paper **Identifying Smart Contract Security Issues in Code Snippets from *Stack Overflow***.
 
 ---
-# *Code Completioner*
-*Code Completioner* is employed to complete smart contract fragments, enabling the generation of a comprehensive and **compiled** contract while preserving the integrity of the original fragments. This guarantees the seamless advancement of our subsequent program analysis procedures.
+# *Code Completer*
+*Code Completer* is employed to complete smart contract fragments, enabling the generation of a comprehensive and **compiled** contract while preserving the integrity of the original fragments. This guarantees the seamless advancement of our subsequent program analysis procedures.
 
 ### File Description
 ***Finetuning dataset.json*** is the file of dataset we use to finetune the model.
