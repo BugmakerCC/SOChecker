@@ -1,194 +1,244 @@
 import json
-import re
 import os
-import shutil
 import random
+import re
+import shutil
+
 from analysis_unit import analysis_unit
 from contract import contract
-import pandas as pd
-import time
+import statistic as excel_to_res
 
+# Paths and Configuration
+SOLC_VERSION_PATH = "solc compiler path"
+BIN_PROCESS_PATH = "./process/"
+RUN_PROCESS_PATH = "./process-run/"
+INPUT_JSON_PATH = './completion_v3.json'
+INPUT_DIR = "./input/"
+OUTPUT_DIR = "./output/"
+BIN_FULL_PATH = "./bin-full/"
+BIN_RUN_PATH = "./bin-runtime/"
+BIN_CREATION_PATH = "./bin-creation/"
+OPCODES_RUNTIME_PATH = "./opcodes-runtime/"
+OPCODES_CREATION_PATH = "./opcodes-creation/"
+OUTPUT_AST_PATH = "./output_ast/"
 
-solcVersionPath = "C:\\Users\\.solcx\\"
+# Constants for log file paths
+CONTRACT_LOG_PATH = "./contract.log"
+FUNCTION_LOG_PATH = "./function.log"
+RECORD_LOG_PATH = "./record.log"
 
-inputMap = {}
+# Constants variable
+AST_COMPACT_JSON_OPTION = " --ast-compact-json "
+DEFAULT_SOLC_VERSION = "0.8.9"
 
-binProcess = "./process/"
-runProcess = "./process-run/"
+# Version Tags
+VERSION_TAGS = []
 
-solFilePath = "./output/"
-
-bin_full = "./bin-full/"
-bin_run = "./bin-runtime/"
-bin_creation = "./bin-creation/"
-
-opcodes_runtime = "./opcodes-runtime/"
-opcodes_creation = "./opcodes-creation/"
-
-versionTag = []
+# Input Map
+input_map = {}
 
 
 def run():
-   
-    with open('./completion_v3.json', 'r',encoding='utf-8') as file:
-    
-        data = json.load(file)
+    """
+    Processes the JSON file to generate input and output Solidity files.
+    Reads data from a JSON file, extracts relevant information, and writes it to Solidity files.
+    """
+
+    # Load data from the JSON file
+    with open(INPUT_JSON_PATH, 'r', encoding='utf-8') as json_file:
+        data = json.load(json_file)
         
         for key, value in data.items():
+            # Extract the number from the key
             numbers = re.findall(r'\d+', key)[0]
-            inputFileName = "input_" + numbers + ".sol"
-            outputFileName = "output_" + numbers + ".sol"
+            input_file_name = f"input_{numbers}.sol"
+            output_file_name = f"output_{numbers}.sol"
 
-            with open("./input/" + inputFileName, "w", encoding='utf-8') as file1, open("./output/" + outputFileName, "w", encoding='utf-8') as file2:
-                file1.write(value['input'])
-                if(value['output'] == ""):
-                    file2.write(value['input'])
-                else:
-                    file2.write(value['output'])
+            # Define full paths for input and output files
+            input_file_path = os.path.join(INPUT_DIR, input_file_name)
+            output_file_path = os.path.join(OUTPUT_DIR, output_file_name)
+
+            # Write input and output data to respective files
+            with open(input_file_path, "w", encoding='utf-8') as input_file, \
+                 open(output_file_path, "w", encoding='utf-8') as output_file:
+                input_file.write(value['input'])
+                output_content = value['output'] if value['output'] else value['input']
+                output_file.write(output_content)
 
 def make_ast():
+    """
+    Processes Solidity files to generate ASTs using specified solc versions.
+    Scans the output directory for files, checks versions, and runs the solc command to generate ASTs.
+    """
+    # Ensure the output directory exists
+    if not os.path.exists(OUTPUT_AST_PATH):
+        os.makedirs(OUTPUT_AST_PATH)
 
-    list_dirs = os.walk("./output")
-    for root,_,files in list_dirs:
-        for f in files: 
-            file_path = os.path.join(root,f)
-            version = getVersion(file_path)
+    # Walk through the output directory
+    for root, _, files in os.walk(OUTPUT_DIR):
+        for file_name in files:
+            file_path = os.path.join(root, file_name)
+            version = get_version(file_path)
+
+            # Check version compatibility
             if version == "mismatch":
-                write_msg("version not match "+f)
+                write_msg(f"Version mismatch for file {file_name}")
                 continue
-            jsonChose = " --ast-compact-json "
-            numlist = version.split('.')
-            pre = int(numlist[1].strip())
-            pro = int(numlist[2].strip())
-            if pre == 4 and pro <= 11:
-                write_msg("low version " + f)
-                continue
-            if not os.path.exists(solcVersionPath + "solc-v" + version):
-                write_msg("no version "+ version)
-                continue
-            solcCmd = solcVersionPath + "solc-v" + version + "\\" + "solc.exe"
-            command_json = solcCmd + jsonChose + file_path + " -o " + "./output_ast"
-            if not os.path.isfile(file_path):
-                write_msg("no sol file")
-                continue
-            os.system(command_json)
-            if not os.path.isfile("./output_ast/" + f +"_json.ast"):
-                version = "0.8.9"
-                solcCmd = solcVersionPath + "solc-v" + version + "\\" + "solc.exe"
-                command_json = solcCmd + jsonChose + file_path + " -o " + "./output_ast"
-                os.system(command_json)
-                if not os.path.isfile("./output_ast/" + f +"_json.ast"):
-                    write_msg_compile("write error>>> "+ f)
-                else:
-                    versionTag.append(get_key(f))
 
+            # Extract major and minor version numbers
+            numlist = version.split('.')
+            try:
+                major_version = int(numlist[1].strip())
+                minor_version = int(numlist[2].strip())
+            except IndexError:
+                write_msg(f"Invalid version format for file {file_name}")
+                continue
+
+            # Skip if version is too old
+            if major_version == 4 and minor_version <= 11:
+                write_msg(f"Low version for file {file_name}")
+                continue
+
+            solc_cmd_path = os.path.join(SOLC_VERSION_PATH, f"solc-v{version}", "solc.exe")
+            if not os.path.isfile(solc_cmd_path):
+                write_msg(f"No solc version {version} found for file {file_name}")
+                continue
+
+            # Construct the command to generate AST
+            command_json = f"{solc_cmd_path}{AST_COMPACT_JSON_OPTION}{file_path} -o {OUTPUT_AST_PATH}"
+
+            # Run the command to generate AST
+            if not os.path.isfile(file_path):
+                write_msg(f"No Solidity file found for {file_name}")
+                continue
+
+            os.system(command_json)
+
+            # Fallback to default solc version if AST file is not generated
+            output_ast_file = os.path.join(OUTPUT_AST_PATH, f"{file_name}_json.ast")
+            if not os.path.isfile(output_ast_file):
+                solc_cmd_path = os.path.join(SOLC_VERSION_PATH, f"solc-v{DEFAULT_SOLC_VERSION}", "solc.exe")
+                command_json = f"{solc_cmd_path}{AST_COMPACT_JSON_OPTION}{file_path} -o {OUTPUT_AST_PATH}"
+                os.system(command_json)
+
+                if not os.path.isfile(output_ast_file):
+                    write_msg_compile(f"Write error for file {file_name}")
+                else:
+                    VERSION_TAGS.append(get_key(file_name))
 
 def handle_input():
-    list_dirs = os.walk("./input")
-    for root,_,files in list_dirs:
-        for f in files: 
-            file_path = os.path.join(root,f)
+    """
+    Processes Solidity files in the input directory to extract and log contract and function information.
+    Scans each file for contract and function definitions and logs the results to corresponding files.
+    """
+    for root, _, files in os.walk(INPUT_DIR):
+        for file_name in files:
+            file_path = os.path.join(root, file_name)
+            
+            # Read the content of the file
             with open(file_path, "r", encoding='utf-8') as input_file:
-                solstr = input_file.read();
-                cmatches = re.findall(r'contract\s+(\w+)\s+.*{', solstr)
-                cmatches = list(set(cmatches))
-                if(cmatches.__len__() > 0):
-                    cinfo = ""
-                    for cmatch in cmatches:
-                        cinfo = cinfo + cmatch + " "
-                    write_log("./contract.log",f +" "+str(cmatches.__len__()) + " " + cinfo)
+                sol_str = input_file.read()
+                
+                # Find all contract names
+                contract_matches = re.findall(r'contract\s+(\w+)\s+.*{', sol_str)
+                contract_matches = list(set(contract_matches))
+                
+                if contract_matches:
+                    # Log contract information
+                    contract_info = " ".join(contract_matches)
+                    log_message = f"{file_name} {len(contract_matches)} {contract_info}"
+                    write_log(CONTRACT_LOG_PATH, log_message)
                 else:
-                    fmatches = re.findall(r'function\s+(\w+)\s*\(', solstr)
-                    fmatches = list(set(fmatches))
-                    if(fmatches.__len__() > 0):
-                        finfo = ""
-                        for fmatch in fmatches:
-                            finfo = finfo + fmatch + " "
-                        write_log("./function.log",f +" "+ str(fmatches.__len__()) + " " + finfo)
+                    # Find all function names if no contracts found
+                    function_matches = re.findall(r'function\s+(\w+)\s*\(', sol_str)
+                    function_matches = list(set(function_matches))
+                    
+                    if function_matches:
+                        # Log function information
+                        function_info = " ".join(function_matches)
+                        log_message = f"{file_name} {len(function_matches)} {function_info}"
+                        write_log(FUNCTION_LOG_PATH, log_message)
                     else:
-                        write_log("./record.log",f) 
+                        # Log file if no contracts or functions found
+                        write_log(RECORD_LOG_PATH, file_name)
+                    
 
-def astGetNameById(id,idList):
-    for key,value in idList.items():
-        if value[0] == id:
-            return key
+def ast_get_name_by_id(node_id, id_list):
+    """
+    Retrieve the name associated with a given node ID from the id_list.
+
+    Parameters:
+    - node_id: The ID of the node.
+    - id_list: A dictionary mapping node names to their IDs and other information.
+
+    Returns:
+    - The name associated with the given node ID, or an empty string if not found.
+    """
+    for name, info in id_list.items():
+        if info[0] == node_id:
+            return name
     return ""
 
+
 def handle_ast():
+    """
+    Processes AST files to update the analysis units based on contract definitions and function selectors.
+    Reads AST files, extracts relevant information, and updates the global input_map with analysis results.
+    """
+    global input_map
 
-    global inputMap
-
-    list_dirs = os.walk("./output_ast")
-    for root,_,files in list_dirs:
-        for f in files: 
-            file_path = os.path.join(root,f)
+    for root, _, files in os.walk(OUTPUT_AST_PATH):
+        for file_name in files:
+            file_path = os.path.join(root, file_name)
+            
             with open(file_path, "r", encoding='utf-8') as ast_file:
-                key = get_key(f)
-                if not key in inputMap:
+                key = get_key(file_name)
+                if key not in input_map:
                     continue
-                unit = inputMap[key]
+                
+                unit = input_map[key]
                 contents = json.load(ast_file)
-                idInfo = contents["nodes"]
-                idList = contents["exportedSymbols"]
+                id_info = contents.get("nodes", [])
+                id_list = contents.get("exportedSymbols", {})
 
-                for info in idInfo:
-                    if info['nodeType'] != "ContractDefinition":
-                        continue
-                    if info['contractKind'] != "contract":
-                        continue
-                    unit.addAstContractNode(info['name'])
+                # Process contract definitions
+                for info in id_info:
+                    if info.get('nodeType') == "ContractDefinition" and info.get('contractKind') == "contract":
+                        unit.add_ast_contract_node(info.get('name', ''))
 
-                if (unit.getType() == 1):
-                    if (unit.getContract().__len__() == 1):
-                        unit.addAnalysisContract(unit.getContract()[0])
+                # Process contracts and functions based on unit type
+                if unit.get_type() == 1:
+                    contracts = unit.get_contracts()
+                    if len(contracts) == 1:
+                        unit.add_analysis_contract(contracts[0])
                     else:
-                        
-                        AllNodesId = []
-                        for contract in unit.getContract():
-                            if contract in idList:
-                                AllNodesId.append(idList[contract][0])
-
-                        for contract in unit.getContract():
-                            for info in idInfo:
-                                if info['nodeType'] != "ContractDefinition":
-                                    continue
-                                if info['contractKind'] != "contract":
-                                    continue
-                                if info['name'] != contract:
-                                    continue
-                                for depandId in info['contractDependencies']:
-                                    if depandId in AllNodesId:
-                                        AllNodesId.remove(depandId)
-                                else:
-                                    continue
-                        for nodeId in AllNodesId:
-                            if astGetNameById(nodeId,idList) != "":
-                                unit.addAnalysisContract(astGetNameById(nodeId,idList))
-                elif (unit.getType() == 2):
-                    if unit.getFunction().__len__():
-                        for info in idInfo:
-                            if info['nodeType'] != "ContractDefinition":
-                                continue
-                            if info['contractKind'] != "contract":
-                                continue
-                            for funcInfo in info['nodes']:
-                                if funcInfo['nodeType'] != "FunctionDefinition":
-                                    continue
-                                if not 'kind' in funcInfo:
-                                    continue
-                                if funcInfo['kind'] != "function":
-                                    continue
-                                if "functionSelector" in funcInfo:
-                                    unit.addFunctionSig(funcInfo['functionSelector'])
-                else:
-                    continue
-
+                        all_nodes_id = [id_list.get(contract, [None])[0] for contract in contracts if contract in id_list]
+                        for info in id_info:
+                            if info.get('nodeType') == "ContractDefinition" and info.get('contractKind') == "contract":
+                                contract_name = info.get('name')
+                                if contract_name in contracts:
+                                    dependencies = info.get('contractDependencies', [])
+                                    all_nodes_id = [node_id for node_id in all_nodes_id if node_id not in dependencies]
+                        for node_id in all_nodes_id:
+                            name = ast_get_name_by_id(node_id, id_list)
+                            if name:
+                                unit.add_analysis_contract(name)
+                elif unit.get_type() == 2:
+                    functions = unit.get_functions()
+                    if functions:
+                        for info in id_info:
+                            if info.get('nodeType') == "ContractDefinition" and info.get('contractKind') == "contract":
+                                for func_info in info.get('nodes', []):
+                                    if func_info.get('nodeType') == "FunctionDefinition" and func_info.get('kind') == "function":
+                                        function_selector = func_info.get('functionSelector')
+                                        if function_selector:
+                                            unit.add_function_sig(function_selector)
 
 def initial_map():
 
-    global inputMap
+    global input_map
 
-    with open("./contract.log", "r", encoding='utf-8') as contract_file: 
+    with open(CONTRACT_LOG_PATH, "r", encoding='utf-8') as contract_file: 
         while True:
             line = contract_file.readline()
             if line == '':
@@ -198,9 +248,9 @@ def initial_map():
             ctype = 1
             unit = analysis_unit(ckey,ctype)
             for i in range(2,content.__len__()):
-                unit.addContract(content[i])
-            inputMap[ckey] = unit
-    with open("./function.log", "r", encoding='utf-8') as function_file: 
+                unit.add_contract(content[i])
+            input_map[ckey] = unit
+    with open(FUNCTION_LOG_PATH, "r", encoding='utf-8') as function_file: 
         while True:
             line = function_file.readline()
             if line == '':
@@ -217,11 +267,11 @@ def initial_map():
                     write_msg_compile("meaning1 less sol " + fkey)
                     continue
                 else:
-                    unit.addAnalysisContract(cmatches[0])
+                    unit.add_analysis_contract(cmatches[0])
             for i in range(2,content.__len__()):
-                unit.addFunction(content[i])
-            inputMap[fkey] = unit
-    with open("./record.log", "r", encoding='utf-8') as record_file: 
+                unit.add_function(content[i])
+            input_map[fkey] = unit
+    with open(RECORD_LOG_PATH, "r", encoding='utf-8') as record_file: 
         while True:
             line = record_file.readline()
             if line == '':
@@ -239,8 +289,8 @@ def initial_map():
                     continue
                 else:
                     for item in cmatches:
-                        unit.addAnalysisContract(item)
-            inputMap[rkey] = unit
+                        unit.add_analysis_contract(item)
+            input_map[rkey] = unit
 
         
 
@@ -250,7 +300,7 @@ def get_key(str):
     return matches[0]
 
 
-def getVersion(path):
+def get_version(path):
     with open(path,'r',encoding='utf-8') as disasm_file:
         while True:
             line = disasm_file.readline()
@@ -276,26 +326,30 @@ def getVersion(path):
 
 def compileLatter(index,fileName,contractName,solcCmd,unit):
     
+    """
+    Handles the compilation of a contract, including moving files, extracting creation code, and disassembling.
+    """
+    
     fileFullName = contractName + ".bin"
     fileRunName = contractName + ".bin-runtime"
     fileCreationName = contractName + ".bin-creation"
     opcodesRunName = contractName + ".opcodes-runtime"
     opcodesCreationName = contractName + ".opcodes-creation"
-    originFullName = binProcess + fileFullName
-    originRunName = runProcess + fileRunName
+    originFullName = BIN_PROCESS_PATH + fileFullName
+    originRunName = RUN_PROCESS_PATH + fileRunName
 
     if not os.path.isfile(originFullName):
         write_msg("compile full error " + contractName)
         return False
 
-    contractName = contractName + "_" + unit.getIndex()
+    contractName = contractName + "_" + unit.get_index()
     fileFullName = contractName + ".bin"
     fileRunName = contractName + ".bin-runtime"
     fileCreationName = contractName + ".bin-creation"
     opcodesRunName = contractName + ".opcodes-runtime"
     opcodesCreationName = contractName + ".opcodes-creation"
 
-    while os.path.isfile(bin_full + fileFullName):
+    while os.path.isfile(BIN_FULL_PATH + fileFullName):
         random_number = random.randint(1,10)
         contractName = contractName + "_" + str(random_number)
         fileFullName = contractName + ".bin"
@@ -304,505 +358,151 @@ def compileLatter(index,fileName,contractName,solcCmd,unit):
         opcodesRunName = contractName + ".opcodes-runtime"
         opcodesCreationName = contractName + ".opcodes-creation"
 
-    shutil.move(originFullName,bin_full + fileFullName)
+    shutil.move(originFullName,BIN_FULL_PATH + fileFullName)
 
 
-    clearRunProcess()
+    clear_run_process()
 
-    command_run = solcCmd + " --bin-runtime " + solFilePath + fileName + " -o " + runProcess
+    # Recompile runtime binary
+    command_run = f"{solcCmd} --bin-runtime {OUTPUT_DIR}{fileName} -o {RUN_PROCESS_PATH}"
     os.system(command_run)
 
+    # Check if runtime binary exists
     if not os.path.isfile(originRunName):
         write_msg("compile run error" + command_run + " " + originRunName)
         return False
 
-    shutil.move(originRunName,bin_run + fileRunName)
+    shutil.move(originRunName,BIN_RUN_PATH + fileRunName)
     
-    with open(bin_full + fileFullName,'r',encoding='utf-8') as f:
+
+    # Read full and runtime binaries
+    with open(os.path.join(BIN_FULL_PATH, fileFullName), 'r', encoding='utf-8') as f:
         str_full = f.read()
-        f.close()
-    with open(bin_run + fileRunName,'r',encoding='utf-8') as f:   
+    with open(os.path.join(BIN_RUN_PATH, fileRunName), 'r', encoding='utf-8') as f:
         str_run = f.read()
-        f.close()
-    creation = str_full[:len(str_full)-len(str_run)]
-    with open(bin_creation + fileCreationName,'w',encoding='utf-8') as f:   
-        f.write(creation)
-        f.close()
 
-    command_evm_run = "evm disasm " + bin_run + fileRunName + " > " + opcodes_runtime + opcodesRunName
-    os.system(command_evm_run)
+    # Extract creation code
+    creation_code = str_full[:-len(str_run)]
+    with open(os.path.join(BIN_CREATION_PATH, fileCreationName), 'w', encoding='utf-8') as f:
+        f.write(creation_code)
 
-    if not os.path.isfile(opcodes_runtime + opcodesRunName):
-        write_msg("opcodes run error" + command_evm_run + " " + opcodes_runtime + opcodesRunName)
+    # Disassemble runtime and creation binaries
+    if not disassemble_evm(BIN_RUN_PATH, OPCODES_RUNTIME_PATH, fileRunName, opcodesRunName):
         return False
-    
-    command_evm_creation = "evm disasm " + bin_creation + fileCreationName + " > " + opcodes_creation + opcodesCreationName
-    os.system(command_evm_creation)
-
-    if not os.path.isfile(opcodes_creation + opcodesCreationName):
-        write_msg("opcodes creation error" + command_evm_creation + " " + opcodes_creation + opcodesCreationName)
+    if not disassemble_evm(BIN_CREATION_PATH, OPCODES_CREATION_PATH, fileCreationName, opcodesCreationName):
         return False
-  
-    contract_anlysis = contract(contractName,index,unit.getFunctionSig())
-    unit.addRes(contract_anlysis)
+
+
+    # Add analysis result to unit
+    contract_analysis = contract(contractName, index, unit.get_function_sigs())
+    unit.add_contract_result(contract_analysis)
 
     return True
 
-def read_label():
-
-    excelData = pd.read_excel("./label.xlsx")
-
-    excelDict = {
-        
-        'Index' : [],
-        'Pass_compile' : [],
-
-        
-        'Reentrancy_label' : [],
-        'Reentrancy_detect' : [],
-        'Reentrancy_FP' : [],
-        'Reentrancy_FN' : [],
-
-
-        'Access_Control_label' : [],
-        'Access_Control_detect' : [],
-        'Access_Control_FP' : [],
-        'Access_Control_FN' : [],
-
-
-        'Arithmetic_Issues_label' : [],
-        'Arithmetic_Issues_detect' : [],
-        'Arithmetic_Issues_FP' : [],
-        'Arithmetic_Issues_FN' : [],
-
-        'UEC_label' : [],
-        'UEC_detect' : [],
-        'UEC_FP' : [],
-        'UEC_FN' : [],
-
-
-        'Dos_label' : [],
-        'Dos_detect' : [],
-        'Dos_FP' : [],
-        'Dos_FN' : [],
-
-        'RAD_label' : [],
-        'RAD_detect' : [],
-        'RAD_FP' : [],
-        'RAD_FN' : [],
-
-        'BID_label' : [],
-        'BID_detect' : [],
-        'BID_FP' : [],
-        'BID_FN' : [],
-
-        'TOD_label' : [],
-        'TOD_detect' : [],
-        'TOD_FP' : [],
-        'TOD_FN' : [],
-
-        'SAA_label' : [],
-        'SAA_detect' : [],
-        'SAA_FP' : [],
-        'SAA_FN' : [],
-
-    }
-
-    for _, row in excelData.iterrows():
-
-
-
-        excelDict['Index'].append(row['Index'])
-
-        excelDict['Reentrancy_label'].append(row['Reentrancy'])
-        excelDict['Access_Control_label'].append(row['Access Control'])
-        excelDict['Arithmetic_Issues_label'].append(row['Arithmetic Issues'])
-        excelDict['UEC_label'].append(row['Unchecked Return Values For Low Level Calls'])
-        excelDict['Dos_label'].append(row['Denial of Service'])
-        excelDict['RAD_label'].append(row['Bad Randomness'])
-        excelDict['BID_label'].append(row['Time manipulation'])
-        excelDict['TOD_label'].append(row['Front-Running'])
-        excelDict['SAA_label'].append(row['Short Address Attack'])
-
-
-        if str(row['Index']) in inputMap:
-
-            unit = inputMap[str(row['Index'])]
-
-            if not unit.is_pass_compile():
-                excelDict['Pass_compile'].append(False)
-                excelDict['UEC_detect'].append(False)
-                excelDict['UEC_FP'].append(False)
-                excelDict['UEC_FN'].append(False)
-                excelDict['BID_detect'].append(False)
-                excelDict['BID_FP'].append(False)
-                excelDict['BID_FN'].append(False)
-                excelDict['SAA_detect'].append(False)
-                excelDict['SAA_FP'].append(False)
-                excelDict['SAA_FN'].append(False)
-                excelDict['TOD_detect'].append(False)
-                excelDict['TOD_FP'].append(False)
-                excelDict['TOD_FN'].append(False)
-                excelDict['RAD_detect'].append(False)
-                excelDict['RAD_FP'].append(False)
-                excelDict['RAD_FN'].append(False)
-                excelDict['Reentrancy_detect'].append(False)
-                excelDict['Reentrancy_FP'].append(False)
-                excelDict['Reentrancy_FN'].append(False)
-                excelDict['Dos_detect'].append(False)
-                excelDict['Dos_FP'].append(False)
-                excelDict['Dos_FN'].append(False)
-                excelDict['Arithmetic_Issues_detect'].append(False)
-                excelDict['Arithmetic_Issues_FP'].append(False)
-                excelDict['Arithmetic_Issues_FN'].append(False)
-                excelDict['Access_Control_detect'].append(False)
-                excelDict['Access_Control_FP'].append(False)
-                excelDict['Access_Control_FN'].append(False)
-                continue
-
-            contracts = unit.getRes()
-
-            if len(contracts) == 0:
-
-                excelDict['Pass_compile'].append(False)
-                excelDict['UEC_detect'].append(False)
-                excelDict['UEC_FP'].append(False)
-                excelDict['UEC_FN'].append(False)
-                excelDict['BID_detect'].append(False)
-                excelDict['BID_FP'].append(False)
-                excelDict['BID_FN'].append(False)
-                excelDict['SAA_detect'].append(False)
-                excelDict['SAA_FP'].append(False)
-                excelDict['SAA_FN'].append(False)
-                excelDict['TOD_detect'].append(False)
-                excelDict['TOD_FP'].append(False)
-                excelDict['TOD_FN'].append(False)
-                excelDict['RAD_detect'].append(False)
-                excelDict['RAD_FP'].append(False)
-                excelDict['RAD_FN'].append(False)
-                excelDict['Reentrancy_detect'].append(False)
-                excelDict['Reentrancy_FP'].append(False)
-                excelDict['Reentrancy_FN'].append(False)
-                excelDict['Dos_detect'].append(False)
-                excelDict['Dos_FP'].append(False)
-                excelDict['Dos_FN'].append(False)
-                excelDict['Arithmetic_Issues_detect'].append(False)
-                excelDict['Arithmetic_Issues_FP'].append(False)
-                excelDict['Arithmetic_Issues_FN'].append(False)
-                excelDict['Access_Control_detect'].append(False)
-                excelDict['Access_Control_FP'].append(False)
-                excelDict['Access_Control_FN'].append(False)
-                continue
-
-            
-            excelDict['Pass_compile'].append(True)
-
-            UECtag = False
-
-            BIDtag = False
-
-            SAAtag = False
-
-            TODtag = False
-
-            RADtag = False
-
-            RECtag = False
-
-            DOStag = False
-
-            AMItag = False
-
-            ACCtag= False
-
-            for contract in contracts:
-            
-                if contract.get_UEC():
-                    UECtag = True
-
-                if contract.get_BID():
-                    BIDtag = True
-
-                if contract.get_SAA():
-                    SAAtag = True
-                
-                if contract.get_TOD():
-                    TODtag = True
-
-                if contract.get_REC():
-                    RECtag = True
-
-                if contract.get_DOS():
-                    DOStag = True
-
-                if contract.get_integer_over() or contract.get_integer_under():    
-                    AMItag = True
-                
-                if contract.get_ORI() or contract.get_SLF():    
-                    ACCtag = True
-
-                if contract.get_RAD():
-                    RADtag = True
-
-            if UECtag:
-                excelDict['UEC_detect'].append(True)
-            else:
-                excelDict['UEC_detect'].append(False)
-
-            if row['Unchecked Return Values For Low Level Calls'] != UECtag:
-                if row['Unchecked Return Values For Low Level Calls'] == True:
-                    excelDict['UEC_FN'].append(True)
-                    excelDict['UEC_FP'].append(False)
-                else:
-                    excelDict['UEC_FP'].append(True)
-                    excelDict['UEC_FN'].append(False)
-            else:
-                excelDict['UEC_FP'].append(False)
-                excelDict['UEC_FN'].append(False)
-            
-            if BIDtag:
-                excelDict['BID_detect'].append(True)
-            else:
-                excelDict['BID_detect'].append(False)
-
-            if row['Time manipulation'] != BIDtag:
-                if row['Time manipulation'] == True:
-                    excelDict['BID_FN'].append(True)
-                    excelDict['BID_FP'].append(False)
-                else:
-                    excelDict['BID_FP'].append(True)
-                    excelDict['BID_FN'].append(False)
-            else:
-                excelDict['BID_FP'].append(False)
-                excelDict['BID_FN'].append(False)
-
-            if SAAtag:
-                excelDict['SAA_detect'].append(True)
-            else:
-                excelDict['SAA_detect'].append(False)
-
-            if row['Short Address Attack'] != SAAtag:
-                if row['Short Address Attack'] == True:
-                    excelDict['SAA_FN'].append(True)
-                    excelDict['SAA_FP'].append(False)
-                else:
-                    excelDict['SAA_FP'].append(True)
-                    excelDict['SAA_FN'].append(False)
-            else:
-                excelDict['SAA_FP'].append(False)
-                excelDict['SAA_FN'].append(False)
-            
-            if TODtag:
-                excelDict['TOD_detect'].append(True)
-            else:
-                excelDict['TOD_detect'].append(False)
-
-            if row['Front-Running'] != TODtag:
-                if row['Front-Running'] == True:
-                    excelDict['TOD_FN'].append(True)
-                    excelDict['TOD_FP'].append(False)
-                else:
-                    excelDict['TOD_FP'].append(True)
-                    excelDict['TOD_FN'].append(False)
-            else:
-                excelDict['TOD_FP'].append(False)
-                excelDict['TOD_FN'].append(False)
-
-            if RADtag:
-                excelDict['RAD_detect'].append(True)
-            else:
-                excelDict['RAD_detect'].append(False)
-            
-            if row['Bad Randomness'] != RADtag:
-                if row['Bad Randomness'] == True:
-                    excelDict['RAD_FN'].append(True)
-                    excelDict['RAD_FP'].append(False)
-                else:
-                    excelDict['RAD_FP'].append(True)
-                    excelDict['RAD_FN'].append(False)
-            else:
-                excelDict['RAD_FP'].append(False)
-                excelDict['RAD_FN'].append(False)
-
-
-            if  RECtag:
-                excelDict['Reentrancy_detect'].append(True)
-            else:
-                excelDict['Reentrancy_detect'].append(False)
-
-            if row['Reentrancy'] != RECtag:
-                if row['Reentrancy'] == True:
-                    excelDict['Reentrancy_FN'].append(True)
-                    excelDict['Reentrancy_FP'].append(False)
-                else:
-                    excelDict['Reentrancy_FP'].append(True)
-                    excelDict['Reentrancy_FN'].append(False)
-            else:
-                excelDict['Reentrancy_FP'].append(False)
-                excelDict['Reentrancy_FN'].append(False)
-
-            
-            if  DOStag:
-                excelDict['Dos_detect'].append(True)
-            else:
-                excelDict['Dos_detect'].append(False)
-
-            if row['Denial of Service'] !=  DOStag:
-                if row['Denial of Service'] == True:
-                    excelDict['Dos_FN'].append(True)
-                    excelDict['Dos_FP'].append(False)
-                else:
-                    excelDict['Dos_FP'].append(True)
-                    excelDict['Dos_FN'].append(False)
-            else:
-                excelDict['Dos_FP'].append(False)
-                excelDict['Dos_FN'].append(False)
-
-                
-            if AMItag:    
-                excelDict['Arithmetic_Issues_detect'].append(True)
-            else:
-                excelDict['Arithmetic_Issues_detect'].append(False)
-
-            if row['Arithmetic Issues'] != AMItag:
-                if row['Arithmetic Issues'] == True:
-                    excelDict['Arithmetic_Issues_FN'].append(True)
-                    excelDict['Arithmetic_Issues_FP'].append(False)
-                else:
-                    excelDict['Arithmetic_Issues_FP'].append(True)
-                    excelDict['Arithmetic_Issues_FN'].append(False)
-            else:
-                excelDict['Arithmetic_Issues_FP'].append(False)
-                excelDict['Arithmetic_Issues_FN'].append(False)
-
+def disassemble_evm(bin_path, opcode_path, bin_name,opcodes_name):
+    """
+    Disassembles the binary file using evm and writes to the opcode file.
+    """
+    command = f"evm disasm {bin_path}{bin_name} > {opcode_path}{opcodes_name}"
+    os.system(command)
     
-            if ACCtag:    
-                excelDict['Access_Control_detect'].append(True)
-            else:
-                excelDict['Access_Control_detect'].append(False)
+    if not os.path.isfile(f"{opcode_path}{opcodes_name}"):
+        write_msg(f"Opcode disassembly error: {command}")
+        return False
+    return True
 
-            if row['Access Control'] != ACCtag:
-                if row['Access Control'] == True:
-                    excelDict['Access_Control_FN'].append(True)
-                    excelDict['Access_Control_FP'].append(False)
-                else:
-                    excelDict['Access_Control_FP'].append(True)
-                    excelDict['Access_Control_FN'].append(False)
-            else:
-                excelDict['Access_Control_FP'].append(False)
-                excelDict['Access_Control_FN'].append(False)
+def compile_contract(index, fileName, contractName, solcCmd, unit):
+    """
+    Compiles the contract using the provided Solidity compiler command.
+    If the compilation is successful, marks the unit as passed.
+    """
+    if compileLatter(index, fileName, contractName, solcCmd, unit):
+        unit.mark_passed_compilation()
+        return True
+    return False
 
-           
-        else:
-            excelDict['Pass_compile'].append(False)
-            excelDict['UEC_detect'].append(False)
-            excelDict['UEC_FP'].append(False)
-            excelDict['UEC_FN'].append(False)
-            excelDict['BID_detect'].append(False)
-            excelDict['BID_FP'].append(False)
-            excelDict['BID_FN'].append(False)
-            excelDict['SAA_detect'].append(False)
-            excelDict['SAA_FP'].append(False)
-            excelDict['SAA_FN'].append(False)
-            excelDict['TOD_detect'].append(False)
-            excelDict['TOD_FP'].append(False)
-            excelDict['TOD_FN'].append(False)
-            excelDict['RAD_detect'].append(False)
-            excelDict['RAD_FP'].append(False)
-            excelDict['RAD_FN'].append(False)
-            excelDict['Reentrancy_detect'].append(False)
-            excelDict['Reentrancy_FP'].append(False)
-            excelDict['Reentrancy_FN'].append(False)
-            excelDict['Dos_detect'].append(False)
-            excelDict['Dos_FP'].append(False)
-            excelDict['Dos_FN'].append(False)
-            excelDict['Arithmetic_Issues_detect'].append(False)
-            excelDict['Arithmetic_Issues_FP'].append(False)
-            excelDict['Arithmetic_Issues_FN'].append(False)
-            excelDict['Access_Control_detect'].append(False)
-            excelDict['Access_Control_FP'].append(False)
-            excelDict['Access_Control_FN'].append(False)
-            if not os.path.isfile("./input/input_"+str(row['Index'])+".sol"):
-                write_msg_compile("label has but not contain in json " + str(row['Index']))
-            continue
-    df = pd.DataFrame(excelDict)
-    df.to_excel("./result.xlsx", index=False, header=True)
-    print("success!") 
+def process_contracts(index, fileName, contractName, solcCmd, unit):
+    """
+    Processes and compiles all contracts in the unit. 
+    Returns True if at least one contract was successfully compiled.
+    """
+    compiled = False
+    ast_contracts = unit.get_ast_contract_nodes()
 
+    if contractName in ast_contracts:
+        compiled = compile_contract(index, fileName, contractName, solcCmd, unit)
+    elif ast_contracts:
+        for ast_contract in ast_contracts:
+            if compile_contract(index, fileName, ast_contract, solcCmd, unit):
+                compiled = True
+    return compiled
 
 def compileInputMap():
-    global inputMap
+    global input_map
 
-    for index,unit in inputMap.items():
+    for index, unit in input_map.items():
+        print(f"Now compiling index: {index}")
         
-      
-        print("now compile index>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",index)
+        fileName = f"output_{index}.sol"
+        jsonName = f"output_{index}.sol_json.ast"
 
-        fileName = "output_" + index + ".sol"
-        jsonName = "output_" + index + ".sol_json.ast"
-
-        if not os.path.isfile("./output_ast/"+jsonName):
-            write_msg_compile("compile error>>>>>> " + index)
+        if not os.path.isfile(f"./output_ast/{jsonName}"):
+            write_msg_compile(f"compile error>>>>>> {index}")
             continue
 
-        analysisContract =  unit.getAnalysisContract()
-        
-        
+        analysis_contracts = unit.get_analysis_contracts()
+        version = get_version(OUTPUT_DIR + fileName)
 
-        for contractName in analysisContract:
+        # Override version if necessary
+        if index in VERSION_TAGS:
+            version = DEFAULT_SOLC_VERSION
 
-            version = getVersion(solFilePath + fileName)
+        # Clear previous compilation processes
+        clear_process()
 
-            if index in versionTag:
-                version = "0.8.9"
+        solcCmd = f"{SOLC_VERSION_PATH}solc-v{version}\\solc.exe"
+        command_full = f"{solcCmd} --bin {OUTPUT_DIR}{fileName} -o {BIN_PROCESS_PATH}"
+        os.system(command_full)
 
-            clearProcess()
+        # Compile each contract in the analysis_contracts list
+        compiled = False
+        for contractName in analysis_contracts:
+            if process_contracts(index, fileName, contractName, solcCmd, unit):
+                compiled = True
 
-            solcCmd = solcVersionPath + "solc-v" + version + "\\" + "solc.exe"
-            
-            command_full = solcCmd + " --bin " + solFilePath + fileName + " -o " + binProcess
-            os.system(command_full)
-
-            if contractName in unit.getAstContractNode():
-
-                if compileLatter(index,fileName,contractName,solcCmd,unit):
-                    unit.make_pass_compile()
-                else:
-                    continue
-            else:
-                if unit.getAstContractNode().__len__() > 0 :
-                    for astContract in unit.getAstContractNode():
-
-                        if  compileLatter(index,fileName,astContract,solcCmd,unit):
-                            unit.make_pass_compile()
-                        else:
-                           
-                            continue
-                else:
-                    continue  
-
-        if not unit.is_pass_compile():
-            write_msg_compile("meaning less sol>>>>>> " + index)
+        # Check if the unit passed compilation
+        if not compiled:
+            write_msg_compile(f"meaningless sol>>>>>> {index}")
 
 
-def cleanCompileFile():
+def ensure_directory_exists(dir_path):
+    """
+    Ensure that a directory exists by deleting it if it already exists and then recreating it.
+    
+    Parameters:
+    - dir_path: Path to the directory to ensure.
+    """
+    if os.path.exists(dir_path):
+        shutil.rmtree(dir_path)
+    os.makedirs(dir_path)
 
-    if os.path.exists(bin_full):
-        shutil.rmtree(bin_full)
-    os.mkdir(bin_full)
-    if os.path.exists(bin_creation):
-        shutil.rmtree(bin_creation)
-    os.mkdir(bin_creation)
-    if os.path.exists(bin_run):
-        shutil.rmtree(bin_run)
-    os.mkdir(bin_run)
-    if os.path.exists(opcodes_runtime):
-        shutil.rmtree(opcodes_runtime)
-    os.mkdir(opcodes_runtime)
-    if os.path.exists(opcodes_creation):
-        shutil.rmtree(opcodes_creation)
-    os.mkdir(opcodes_creation)
 
+def clean_compile_files():
+    """
+    Clean and recreate necessary directories for compilation.
+    """
+    ensure_directory_exists(BIN_FULL_PATH)
+    ensure_directory_exists(BIN_CREATION_PATH)
+    ensure_directory_exists(BIN_RUN_PATH)
+    ensure_directory_exists(OPCODES_RUNTIME_PATH)
+    ensure_directory_exists(OPCODES_CREATION_PATH)
+
+
+def write_msg_compile(msg):
+    with open("./nocompile.log",'a') as f:
+        f.write(msg)
+        f.write('\n')
+        f.close()  
     
 
 def cleanLog():
@@ -819,31 +519,12 @@ def cleanLog():
         f.flush()
         f.close()
 
-def libraryHandel(file_path):
-
-    with open(file_path,'r') as f:
-        str = f.read()
-        res = re.search(r'(\_\_\.).*(\_\_)',str)
-        if res:
-            res_final = str[:res.start()] + str[res.end():]
-            f.close()
-            with open(file_path,'w') as w:
-                w.write(res_final)
-                w.close()
-        else:
-            f.close()
-
 def write_msg(msg):
     with open("./error.log",'a') as f:
         f.write(msg)
         f.write('\n')
         f.close()
 
-def write_msg_compile(msg):
-    with open("./nocompile.log",'a') as f:
-        f.write(msg)
-        f.write('\n')
-        f.close()  
 
 def write_log(path,msg):
      with open(path,'a') as f:
@@ -857,17 +538,18 @@ def write_statics(path,msg):
         f.write('\n')
         f.close()
 
-def clear():
-    if os.path.exists("./output_ast/"):
-        shutil.rmtree("./output_ast/")
-    os.mkdir("./output_ast/")
+def write_res(msg):
+    with open("./result.log",'a') as f:
+        f.write(msg)
+        f.write('\n')
+        f.close()
 
-def clearProcess():
+def clear_process():
     if os.path.exists("./process/"):
         shutil.rmtree("./process/")
     os.mkdir("./process/")
 
-def clearRunProcess():
+def clear_run_process():
     if os.path.exists("./process-run/"):
         shutil.rmtree("./process-run/")
     os.mkdir("./process-run/")
@@ -886,22 +568,26 @@ def clearAll():
 
     cleanLog()
 
-def write_res(msg):
-    with open("./result.log",'a') as f:
-        f.write(msg)
-        f.write('\n')
-        f.close()
+def main():
 
-def finalRun():
+    global input_map
+
     clearAll() 
+   
     run()
+    
     make_ast()
+    
     handle_input()
-    cleanCompileFile()
+    
+    clean_compile_files()
+    
     initial_map()
+    
     handle_ast()
+    
     compileInputMap()
-    read_label()
+    
+    excel_to_res.read_label(input_map)
 
-# finalRun()
-
+main()
