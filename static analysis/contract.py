@@ -1913,11 +1913,3 @@ class SmartContractAnalyzer:
     
     def __del__(self):
         return
-
-
-# test = SmartContractAnalyzer("MathLib_699",699,"0x123")
-# # print(test.get_ORI())
-# print(test.get_integer_under())
-# print(test.get_integer_over())
-
-# print(preCheck.check_need_addconstraint(114))

@@ -5,11 +5,11 @@ import re
 import shutil
 
 from analysis_unit import analysis_unit
-from contract import contract
+from contract import SmartContractAnalyzer 
 import statistic as excel_to_res
 
 # Paths and Configuration
-SOLC_VERSION_PATH = "solc compiler path"
+SOLC_VERSION_PATH = "C:\\Users\\yafei\\.solcx\\"
 BIN_PROCESS_PATH = "./process/"
 RUN_PROCESS_PATH = "./process-run/"
 INPUT_JSON_PATH = './completion_v3.json'
@@ -394,7 +394,7 @@ def compileLatter(index,fileName,contractName,solcCmd,unit):
 
 
     # Add analysis result to unit
-    contract_analysis = contract(contractName, index, unit.get_function_sigs())
+    contract_analysis = SmartContractAnalyzer(contractName, index, unit.get_function_sigs())
     unit.add_contract_result(contract_analysis)
 
     return True
