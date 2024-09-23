@@ -9,7 +9,7 @@ from contract import SmartContractAnalyzer
 import statistic as excel_to_res
 
 # Paths and Configuration
-SOLC_VERSION_PATH = "C:\\Users\\yafei\\.solcx\\"
+SOLC_VERSION_PATH = "solc path"
 BIN_PROCESS_PATH = "./process/"
 RUN_PROCESS_PATH = "./process-run/"
 INPUT_JSON_PATH = './completion_v3.json'
