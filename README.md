@@ -1,7 +1,7 @@
 # SOChecker
 SOChecker is an automated security analysis tool designed for fragmented smart contract code.
 
-For more information, please refer to our paper [**Identifying Smart Contract Security Issues in Code Snippets from *Stack Overflow***](https://arxiv.org/abs/2407.13271).
+For more information, please refer to our paper [**Identifying Smart Contract Security Issues in Code Snippets from *Stack Overflow***](https://dl.acm.org/doi/pdf/10.1145/3650212.3680353).
 
 ---
 # *Code Completer*
